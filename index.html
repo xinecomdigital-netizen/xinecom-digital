@@ -2,23 +2,28 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>XineCom Digital | Soporte TI, PC y Automatización en Chile</title>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>
+    XineCom Digital | Soporte TI y Automatización para Empresas
+  </title>
 
   <meta
     name="description"
-    content="XineCom Digital ofrece soporte TI, optimización de PC, instalación de Windows, seguridad informática, diagnóstico y automatización con IA en Chile."
+    content="XineCom Digital ofrece soporte TI, optimización de computadores, seguridad, automatización y soluciones digitales para personas, emprendedores y pequeñas empresas en Chile."
   >
 
   <meta
     name="keywords"
-    content="soporte TI, soporte técnico, reparación PC, optimización PC, Windows, seguridad informática, automatización IA, n8n, Chile"
+    content="soporte TI Chile, soporte técnico, pequeñas empresas, automatización, n8n, inteligencia artificial, soporte PC, Windows, herramientas gratis, XineCom Digital"
   >
 
   <meta name="author" content="XineCom Digital">
   <meta name="robots" content="index, follow">
-  <meta name="language" content="Spanish">
   <meta name="theme-color" content="#00ff88">
 
   <link
@@ -26,34 +31,57 @@
     href="https://xinecomdigital-netizen.github.io/xinecom-digital/"
   >
 
-  <!-- Open Graph -->
+  <!-- ======================================================
+       OPEN GRAPH
+       ====================================================== -->
+
   <meta property="og:type" content="website">
+
   <meta
     property="og:title"
-    content="XineCom Digital | Soporte TI y Automatización"
+    content="XineCom Digital | Tecnología simple para tu negocio"
   >
+
   <meta
     property="og:description"
-    content="Soporte técnico, optimización de PC, seguridad informática y automatización con IA."
+    content="Soporte TI, automatización y herramientas digitales para personas, emprendedores y pequeñas empresas."
   >
+
   <meta
     property="og:url"
     content="https://xinecomdigital-netizen.github.io/xinecom-digital/"
   >
-  <meta property="og:site_name" content="XineCom Digital">
 
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image">
+  <meta
+    property="og:site_name"
+    content="XineCom Digital"
+  >
+
+
+  <!-- ======================================================
+       TWITTER / X
+       ====================================================== -->
+
+  <meta
+    name="twitter:card"
+    content="summary_large_image"
+  >
+
   <meta
     name="twitter:title"
-    content="XineCom Digital | Soporte TI y Automatización"
-  >
-  <meta
-    name="twitter:description"
-    content="Soluciones TI y automatización con IA para personas y emprendedores."
+    content="XineCom Digital"
   >
 
-  <!-- Datos estructurados -->
+  <meta
+    name="twitter:description"
+    content="Soporte TI, automatización y soluciones digitales."
+  >
+
+
+  <!-- ======================================================
+       DATOS ESTRUCTURADOS
+       ====================================================== -->
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -61,543 +89,2637 @@
     "name": "XineCom Digital",
     "url": "https://xinecomdigital-netizen.github.io/xinecom-digital/",
     "email": "xinecomdigital@gmail.com",
-    "description": "Soporte TI, optimización de PC, instalación de Windows, seguridad informática, diagnóstico y automatización con IA.",
+    "description": "Soporte TI, optimización de computadores, seguridad informática y automatización para personas, emprendedores y pequeñas empresas.",
     "areaServed": {
       "@type": "Country",
       "name": "Chile"
     },
     "serviceType": [
       "Soporte TI",
-      "Optimización de PC",
+      "Optimización de computadores",
       "Instalación de Windows",
       "Seguridad informática",
-      "Diagnóstico de PC",
-      "Automatización con IA"
+      "Diagnóstico de computadores",
+      "Automatización",
+      "Automatización con IA",
+      "Soporte para pequeñas empresas"
     ]
   }
   </script>
 
+
   <style>
 
+    /* ======================================================
+       VARIABLES
+       ====================================================== */
+
+    :root {
+
+      --bg:
+        #050706;
+
+      --bg-soft:
+        #080c0a;
+
+      --card:
+        #0b100d;
+
+      --card-light:
+        #101712;
+
+      --green:
+        #00ff88;
+
+      --green-soft:
+        #00d977;
+
+      --green-dark:
+        #003c22;
+
+      --text:
+        #ffffff;
+
+      --muted:
+        #96a099;
+
+      --border:
+        rgba(255,255,255,0.08);
+
+      --border-green:
+        rgba(0,255,136,0.22);
+
+      --shadow:
+        0 20px 60px rgba(0,0,0,0.35);
+
+      --radius:
+        18px;
+
+    }
+
+
+    /* ======================================================
+       RESET
+       ====================================================== */
+
     * {
+
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+
     }
+
 
     html {
+
       scroll-behavior: smooth;
+
     }
+
 
     body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: #050505;
-      color: #ffffff;
-      line-height: 1.6;
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+      background:
+        var(--bg);
+
+      color:
+        var(--text);
+
+      line-height:
+        1.6;
+
+      overflow-x:
+        hidden;
+
     }
+
 
     a {
-      text-decoration: none;
+
       color: inherit;
+      text-decoration: none;
+
     }
+
+
+    button,
+    input,
+    select,
+    textarea {
+
+      font-family: inherit;
+
+    }
+
+
+    button {
+
+      border: none;
+
+    }
+
 
     .container {
+
       width: 90%;
-      max-width: 1150px;
+      max-width: 1180px;
       margin: auto;
+
     }
 
-    /* NAV */
-
-    nav {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      background: rgba(5,5,5,0.95);
-      border-bottom: 1px solid rgba(0,255,136,0.15);
-      backdrop-filter: blur(10px);
-    }
-
-    .nav-container {
-      min-height: 70px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 20px;
-    }
-
-    .logo {
-      font-size: 24px;
-      font-weight: 900;
-      letter-spacing: -1px;
-    }
-
-    .logo span:first-child {
-      color: #00ff88;
-    }
-
-    .logo span:last-child {
-      color: #ffffff;
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 25px;
-      list-style: none;
-    }
-
-    .nav-links a {
-      color: #ccc;
-      font-size: 14px;
-      transition: 0.2s;
-    }
-
-    .nav-links a:hover {
-      color: #00ff88;
-    }
-
-    /* HERO */
-
-    .hero {
-      min-height: 650px;
-      display: flex;
-      align-items: center;
-      padding: 80px 0;
-      background:
-        radial-gradient(
-          circle at top right,
-          rgba(0,255,136,0.12),
-          transparent 35%
-        );
-    }
-
-    .hero-content {
-      max-width: 800px;
-    }
-
-    .hero-badge {
-      display: inline-block;
-      padding: 7px 14px;
-      border: 1px solid rgba(0,255,136,0.35);
-      border-radius: 30px;
-      color: #00ff88;
-      font-size: 13px;
-      margin-bottom: 20px;
-      background: rgba(0,255,136,0.05);
-    }
-
-    .hero h1 {
-      font-size: clamp(42px, 7vw, 76px);
-      line-height: 1;
-      margin-bottom: 25px;
-      letter-spacing: -3px;
-    }
-
-    .hero h1 span {
-      color: #00ff88;
-    }
-
-    .hero p {
-      color: #aaa;
-      font-size: 19px;
-      max-width: 700px;
-      margin-bottom: 35px;
-    }
-
-    .hero-buttons {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
-    }
-
-    .btn {
-      border: none;
-      cursor: pointer;
-      padding: 13px 22px;
-      border-radius: 10px;
-      background: #00ff88;
-      color: #001a0d;
-      font-weight: 800;
-      transition: 0.2s;
-    }
-
-    .btn:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 10px 30px rgba(0,255,136,0.18);
-    }
-
-    .btn-secondary {
-      background: transparent;
-      color: #fff;
-      border: 1px solid #333;
-    }
-
-    .btn-secondary:hover {
-      border-color: #00ff88;
-      color: #00ff88;
-    }
-
-    /* SECTIONS */
 
     section {
-      padding: 90px 0;
+
+      padding:
+        95px 0;
+
     }
+
+
+    /* ======================================================
+       UTILIDADES
+       ====================================================== */
+
+    .green {
+
+      color:
+        var(--green);
+
+    }
+
+
+    .eyebrow {
+
+      display:
+        inline-flex;
+
+      align-items:
+        center;
+
+      gap:
+        8px;
+
+      color:
+        var(--green);
+
+      border:
+        1px solid var(--border-green);
+
+      background:
+        rgba(0,255,136,0.05);
+
+      border-radius:
+        100px;
+
+      padding:
+        7px 13px;
+
+      font-size:
+        12px;
+
+      font-weight:
+        800;
+
+      letter-spacing:
+        0.4px;
+
+      margin-bottom:
+        18px;
+
+    }
+
 
     .section-title {
-      font-size: 38px;
-      margin-bottom: 15px;
-      letter-spacing: -1px;
+
+      font-size:
+        clamp(32px, 5vw, 48px);
+
+      line-height:
+        1.08;
+
+      letter-spacing:
+        -1.8px;
+
+      margin-bottom:
+        16px;
+
     }
 
-    .section-title span {
-      color: #00ff88;
-    }
 
     .section-description {
-      color: #999;
-      max-width: 700px;
-      margin-bottom: 45px;
+
+      max-width:
+        720px;
+
+      color:
+        var(--muted);
+
+      font-size:
+        16px;
+
+      margin-bottom:
+        42px;
+
     }
 
-    /* CARDS */
+
+    .btn {
+
+      display:
+        inline-flex;
+
+      justify-content:
+        center;
+
+      align-items:
+        center;
+
+      gap:
+        8px;
+
+      min-height:
+        46px;
+
+      padding:
+        12px 21px;
+
+      border-radius:
+        10px;
+
+      cursor:
+        pointer;
+
+      font-size:
+        14px;
+
+      font-weight:
+        900;
+
+      background:
+        var(--green);
+
+      color:
+        #00190d;
+
+      transition:
+        0.22s ease;
+
+    }
+
+
+    .btn:hover {
+
+      transform:
+        translateY(-2px);
+
+      box-shadow:
+        0 12px 32px rgba(0,255,136,0.18);
+
+    }
+
+
+    .btn-secondary {
+
+      background:
+        transparent;
+
+      color:
+        #ffffff;
+
+      border:
+        1px solid rgba(255,255,255,0.15);
+
+    }
+
+
+    .btn-secondary:hover {
+
+      color:
+        var(--green);
+
+      border-color:
+        var(--green);
+
+      box-shadow:
+        none;
+
+    }
+
+
+    .btn-small {
+
+      min-height:
+        38px;
+
+      padding:
+        9px 14px;
+
+      font-size:
+        12px;
+
+    }
+
+
+    /* ======================================================
+       NAVBAR
+       ====================================================== */
+
+    nav {
+
+      position:
+        sticky;
+
+      top:
+        0;
+
+      z-index:
+        1000;
+
+      background:
+        rgba(5,7,6,0.92);
+
+      border-bottom:
+        1px solid var(--border);
+
+      backdrop-filter:
+        blur(14px);
+
+    }
+
+
+    .nav-container {
+
+      min-height:
+        72px;
+
+      display:
+        flex;
+
+      align-items:
+        center;
+
+      justify-content:
+        space-between;
+
+      gap:
+        30px;
+
+    }
+
+
+    .logo {
+
+      display:
+        flex;
+
+      align-items:
+        center;
+
+      gap:
+        9px;
+
+      font-size:
+        21px;
+
+      font-weight:
+        900;
+
+      letter-spacing:
+        -0.8px;
+
+      white-space:
+        nowrap;
+
+    }
+
+
+    .logo-symbol {
+
+      width:
+        34px;
+
+      height:
+        34px;
+
+      display:
+        grid;
+
+      place-items:
+        center;
+
+      border-radius:
+        9px;
+
+      background:
+        rgba(0,255,136,0.1);
+
+      border:
+        1px solid rgba(0,255,136,0.25);
+
+      color:
+        var(--green);
+
+      font-weight:
+        900;
+
+    }
+
+
+    .logo-xinecom {
+
+      color:
+        var(--green);
+
+    }
+
+
+    .logo-digital {
+
+      color:
+        #ffffff;
+
+    }
+
+
+    .nav-links {
+
+      display:
+        flex;
+
+      align-items:
+        center;
+
+      list-style:
+        none;
+
+      gap:
+        24px;
+
+    }
+
+
+    .nav-links a {
+
+      color:
+        #b8beb9;
+
+      font-size:
+        13px;
+
+      font-weight:
+        700;
+
+      transition:
+        0.2s;
+
+    }
+
+
+    .nav-links a:hover {
+
+      color:
+        var(--green);
+
+    }
+
+
+    .free-link {
+
+      color:
+        var(--green) !important;
+
+    }
+
+
+    .free-badge {
+
+      display:
+        inline-block;
+
+      margin-left:
+        5px;
+
+      padding:
+        2px 6px;
+
+      border-radius:
+        20px;
+
+      background:
+        var(--green);
+
+      color:
+        #00190d;
+
+      font-size:
+        8px;
+
+      vertical-align:
+        1px;
+
+      font-weight:
+        900;
+
+    }
+
+
+    /* ======================================================
+       HERO
+       ====================================================== */
+
+    .hero {
+
+      position:
+        relative;
+
+      min-height:
+        690px;
+
+      display:
+        flex;
+
+      align-items:
+        center;
+
+      overflow:
+        hidden;
+
+      padding:
+        90px 0;
+
+      background:
+
+        radial-gradient(
+          circle at 78% 35%,
+          rgba(0,255,136,0.13),
+          transparent 30%
+        ),
+
+        radial-gradient(
+          circle at 10% 20%,
+          rgba(0,255,136,0.05),
+          transparent 30%
+        );
+
+    }
+
+
+    .hero::before {
+
+      content:
+        "";
+
+      position:
+        absolute;
+
+      inset:
+        0;
+
+      pointer-events:
+        none;
+
+      opacity:
+        0.22;
+
+      background-image:
+
+        linear-gradient(
+          rgba(255,255,255,0.025) 1px,
+          transparent 1px
+        ),
+
+        linear-gradient(
+          90deg,
+          rgba(255,255,255,0.025) 1px,
+          transparent 1px
+        );
+
+      background-size:
+        45px 45px;
+
+      mask-image:
+        linear-gradient(
+          to bottom,
+          black,
+          transparent
+        );
+
+    }
+
+
+    .hero-grid {
+
+      position:
+        relative;
+
+      z-index:
+        2;
+
+      display:
+        grid;
+
+      grid-template-columns:
+        1.05fr 0.95fr;
+
+      align-items:
+        center;
+
+      gap:
+        65px;
+
+    }
+
+
+    .hero h1 {
+
+      max-width:
+        700px;
+
+      font-size:
+        clamp(47px, 6.7vw, 78px);
+
+      line-height:
+        0.98;
+
+      letter-spacing:
+        -4px;
+
+      margin-bottom:
+        25px;
+
+    }
+
+
+    .hero-description {
+
+      max-width:
+        650px;
+
+      color:
+        #a8b0aa;
+
+      font-size:
+        18px;
+
+      margin-bottom:
+        32px;
+
+    }
+
+
+    .hero-buttons {
+
+      display:
+        flex;
+
+      flex-wrap:
+        wrap;
+
+      gap:
+        13px;
+
+      margin-bottom:
+        30px;
+
+    }
+
+
+    .hero-note {
+
+      color:
+        #77817a;
+
+      font-size:
+        12px;
+
+    }
+
+
+    /* ======================================================
+       HERO VISUAL
+       ====================================================== */
+
+    .hero-visual {
+
+      position:
+        relative;
+
+      min-height:
+        430px;
+
+      display:
+        grid;
+
+      place-items:
+        center;
+
+    }
+
+
+    .visual-glow {
+
+      position:
+        absolute;
+
+      width:
+        350px;
+
+      height:
+        350px;
+
+      border-radius:
+        50%;
+
+      background:
+        rgba(0,255,136,0.12);
+
+      filter:
+        blur(80px);
+
+    }
+
+
+    .tech-panel {
+
+      position:
+        relative;
+
+      z-index:
+        2;
+
+      width:
+        min(100%, 470px);
+
+      background:
+        linear-gradient(
+          145deg,
+          rgba(16,23,18,0.96),
+          rgba(6,9,7,0.96)
+        );
+
+      border:
+        1px solid var(--border-green);
+
+      border-radius:
+        22px;
+
+      padding:
+        25px;
+
+      box-shadow:
+        var(--shadow);
+
+      transform:
+        perspective(1000px)
+        rotateY(-4deg)
+        rotateX(2deg);
+
+    }
+
+
+    .tech-panel-top {
+
+      display:
+        flex;
+
+      align-items:
+        center;
+
+      justify-content:
+        space-between;
+
+      padding-bottom:
+        18px;
+
+      margin-bottom:
+        20px;
+
+      border-bottom:
+        1px solid var(--border);
+
+    }
+
+
+    .tech-status {
+
+      display:
+        flex;
+
+      align-items:
+        center;
+
+      gap:
+        8px;
+
+      color:
+        #c8d0ca;
+
+      font-size:
+        12px;
+
+    }
+
+
+    .status-dot {
+
+      width:
+        8px;
+
+      height:
+        8px;
+
+      border-radius:
+        50%;
+
+      background:
+        var(--green);
+
+      box-shadow:
+        0 0 12px var(--green);
+
+    }
+
+
+    .tech-screen {
+
+      background:
+        #050806;
+
+      border:
+        1px solid rgba(255,255,255,0.06);
+
+      border-radius:
+        14px;
+
+      padding:
+        22px;
+
+      margin-bottom:
+        16px;
+
+    }
+
+
+    .tech-screen-title {
+
+      color:
+        var(--green);
+
+      font-size:
+        13px;
+
+      font-weight:
+        900;
+
+      margin-bottom:
+        18px;
+
+    }
+
+
+    .flow-row {
+
+      display:
+        flex;
+
+      align-items:
+        center;
+
+      gap:
+        7px;
+
+      flex-wrap:
+        wrap;
+
+    }
+
+
+    .flow-node {
+
+      padding:
+        8px 10px;
+
+      border:
+        1px solid rgba(0,255,136,0.22);
+
+      border-radius:
+        7px;
+
+      background:
+        rgba(0,255,136,0.05);
+
+      font-size:
+        10px;
+
+      color:
+        #cbd3cd;
+
+    }
+
+
+    .flow-arrow {
+
+      color:
+        var(--green);
+
+      font-size:
+        11px;
+
+    }
+
+
+    .tech-metrics {
+
+      display:
+        grid;
+
+      grid-template-columns:
+        repeat(3, 1fr);
+
+      gap:
+        10px;
+
+    }
+
+
+    .metric {
+
+      background:
+        rgba(255,255,255,0.025);
+
+      border:
+        1px solid var(--border);
+
+      border-radius:
+        10px;
+
+      padding:
+        13px;
+
+    }
+
+
+    .metric strong {
+
+      display:
+        block;
+
+      color:
+        var(--green);
+
+      font-size:
+        17px;
+
+    }
+
+
+    .metric span {
+
+      color:
+        #7e8881;
+
+      font-size:
+        9px;
+
+    }
+
+
+    /* ======================================================
+       VALUE BAR
+       ====================================================== */
+
+    .value-bar {
+
+      padding:
+        0;
+
+      border-top:
+        1px solid var(--border);
+
+      border-bottom:
+        1px solid var(--border);
+
+      background:
+        #070a08;
+
+    }
+
+
+    .value-grid {
+
+      display:
+        grid;
+
+      grid-template-columns:
+        repeat(4, 1fr);
+
+    }
+
+
+    .value-item {
+
+      padding:
+        22px 15px;
+
+      text-align:
+        center;
+
+      border-right:
+        1px solid var(--border);
+
+    }
+
+
+    .value-item:last-child {
+
+      border-right:
+        none;
+
+    }
+
+
+    .value-item strong {
+
+      color:
+        var(--green);
+
+      font-size:
+        18px;
+
+      margin-right:
+        5px;
+
+    }
+
+
+    .value-item span {
+
+      color:
+        #9aa39c;
+
+      font-size:
+        13px;
+
+    }
+
+
+    /* ======================================================
+       SERVICES
+       ====================================================== */
+
+    .services {
+
+      background:
+        var(--bg);
+
+    }
+
 
     .cards {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
+
+      display:
+        grid;
+
+      grid-template-columns:
+        repeat(3, 1fr);
+
+      gap:
+        18px;
+
     }
+
 
     .card {
-      background: #0c0c0c;
-      border: 1px solid #1c1c1c;
-      border-radius: 16px;
-      padding: 25px;
-      transition: 0.25s;
+
+      position:
+        relative;
+
+      overflow:
+        hidden;
+
+      padding:
+        26px;
+
+      border-radius:
+        var(--radius);
+
+      border:
+        1px solid var(--border);
+
+      background:
+        linear-gradient(
+          145deg,
+          #0b100d,
+          #080b09
+        );
+
+      transition:
+        0.25s;
+
     }
+
+
+    .card::before {
+
+      content:
+        "";
+
+      position:
+        absolute;
+
+      top:
+        0;
+
+      left:
+        0;
+
+      width:
+        100%;
+
+      height:
+        2px;
+
+      opacity:
+        0;
+
+      background:
+        linear-gradient(
+          90deg,
+          transparent,
+          var(--green),
+          transparent
+        );
+
+      transition:
+        0.25s;
+
+    }
+
 
     .card:hover {
-      transform: translateY(-4px);
-      border-color: rgba(0,255,136,0.4);
+
+      transform:
+        translateY(-5px);
+
+      border-color:
+        var(--border-green);
+
     }
+
+
+    .card:hover::before {
+
+      opacity:
+        1;
+
+    }
+
 
     .card-icon {
-      font-size: 30px;
-      margin-bottom: 15px;
+
+      width:
+        45px;
+
+      height:
+        45px;
+
+      display:
+        grid;
+
+      place-items:
+        center;
+
+      margin-bottom:
+        19px;
+
+      border-radius:
+        12px;
+
+      background:
+        rgba(0,255,136,0.07);
+
+      border:
+        1px solid rgba(0,255,136,0.15);
+
+      font-size:
+        22px;
+
     }
+
 
     .card h3 {
-      margin-bottom: 10px;
-      font-size: 20px;
+
+      margin-bottom:
+        10px;
+
+      font-size:
+        19px;
+
     }
+
 
     .card p {
-      color: #999;
-      font-size: 14px;
-      margin-bottom: 20px;
+
+      min-height:
+        68px;
+
+      margin-bottom:
+        18px;
+
+      color:
+        var(--muted);
+
+      font-size:
+        13px;
+
     }
+
 
     .price {
-      color: #00ff88;
-      font-weight: 800;
-      font-size: 18px;
+
+      color:
+        var(--green);
+
+      font-size:
+        16px;
+
+      font-weight:
+        900;
+
     }
 
-    /* AUTOMATION */
 
-    .automation {
-      background: linear-gradient(
-        135deg,
-        #07150e,
-        #050505
-      );
-      border-top: 1px solid rgba(0,255,136,0.1);
-      border-bottom: 1px solid rgba(0,255,136,0.1);
+    /* ======================================================
+       EMPRESAS
+       ====================================================== */
+
+    .business {
+
+      position:
+        relative;
+
+      overflow:
+        hidden;
+
+      background:
+        linear-gradient(
+          135deg,
+          #07120c,
+          #050706
+        );
+
+      border-top:
+        1px solid rgba(0,255,136,0.09);
+
+      border-bottom:
+        1px solid rgba(0,255,136,0.09);
+
     }
 
-    .automation-box {
-      display: grid;
-      grid-template-columns: 1.2fr 1fr;
-      gap: 40px;
-      align-items: center;
+
+    .business-grid {
+
+      display:
+        grid;
+
+      grid-template-columns:
+        1fr 1fr;
+
+      gap:
+        60px;
+
+      align-items:
+        center;
+
     }
 
-    .automation-text h2 {
-      font-size: 42px;
-      margin-bottom: 20px;
+
+    .business-list {
+
+      list-style:
+        none;
+
+      margin:
+        25px 0 30px;
+
     }
 
-    .automation-text h2 span {
-      color: #00ff88;
+
+    .business-list li {
+
+      margin-bottom:
+        12px;
+
+      color:
+        #c3cbc5;
+
+      font-size:
+        14px;
+
     }
 
-    .automation-text p {
-      color: #aaa;
-      margin-bottom: 25px;
+
+    .business-list li::before {
+
+      content:
+        "✓";
+
+      color:
+        var(--green);
+
+      margin-right:
+        10px;
+
+      font-weight:
+        900;
+
     }
+
+
+    .business-panel {
+
+      padding:
+        30px;
+
+      border-radius:
+        20px;
+
+      border:
+        1px solid var(--border-green);
+
+      background:
+        rgba(9,14,11,0.8);
+
+    }
+
+
+    .business-panel h3 {
+
+      margin-bottom:
+        12px;
+
+      font-size:
+        23px;
+
+    }
+
+
+    .business-panel > p {
+
+      color:
+        var(--muted);
+
+      font-size:
+        14px;
+
+      margin-bottom:
+        22px;
+
+    }
+
+
+    .business-feature {
+
+      padding:
+        14px 0;
+
+      border-bottom:
+        1px solid var(--border);
+
+    }
+
+
+    .business-feature:last-child {
+
+      border-bottom:
+        none;
+
+    }
+
+
+    .business-feature strong {
+
+      display:
+        block;
+
+      margin-bottom:
+        4px;
+
+      font-size:
+        14px;
+
+    }
+
+
+    .business-feature span {
+
+      color:
+        #89928b;
+
+      font-size:
+        12px;
+
+    }
+
+
+    /* ======================================================
+       AUTOMATION
+       ====================================================== */
+
+    .automation-grid {
+
+      display:
+        grid;
+
+      grid-template-columns:
+        1fr 1fr;
+
+      gap:
+        50px;
+
+      align-items:
+        center;
+
+    }
+
 
     .automation-list {
-      list-style: none;
+
+      display:
+        grid;
+
+      gap:
+        12px;
+
+      margin-top:
+        25px;
+
     }
 
-    .automation-list li {
-      margin-bottom: 12px;
-      color: #ccc;
+
+    .automation-item {
+
+      display:
+        flex;
+
+      align-items:
+        center;
+
+      gap:
+        13px;
+
+      padding:
+        14px 16px;
+
+      border:
+        1px solid var(--border);
+
+      border-radius:
+        11px;
+
+      background:
+        rgba(255,255,255,0.018);
+
+      color:
+        #bbc4bd;
+
+      font-size:
+        13px;
+
     }
 
-    .automation-list li::before {
-      content: "✓";
-      color: #00ff88;
-      margin-right: 10px;
-      font-weight: bold;
+
+    .automation-check {
+
+      color:
+        var(--green);
+
+      font-weight:
+        900;
+
     }
 
-    .automation-card {
-      background: #0c0c0c;
-      border: 1px solid rgba(0,255,136,0.2);
-      padding: 30px;
-      border-radius: 18px;
+
+    .automation-offer {
+
+      padding:
+        32px;
+
+      border-radius:
+        20px;
+
+      border:
+        1px solid var(--border-green);
+
+      background:
+        linear-gradient(
+          145deg,
+          #0d1510,
+          #080c09
+        );
+
     }
+
 
     .discount {
-      display: inline-block;
-      background: #00ff88;
-      color: #001a0d;
-      padding: 6px 12px;
-      border-radius: 20px;
-      font-size: 12px;
-      font-weight: 900;
-      margin-bottom: 20px;
+
+      display:
+        inline-block;
+
+      margin-bottom:
+        18px;
+
+      padding:
+        6px 11px;
+
+      border-radius:
+        30px;
+
+      color:
+        #00190d;
+
+      background:
+        var(--green);
+
+      font-size:
+        10px;
+
+      font-weight:
+        900;
+
     }
 
-    /* TOOLS */
+
+    .automation-offer h3 {
+
+      font-size:
+        25px;
+
+      margin-bottom:
+        13px;
+
+    }
+
+
+    .automation-offer p {
+
+      color:
+        var(--muted);
+
+      font-size:
+        14px;
+
+      margin-bottom:
+        22px;
+
+    }
+
+
+    /* ======================================================
+       FREE TOOLS
+       ====================================================== */
+
+    .tools {
+
+      background:
+        #070a08;
+
+      border-top:
+        1px solid var(--border);
+
+      border-bottom:
+        1px solid var(--border);
+
+    }
+
+
+    .tools-heading {
+
+      display:
+        flex;
+
+      justify-content:
+        space-between;
+
+      align-items:
+        end;
+
+      gap:
+        30px;
+
+      margin-bottom:
+        42px;
+
+    }
+
+
+    .tools-heading .section-description {
+
+      margin-bottom:
+        0;
+
+    }
+
+
+    .tools-label {
+
+      white-space:
+        nowrap;
+
+      color:
+        var(--green);
+
+      font-size:
+        12px;
+
+      font-weight:
+        900;
+
+    }
+
 
     .tools-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 15px;
+
+      display:
+        grid;
+
+      grid-template-columns:
+        repeat(4, 1fr);
+
+      gap:
+        15px;
+
     }
+
 
     .tool {
-      background: #0c0c0c;
-      border: 1px solid #1b1b1b;
-      padding: 22px;
-      border-radius: 14px;
-      text-align: center;
-      transition: 0.2s;
+
+      position:
+        relative;
+
+      min-height:
+        185px;
+
+      display:
+        flex;
+
+      flex-direction:
+        column;
+
+      padding:
+        22px;
+
+      border-radius:
+        15px;
+
+      border:
+        1px solid var(--border);
+
+      background:
+        #0b0f0c;
+
+      transition:
+        0.22s;
+
     }
+
 
     .tool:hover {
-      border-color: #00ff88;
-      transform: translateY(-3px);
+
+      transform:
+        translateY(-4px);
+
+      border-color:
+        var(--green);
+
     }
+
 
     .tool-icon {
-      font-size: 28px;
-      margin-bottom: 10px;
+
+      font-size:
+        25px;
+
+      margin-bottom:
+        14px;
+
     }
+
 
     .tool h3 {
-      font-size: 16px;
-      margin-bottom: 6px;
+
+      font-size:
+        15px;
+
+      margin-bottom:
+        7px;
+
     }
+
 
     .tool p {
-      color: #888;
-      font-size: 13px;
+
+      color:
+        #858e87;
+
+      font-size:
+        12px;
+
+      margin-bottom:
+        18px;
+
     }
 
-    /* TRUST */
 
-    .trust-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
+    .tool-status {
+
+      margin-top:
+        auto;
+
+      font-size:
+        10px;
+
+      font-weight:
+        900;
+
+      color:
+        var(--green);
+
     }
+
+
+    .coming {
+
+      color:
+        #777f79;
+
+    }
+
+
+    /* ======================================================
+       CALCULATOR
+       ====================================================== */
+
+    .calculator-box {
+
+      display:
+        none;
+
+      margin-top:
+        30px;
+
+      max-width:
+        600px;
+
+      padding:
+        28px;
+
+      border:
+        1px solid var(--border-green);
+
+      border-radius:
+        18px;
+
+      background:
+        #0b100d;
+
+    }
+
+
+    .calculator-box.active {
+
+      display:
+        block;
+
+    }
+
+
+    .calculator-box h3 {
+
+      margin-bottom:
+        20px;
+
+    }
+
+
+    .calc-grid {
+
+      display:
+        grid;
+
+      grid-template-columns:
+        1fr 1fr;
+
+      gap:
+        12px;
+
+      margin-bottom:
+        15px;
+
+    }
+
+
+    .calculator-box input {
+
+      width:
+        100%;
+
+      padding:
+        13px;
+
+      color:
+        #fff;
+
+      background:
+        #050706;
+
+      border:
+        1px solid #273029;
+
+      border-radius:
+        9px;
+
+      outline:
+        none;
+
+    }
+
+
+    .calculator-box input:focus {
+
+      border-color:
+        var(--green);
+
+    }
+
+
+    .calc-result {
+
+      margin-top:
+        17px;
+
+      padding:
+        13px;
+
+      border-radius:
+        9px;
+
+      background:
+        rgba(0,255,136,0.07);
+
+      color:
+        var(--green);
+
+      font-weight:
+        800;
+
+    }
+
+
+    /* ======================================================
+       RESOURCES
+       ====================================================== */
+
+    .resources-grid {
+
+      display:
+        grid;
+
+      grid-template-columns:
+        repeat(3, 1fr);
+
+      gap:
+        18px;
+
+    }
+
+
+    .resource {
+
+      padding:
+        27px;
+
+      border-radius:
+        17px;
+
+      border:
+        1px solid var(--border);
+
+      background:
+        #0a0e0b;
+
+    }
+
+
+    .resource-label {
+
+      display:
+        inline-block;
+
+      color:
+        var(--green);
+
+      font-size:
+        10px;
+
+      font-weight:
+        900;
+
+      margin-bottom:
+        14px;
+
+    }
+
+
+    .resource h3 {
+
+      margin-bottom:
+        10px;
+
+    }
+
+
+    .resource p {
+
+      color:
+        var(--muted);
+
+      font-size:
+        13px;
+
+      margin-bottom:
+        18px;
+
+    }
+
+
+    .resource-state {
+
+      color:
+        #727a74;
+
+      font-size:
+        11px;
+
+      font-weight:
+        800;
+
+    }
+
+
+    /* ======================================================
+       TRUST
+       ====================================================== */
 
     .trust {
-      padding: 25px;
-      background: #0c0c0c;
-      border-radius: 15px;
-      border: 1px solid #1b1b1b;
+
+      background:
+        linear-gradient(
+          180deg,
+          #050706,
+          #070a08
+        );
+
     }
 
-    .trust h3 {
-      margin-bottom: 8px;
+
+    .trust-grid {
+
+      display:
+        grid;
+
+      grid-template-columns:
+        repeat(4, 1fr);
+
+      gap:
+        15px;
+
     }
 
-    .trust p {
-      color: #999;
-      font-size: 14px;
+
+    .trust-card {
+
+      padding:
+        24px;
+
+      border-radius:
+        15px;
+
+      border:
+        1px solid var(--border);
+
+      background:
+        rgba(255,255,255,0.018);
+
     }
 
-    /* FAQ */
+
+    .trust-card h3 {
+
+      margin-bottom:
+        8px;
+
+      font-size:
+        16px;
+
+    }
+
+
+    .trust-card p {
+
+      color:
+        var(--muted);
+
+      font-size:
+        12px;
+
+    }
+
+
+    /* ======================================================
+       FAQ
+       ====================================================== */
 
     .faq {
-      max-width: 850px;
+
+      max-width:
+        850px;
+
     }
+
 
     .faq-item {
-      border-bottom: 1px solid #222;
-      padding: 20px 0;
+
+      padding:
+        22px 0;
+
+      border-bottom:
+        1px solid var(--border);
+
     }
+
 
     .faq-question {
-      font-weight: 700;
-      margin-bottom: 8px;
+
+      margin-bottom:
+        7px;
+
+      font-weight:
+        900;
+
     }
+
 
     .faq-answer {
-      color: #999;
-      font-size: 14px;
+
+      color:
+        var(--muted);
+
+      font-size:
+        14px;
+
     }
 
-    /* CONTACT */
 
-    .contact-wrapper {
-      display: grid;
-      grid-template-columns: 0.8fr 1.2fr;
-      gap: 40px;
-      align-items: start;
+    /* ======================================================
+       CONTACT
+       ====================================================== */
+
+    .contact {
+
+      position:
+        relative;
+
+      background:
+
+        radial-gradient(
+          circle at 15% 50%,
+          rgba(0,255,136,0.08),
+          transparent 28%
+        ),
+
+        #070a08;
+
+      border-top:
+        1px solid var(--border);
+
     }
+
+
+    .contact-grid {
+
+      display:
+        grid;
+
+      grid-template-columns:
+        0.85fr 1.15fr;
+
+      gap:
+        55px;
+
+      align-items:
+        start;
+
+    }
+
 
     .contact-info h2 {
-      font-size: 42px;
-      margin-bottom: 15px;
+
+      font-size:
+        clamp(37px, 5vw, 52px);
+
+      line-height:
+        1.05;
+
+      letter-spacing:
+        -2px;
+
+      margin-bottom:
+        17px;
+
     }
 
-    .contact-info h2 span {
-      color: #00ff88;
-    }
 
     .contact-info p {
-      color: #999;
-      margin-bottom: 25px;
+
+      color:
+        var(--muted);
+
+      margin-bottom:
+        25px;
+
     }
+
 
     .contact-email {
-      color: #00ff88;
-      font-weight: 700;
+
+      display:
+        inline-block;
+
+      color:
+        var(--green);
+
+      font-weight:
+        900;
+
+      word-break:
+        break-word;
+
     }
+
+
+    .contact-extra {
+
+      margin-top:
+        25px;
+
+      color:
+        #778079;
+
+      font-size:
+        12px;
+
+    }
+
+
+    /* ======================================================
+       FORM
+       ====================================================== */
 
     .form {
-      background: #0c0c0c;
-      border: 1px solid #1b1b1b;
-      border-radius: 18px;
-      padding: 30px;
+
+      padding:
+        30px;
+
+      border-radius:
+        19px;
+
+      border:
+        1px solid var(--border);
+
+      background:
+        #0b100d;
+
+      box-shadow:
+        var(--shadow);
+
     }
+
+
+    .form-title {
+
+      margin-bottom:
+        23px;
+
+      font-size:
+        19px;
+
+    }
+
 
     .form-group {
-      margin-bottom: 18px;
+
+      margin-bottom:
+        17px;
+
     }
 
+
     .form label {
-      display: block;
-      margin-bottom: 7px;
-      font-size: 13px;
-      color: #ccc;
+
+      display:
+        block;
+
+      margin-bottom:
+        7px;
+
+      color:
+        #c3cac5;
+
+      font-size:
+        12px;
+
+      font-weight:
+        700;
+
     }
+
 
     .form input,
     .form select,
     .form textarea {
-      width: 100%;
-      background: #050505;
-      border: 1px solid #272727;
-      color: #fff;
-      padding: 13px;
-      border-radius: 9px;
-      outline: none;
-      font-family: inherit;
+
+      width:
+        100%;
+
+      padding:
+        13px;
+
+      border-radius:
+        9px;
+
+      border:
+        1px solid #252c27;
+
+      outline:
+        none;
+
+      background:
+        #050706;
+
+      color:
+        #ffffff;
+
     }
+
 
     .form input:focus,
     .form select:focus,
     .form textarea:focus {
-      border-color: #00ff88;
+
+      border-color:
+        var(--green);
+
     }
+
 
     .form textarea {
-      min-height: 130px;
-      resize: vertical;
+
+      min-height:
+        130px;
+
+      resize:
+        vertical;
+
     }
+
+
+    .form .btn {
+
+      width:
+        100%;
+
+    }
+
 
     .notice {
-      margin-top: 15px;
-      padding: 12px 15px;
-      border-radius: 9px;
-      background: rgba(0,255,136,0.08);
-      border: 1px solid rgba(0,255,136,0.2);
-      color: #00ff88;
-      font-size: 14px;
+
+      display:
+        none;
+
+      margin-top:
+        15px;
+
+      padding:
+        13px;
+
+      border-radius:
+        9px;
+
+      background:
+        rgba(0,255,136,0.07);
+
+      border:
+        1px solid rgba(0,255,136,0.18);
+
+      color:
+        var(--green);
+
+      font-size:
+        13px;
+
     }
 
-    /* FOOTER */
+
+    /* ======================================================
+       FOOTER
+       ====================================================== */
 
     footer {
-      border-top: 1px solid #171717;
-      padding: 30px 0;
-      color: #777;
-      font-size: 13px;
+
+      padding:
+        32px 0;
+
+      border-top:
+        1px solid var(--border);
+
+      background:
+        #040504;
+
+      color:
+        #717972;
+
+      font-size:
+        12px;
+
     }
 
-    .footer-content {
-      display: flex;
-      justify-content: space-between;
-      gap: 20px;
-      flex-wrap: wrap;
+
+    .footer-grid {
+
+      display:
+        flex;
+
+      justify-content:
+        space-between;
+
+      align-items:
+        center;
+
+      flex-wrap:
+        wrap;
+
+      gap:
+        20px;
+
     }
 
-    /* RESPONSIVE */
 
-    @media (max-width: 900px) {
+    .footer-brand {
+
+      color:
+        #b6beb8;
+
+      font-weight:
+        800;
+
+    }
+
+
+    /* ======================================================
+       RESPONSIVE
+       ====================================================== */
+
+    @media (max-width: 1000px) {
+
+      .hero-grid,
+      .business-grid,
+      .automation-grid,
+      .contact-grid {
+
+        grid-template-columns:
+          1fr;
+
+      }
+
+
+      .hero-visual {
+
+        min-height:
+          350px;
+
+      }
+
 
       .cards {
-        grid-template-columns: repeat(2, 1fr);
+
+        grid-template-columns:
+          repeat(2, 1fr);
+
       }
 
+
       .tools-grid {
-        grid-template-columns: repeat(2, 1fr);
+
+        grid-template-columns:
+          repeat(2, 1fr);
+
       }
+
+
+      .resources-grid {
+
+        grid-template-columns:
+          1fr 1fr;
+
+      }
+
 
       .trust-grid {
-        grid-template-columns: 1fr;
-      }
 
-      .automation-box,
-      .contact-wrapper {
-        grid-template-columns: 1fr;
+        grid-template-columns:
+          repeat(2, 1fr);
+
       }
 
     }
 
-    @media (max-width: 650px) {
+
+    @media (max-width: 760px) {
 
       .nav-links {
-        display: none;
+
+        display:
+          none;
+
       }
 
-      .cards {
-        grid-template-columns: 1fr;
+
+      section {
+
+        padding:
+          75px 0;
+
       }
 
-      .tools-grid {
-        grid-template-columns: 1fr;
-      }
 
       .hero {
-        min-height: 550px;
+
+        padding:
+          70px 0;
+
       }
+
 
       .hero h1 {
-        font-size: 48px;
+
+        letter-spacing:
+          -2.7px;
+
       }
 
-      .section-title {
-        font-size: 32px;
+
+      .hero-visual {
+
+        min-height:
+          300px;
+
       }
+
+
+      .tech-panel {
+
+        transform:
+          none;
+
+      }
+
+
+      .value-grid {
+
+        grid-template-columns:
+          repeat(2, 1fr);
+
+      }
+
+
+      .value-item {
+
+        border-bottom:
+          1px solid var(--border);
+
+      }
+
+
+      .cards,
+      .tools-grid,
+      .resources-grid,
+      .trust-grid {
+
+        grid-template-columns:
+          1fr;
+
+      }
+
+
+      .tools-heading {
+
+        display:
+          block;
+
+      }
+
+
+      .tools-label {
+
+        display:
+          block;
+
+        margin-top:
+          15px;
+
+      }
+
+
+      .calc-grid {
+
+        grid-template-columns:
+          1fr;
+
+      }
+
 
       .form {
-        padding: 20px;
+
+        padding:
+          22px;
+
+      }
+
+    }
+
+
+    @media (max-width: 480px) {
+
+      .container {
+
+        width:
+          92%;
+
+      }
+
+
+      .hero h1 {
+
+        font-size:
+          44px;
+
+      }
+
+
+      .hero-description {
+
+        font-size:
+          16px;
+
+      }
+
+
+      .hero-buttons {
+
+        flex-direction:
+          column;
+
+      }
+
+
+      .hero-buttons .btn {
+
+        width:
+          100%;
+
+      }
+
+
+      .tech-metrics {
+
+        grid-template-columns:
+          1fr;
+
+      }
+
+
+      .flow-arrow {
+
+        display:
+          none;
+
       }
 
     }
@@ -605,65 +2727,325 @@
   </style>
 </head>
 
+
 <body>
 
-  <!-- NAV -->
+
+  <!-- ======================================================
+       NAVEGACIÓN
+       ====================================================== -->
 
   <nav>
+
     <div class="container nav-container">
 
-      <div class="logo">
-        <span>XineCom</span>
-        <span>Digital</span>
-      </div>
+      <a
+        href="#inicio"
+        class="logo"
+        aria-label="XineCom Digital"
+      >
+
+        <div class="logo-symbol">
+          X
+        </div>
+
+        <div>
+
+          <span class="logo-xinecom">
+            XineCom
+          </span>
+
+          <span class="logo-digital">
+            Digital
+          </span>
+
+        </div>
+
+      </a>
+
 
       <ul class="nav-links">
-        <li><a href="#servicios">Servicios</a></li>
-        <li><a href="#automatizacion">Automatización</a></li>
-        <li><a href="#herramientas">Herramientas</a></li>
-        <li><a href="#faq">FAQ</a></li>
-        <li><a href="#contacto">Contacto</a></li>
+
+        <li>
+          <a href="#servicios">
+            Servicios
+          </a>
+        </li>
+
+        <li>
+          <a href="#empresas">
+            Empresas
+          </a>
+        </li>
+
+        <li>
+          <a href="#automatizacion">
+            Automatización
+          </a>
+        </li>
+
+        <li>
+
+          <a
+            href="#herramientas"
+            class="free-link"
+          >
+            Herramientas
+
+            <span class="free-badge">
+              GRATIS
+            </span>
+
+          </a>
+
+        </li>
+
+        <li>
+          <a href="#recursos">
+            Recursos
+          </a>
+        </li>
+
+        <li>
+          <a href="#contacto">
+            Contacto
+          </a>
+        </li>
+
       </ul>
 
     </div>
+
   </nav>
 
 
-  <!-- HERO -->
+  <!-- ======================================================
+       HERO
+       ====================================================== -->
 
-  <section class="hero">
+  <header
+    class="hero"
+    id="inicio"
+  >
 
-    <div class="container">
+    <div class="container hero-grid">
+
 
       <div class="hero-content">
 
-        <div class="hero-badge">
-          Soluciones TI para personas y emprendedores
+        <div class="eyebrow">
+          ● SOPORTE TI · AUTOMATIZACIÓN · IA
         </div>
 
+
         <h1>
-          Tu tecnología.<br>
-          <span>Más simple.</span>
+
+          Tecnología simple
+          para
+
+          <span class="green">
+            pequeñas empresas.
+          </span>
+
         </h1>
 
-        <p>
-          Soporte técnico, optimización de computadores,
-          seguridad informática y automatización con IA.
-          Soluciones claras, rápidas y sin complicaciones.
+
+        <p class="hero-description">
+
+          Soporte TI, automatización y soluciones
+          digitales para que personas, emprendedores
+          y pequeños negocios trabajen mejor,
+          pierdan menos tiempo y aprovechen su
+          tecnología.
+
         </p>
+
 
         <div class="hero-buttons">
 
-          <a href="#contacto" class="btn">
-            Solicitar soporte
+          <a
+            href="#contacto"
+            class="btn"
+          >
+            Solicitar soporte →
           </a>
 
-          <a href="#automatizacion" class="btn btn-secondary">
-            Ver automatización
+
+          <a
+            href="#herramientas"
+            class="btn btn-secondary"
+          >
+            Herramientas Gratis
           </a>
 
         </div>
 
+
+        <div class="hero-note">
+
+          Atención clara · Soluciones prácticas ·
+          Automatización personalizada
+
+        </div>
+
+      </div>
+
+
+      <!-- VISUAL HERO -->
+
+      <div class="hero-visual">
+
+        <div class="visual-glow"></div>
+
+
+        <div class="tech-panel">
+
+
+          <div class="tech-panel-top">
+
+            <div class="logo">
+
+              <div class="logo-symbol">
+                X
+              </div>
+
+              <span class="logo-xinecom">
+                XineCom
+              </span>
+
+            </div>
+
+
+            <div class="tech-status">
+
+              <span class="status-dot"></span>
+
+              Sistemas activos
+
+            </div>
+
+          </div>
+
+
+          <div class="tech-screen">
+
+            <div class="tech-screen-title">
+              Automatización inteligente
+            </div>
+
+
+            <div class="flow-row">
+
+              <div class="flow-node">
+                Cliente
+              </div>
+
+              <div class="flow-arrow">
+                →
+              </div>
+
+              <div class="flow-node">
+                XineCom
+              </div>
+
+              <div class="flow-arrow">
+                →
+              </div>
+
+              <div class="flow-node">
+                Automatización
+              </div>
+
+              <div class="flow-arrow">
+                →
+              </div>
+
+              <div class="flow-node">
+                Resultado
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="tech-metrics">
+
+            <div class="metric">
+
+              <strong>
+                TI
+              </strong>
+
+              <span>
+                Soporte técnico
+              </span>
+
+            </div>
+
+
+            <div class="metric">
+
+              <strong>
+                IA
+              </strong>
+
+              <span>
+                Automatización
+              </span>
+
+            </div>
+
+
+            <div class="metric">
+
+              <strong>
+                15d
+              </strong>
+
+              <span>
+                Garantía soporte
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <!-- ======================================================
+       VALUE BAR
+       ====================================================== -->
+
+  <section class="value-bar">
+
+    <div class="container value-grid">
+
+      <div class="value-item">
+        <strong>+</strong>
+        <span>Soluciones</span>
+      </div>
+
+      <div class="value-item">
+        <strong>−</strong>
+        <span>Tiempo perdido</span>
+      </div>
+
+      <div class="value-item">
+        <strong>+</strong>
+        <span>Productividad</span>
+      </div>
+
+      <div class="value-item">
+        <strong>+</strong>
+        <span>Seguridad</span>
       </div>
 
     </div>
@@ -671,139 +3053,359 @@
   </section>
 
 
-  <!-- SERVICIOS -->
+  <!-- ======================================================
+       SERVICIOS
+       ====================================================== -->
 
-  <section id="servicios">
+  <section
+    class="services"
+    id="servicios"
+  >
 
     <div class="container">
 
+      <div class="eyebrow">
+        SERVICIOS
+      </div>
+
+
       <h2 class="section-title">
-        Servicios <span>TI</span>
+
+        Soporte que
+
+        <span class="green">
+          resuelve.
+        </span>
+
       </h2>
 
+
       <p class="section-description">
-        Soluciones informáticas para mantener tu computador
-        funcionando correctamente y ayudarte a trabajar mejor.
+
+        Desde problemas cotidianos con tu computador
+        hasta soporte tecnológico para pequeños negocios.
+        Buscamos soluciones claras, prácticas y sin
+        tecnicismos innecesarios.
+
       </p>
+
 
       <div class="cards">
 
-        <div class="card">
 
-          <div class="card-icon">💻</div>
+        <!-- SOPORTE TI -->
+
+        <article class="card">
+
+          <div class="card-icon">
+            💻
+          </div>
 
           <h3>
-            Soporte de PC
+            Soporte TI
           </h3>
 
           <p>
-            Solución de problemas de Windows, programas,
-            cuentas, conectividad, periféricos y errores comunes.
+
+            Solución de problemas de Windows,
+            programas, cuentas, conectividad,
+            periféricos y errores frecuentes.
+
           </p>
 
           <div class="price">
             Desde $15.000
           </div>
 
-        </div>
+        </article>
 
 
-        <div class="card">
+        <!-- OPTIMIZACIÓN -->
 
-          <div class="card-icon">⚡</div>
+        <article class="card">
+
+          <div class="card-icon">
+            ⚡
+          </div>
 
           <h3>
             Optimización
           </h3>
 
           <p>
-            Limpieza, revisión de programas, rendimiento,
-            inicio de Windows y optimización general.
+
+            Revisión de rendimiento, programas,
+            almacenamiento, inicio de Windows
+            y configuración general.
+
           </p>
 
           <div class="price">
             Desde $20.000
           </div>
 
-        </div>
+        </article>
 
 
-        <div class="card">
+        <!-- SEGURIDAD -->
 
-          <div class="card-icon">🛡️</div>
+        <article class="card">
+
+          <div class="card-icon">
+            🛡️
+          </div>
 
           <h3>
             Seguridad
           </h3>
 
           <p>
-            Revisión de malware, configuraciones de seguridad,
-            Defender y recomendaciones de protección.
+
+            Revisión de malware, configuraciones
+            de seguridad, Microsoft Defender
+            y recomendaciones de protección.
+
           </p>
 
           <div class="price">
             Desde $20.000
           </div>
 
-        </div>
+        </article>
 
 
-        <div class="card">
+        <!-- WINDOWS -->
 
-          <div class="card-icon">🪟</div>
+        <article class="card">
+
+          <div class="card-icon">
+            🪟
+          </div>
 
           <h3>
-            Instalación de Windows
+            Windows
           </h3>
 
           <p>
-            Instalación y configuración de Windows,
-            controladores, actualizaciones y programas básicos.
+
+            Instalación, configuración,
+            controladores, actualizaciones
+            y programas esenciales.
+
           </p>
 
           <div class="price">
             Desde $25.000
           </div>
 
-        </div>
+        </article>
 
 
-        <div class="card">
+        <!-- DIAGNÓSTICO -->
 
-          <div class="card-icon">🔎</div>
+        <article class="card">
+
+          <div class="card-icon">
+            🔎
+          </div>
 
           <h3>
             Diagnóstico
           </h3>
 
           <p>
-            Revisamos tu computador para identificar
-            problemas de hardware, software o rendimiento.
+
+            Evaluamos tu computador para
+            identificar problemas de hardware,
+            software o rendimiento.
+
           </p>
 
           <div class="price">
             Desde $15.000
           </div>
 
-        </div>
+        </article>
 
 
-        <div class="card">
+        <!-- EMPRESAS -->
 
-          <div class="card-icon">🤖</div>
+        <article class="card">
+
+          <div class="card-icon">
+            🏢
+          </div>
 
           <h3>
-            Automatización con IA
+            Soporte para empresas
           </h3>
 
           <p>
-            Automatización de tareas y procesos para
-            emprendedores y pequeños negocios.
+
+            Apoyo tecnológico para pequeños
+            negocios que necesitan soporte,
+            orden y continuidad operacional.
+
           </p>
 
           <div class="price">
-            Consultar
+            Cotizar
           </div>
+
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ======================================================
+       XINECOM EMPRESAS
+       ====================================================== -->
+
+  <section
+    class="business"
+    id="empresas"
+  >
+
+    <div class="container business-grid">
+
+
+      <div>
+
+        <div class="eyebrow">
+          XINECOM EMPRESAS
+        </div>
+
+
+        <h2 class="section-title">
+
+          Tu negocio necesita tecnología.
+
+          <span class="green">
+            No complicaciones.
+          </span>
+
+        </h2>
+
+
+        <p class="section-description">
+
+          Queremos ayudar a pequeñas empresas que
+          necesitan apoyo tecnológico sin mantener
+          un gran departamento TI interno.
+
+        </p>
+
+
+        <ul class="business-list">
+
+          <li>
+            Soporte remoto a usuarios
+          </li>
+
+          <li>
+            Configuración de computadores
+          </li>
+
+          <li>
+            Apoyo con Microsoft 365
+          </li>
+
+          <li>
+            Instalación y configuración de software
+          </li>
+
+          <li>
+            Diagnóstico de problemas
+          </li>
+
+          <li>
+            Automatización de tareas repetitivas
+          </li>
+
+          <li>
+            Orientación tecnológica
+          </li>
+
+        </ul>
+
+
+        <a
+          href="#contacto"
+          class="btn"
+        >
+          Hablar sobre mi empresa →
+        </a>
+
+      </div>
+
+
+      <div class="business-panel">
+
+        <h3>
+          Soporte TI para pequeñas empresas
+        </h3>
+
+        <p>
+
+          Podemos evaluar las necesidades de tu
+          negocio y preparar una solución adaptada
+          al tamaño y operación de tu empresa.
+
+        </p>
+
+
+        <div class="business-feature">
+
+          <strong>
+            💻 Usuarios y equipos
+          </strong>
+
+          <span>
+            Apoyo para computadores y usuarios.
+          </span>
+
+        </div>
+
+
+        <div class="business-feature">
+
+          <strong>
+            ☁️ Servicios digitales
+          </strong>
+
+          <span>
+            Ayuda con herramientas de trabajo y nube.
+          </span>
+
+        </div>
+
+
+        <div class="business-feature">
+
+          <strong>
+            🤖 Automatización
+          </strong>
+
+          <span>
+            Procesos repetitivos convertidos en flujos automáticos.
+          </span>
+
+        </div>
+
+
+        <div class="business-feature">
+
+          <strong>
+            🔧 Atención personalizada
+          </strong>
+
+          <span>
+            Soluciones pensadas según cada necesidad.
+          </span>
 
         </div>
 
@@ -814,104 +3416,197 @@
   </section>
 
 
-  <!-- AUTOMATIZACIÓN -->
+  <!-- ======================================================
+       AUTOMATIZACIÓN
+       ====================================================== -->
 
-  <section id="automatizacion" class="automation">
+  <section id="automatizacion">
+
+    <div class="container automation-grid">
+
+
+      <div>
+
+        <div class="eyebrow">
+          AUTOMATIZACIÓN
+        </div>
+
+
+        <h2 class="section-title">
+
+          Haz que las tareas repetitivas
+
+          <span class="green">
+            se hagan solas.
+          </span>
+
+        </h2>
+
+
+        <p class="section-description">
+
+          Conectamos herramientas y procesos
+          para reducir trabajo manual y ayudarte
+          a dedicar más tiempo a lo importante.
+
+        </p>
+
+
+        <div class="automation-list">
+
+
+          <div class="automation-item">
+
+            <span class="automation-check">
+              ✓
+            </span>
+
+            Recepción automática de clientes
+
+          </div>
+
+
+          <div class="automation-item">
+
+            <span class="automation-check">
+              ✓
+            </span>
+
+            Registro automático de leads
+
+          </div>
+
+
+          <div class="automation-item">
+
+            <span class="automation-check">
+              ✓
+            </span>
+
+            Correos y respuestas automáticas
+
+          </div>
+
+
+          <div class="automation-item">
+
+            <span class="automation-check">
+              ✓
+            </span>
+
+            Integraciones entre herramientas
+
+          </div>
+
+
+          <div class="automation-item">
+
+            <span class="automation-check">
+              ✓
+            </span>
+
+            Automatización con inteligencia artificial
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="automation-offer">
+
+        <div class="discount">
+          LANZAMIENTO · 30–40% DESCUENTO
+        </div>
+
+
+        <h3>
+          Automatizaciones personalizadas
+        </h3>
+
+
+        <p>
+
+          Estamos desarrollando nuestro servicio
+          de automatización y mantenemos precios
+          especiales de lanzamiento para nuestros
+          primeros proyectos.
+
+        </p>
+
+
+        <a
+          href="#contacto"
+          class="btn"
+        >
+          Quiero automatizar →
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ======================================================
+       HERRAMIENTAS GRATIS
+       ====================================================== -->
+
+  <section
+    class="tools"
+    id="herramientas"
+  >
 
     <div class="container">
 
-      <div class="automation-box">
 
-        <div class="automation-text">
+      <div class="tools-heading">
 
-          <h2>
-            Haz que tu negocio
-            <span>trabaje solo.</span>
+        <div>
+
+          <div class="eyebrow">
+            100% GRATIS
+          </div>
+
+
+          <h2 class="section-title">
+
+            Herramientas que
+
+            <span class="green">
+              sí sirven.
+            </span>
+
           </h2>
 
-          <p>
-            Automatizamos tareas repetitivas para que puedas
-            dedicar más tiempo a tus clientes y menos tiempo
-            haciendo trabajo manual.
+
+          <p class="section-description">
+
+            Utilidades rápidas para resolver
+            cálculos y tareas del día a día.
+            Iremos agregando nuevas herramientas
+            progresivamente.
+
           </p>
-
-          <ul class="automation-list">
-
-            <li>
-              Recepción automática de clientes
-            </li>
-
-            <li>
-              Registro de leads
-            </li>
-
-            <li>
-              Respuestas automáticas
-            </li>
-
-            <li>
-              Automatización con IA
-            </li>
-
-            <li>
-              Seguimiento de clientes
-            </li>
-
-          </ul>
 
         </div>
 
 
-        <div class="automation-card">
-
-          <div class="discount">
-            LANZAMIENTO · 30–40% DESCUENTO
-          </div>
-
-          <h3>
-            Automatizaciones personalizadas
-          </h3>
-
-          <p>
-            Estamos comenzando este servicio y por eso
-            mantenemos precios especiales de lanzamiento
-            para nuestros primeros clientes.
-          </p>
-
-          <br>
-
-          <a href="#contacto" class="btn">
-            Quiero automatizar
-          </a>
-
+        <div class="tools-label">
+          XINECOM TOOLS
         </div>
 
       </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- HERRAMIENTAS -->
-
-  <section id="herramientas">
-
-    <div class="container">
-
-      <h2 class="section-title">
-        Herramientas <span>gratuitas</span>
-      </h2>
-
-      <p class="section-description">
-        Pequeñas herramientas útiles para el día a día.
-      </p>
 
 
       <div class="tools-grid">
 
 
-        <div class="tool">
+        <!-- PORCENTAJES -->
+
+        <article class="tool">
 
           <div class="tool-icon">
             🧮
@@ -922,30 +3617,73 @@
           </h3>
 
           <p>
-            Calcula porcentajes rápidamente.
+            Calcula rápidamente un porcentaje de cualquier cantidad.
           </p>
 
-        </div>
+          <button
+            class="btn btn-small"
+            type="button"
+            onclick="togglePercentageCalculator()"
+          >
+            Usar herramienta
+          </button>
+
+          <div class="tool-status">
+            DISPONIBLE
+          </div>
+
+        </article>
 
 
-        <div class="tool">
+        <!-- SUELDO -->
+
+        <article class="tool">
 
           <div class="tool-icon">
-            💾
+            💰
           </div>
 
           <h3>
-            Conversor de almacenamiento
+            Sueldo líquido Chile
           </h3>
 
           <p>
-            Convierte MB, GB y TB.
+            Estimación del sueldo líquido a partir del sueldo bruto.
           </p>
 
-        </div>
+          <div class="tool-status coming">
+            PRÓXIMAMENTE
+          </div>
+
+        </article>
 
 
-        <div class="tool">
+        <!-- FINIQUITO -->
+
+        <article class="tool">
+
+          <div class="tool-icon">
+            📄
+          </div>
+
+          <h3>
+            Calculadora de finiquito
+          </h3>
+
+          <p>
+            Herramienta orientativa para estimar un finiquito.
+          </p>
+
+          <div class="tool-status coming">
+            PRÓXIMAMENTE
+          </div>
+
+        </article>
+
+
+        <!-- PASSWORD -->
+
+        <article class="tool">
 
           <div class="tool-icon">
             🔐
@@ -956,13 +3694,96 @@
           </h3>
 
           <p>
-            Crea contraseñas seguras.
+            Genera contraseñas aleatorias para mejorar tu seguridad.
           </p>
 
-        </div>
+          <button
+            class="btn btn-small"
+            type="button"
+            onclick="showPasswordGenerator()"
+          >
+            Generar
+          </button>
+
+          <div class="tool-status">
+            DISPONIBLE
+          </div>
+
+        </article>
 
 
-        <div class="tool">
+        <!-- IVA -->
+
+        <article class="tool">
+
+          <div class="tool-icon">
+            🧾
+          </div>
+
+          <h3>
+            Calculadora IVA
+          </h3>
+
+          <p>
+            Calcula valores netos, IVA y totales.
+          </p>
+
+          <div class="tool-status coming">
+            PRÓXIMAMENTE
+          </div>
+
+        </article>
+
+
+        <!-- STORAGE -->
+
+        <article class="tool">
+
+          <div class="tool-icon">
+            💾
+          </div>
+
+          <h3>
+            Conversor de almacenamiento
+          </h3>
+
+          <p>
+            Convierte fácilmente MB, GB y TB.
+          </p>
+
+          <div class="tool-status coming">
+            PRÓXIMAMENTE
+          </div>
+
+        </article>
+
+
+        <!-- QR -->
+
+        <article class="tool">
+
+          <div class="tool-icon">
+            ▦
+          </div>
+
+          <h3>
+            Generador QR
+          </h3>
+
+          <p>
+            Convierte enlaces o información en códigos QR.
+          </p>
+
+          <div class="tool-status coming">
+            PRÓXIMAMENTE
+          </div>
+
+        </article>
+
+
+        <!-- TEXT -->
+
+        <article class="tool">
 
           <div class="tool-icon">
             📝
@@ -973,11 +3794,106 @@
           </h3>
 
           <p>
-            Cuenta caracteres y palabras.
+            Cuenta caracteres y palabras de cualquier texto.
           </p>
+
+          <div class="tool-status coming">
+            PRÓXIMAMENTE
+          </div>
+
+        </article>
+
+      </div>
+
+
+      <!-- CALCULADORA PORCENTAJES -->
+
+      <div
+        class="calculator-box"
+        id="percentageCalculator"
+      >
+
+        <h3>
+          🧮 Calculadora de porcentajes
+        </h3>
+
+
+        <div class="calc-grid">
+
+          <input
+            type="number"
+            id="percentageNumber"
+            placeholder="Cantidad"
+          >
+
+          <input
+            type="number"
+            id="percentageValue"
+            placeholder="Porcentaje (%)"
+          >
 
         </div>
 
+
+        <button
+          class="btn"
+          type="button"
+          onclick="calculatePercentageUI()"
+        >
+          Calcular
+        </button>
+
+
+        <div
+          class="calc-result"
+          id="percentageResult"
+        >
+          Ingresa los valores para calcular.
+        </div>
+
+      </div>
+
+
+      <!-- GENERADOR CONTRASEÑAS -->
+
+      <div
+        class="calculator-box"
+        id="passwordGenerator"
+      >
+
+        <h3>
+          🔐 Generador de contraseñas
+        </h3>
+
+
+        <div class="calc-grid">
+
+          <input
+            type="number"
+            id="passwordLength"
+            min="8"
+            max="64"
+            value="16"
+            placeholder="Longitud"
+          >
+
+          <button
+            class="btn"
+            type="button"
+            onclick="generatePasswordUI()"
+          >
+            Generar contraseña
+          </button>
+
+        </div>
+
+
+        <div
+          class="calc-result"
+          id="passwordResult"
+        >
+          Presiona generar para crear una contraseña.
+        </div>
 
       </div>
 
@@ -986,66 +3902,207 @@
   </section>
 
 
-  <!-- CONFIANZA -->
+  <!-- ======================================================
+       RECURSOS DIGITALES
+       ====================================================== -->
 
-  <section>
+  <section id="recursos">
 
     <div class="container">
 
+      <div class="eyebrow">
+        RECURSOS XINECOM
+      </div>
+
+
       <h2 class="section-title">
-        ¿Por qué <span>XineCom?</span>
+
+        Aprende, automatiza y
+
+        <span class="green">
+          trabaja mejor.
+        </span>
+
       </h2>
 
+
       <p class="section-description">
-        Buscamos entregar soluciones simples y entendibles,
-        sin tecnicismos innecesarios.
+
+        Estamos preparando recursos prácticos
+        para técnicos, emprendedores y pequeñas empresas.
+
+      </p>
+
+
+      <div class="resources-grid">
+
+
+        <article class="resource">
+
+          <div class="resource-label">
+            PACK
+          </div>
+
+          <h3>
+            Kit de Soporte TI
+          </h3>
+
+          <p>
+
+            Scripts, comandos, checklists y
+            herramientas pensadas para técnicos
+            de soporte.
+
+          </p>
+
+          <div class="resource-state">
+            EN DESARROLLO
+          </div>
+
+        </article>
+
+
+        <article class="resource">
+
+          <div class="resource-label">
+            PLANTILLAS
+          </div>
+
+          <h3>
+            Pack para pequeñas empresas
+          </h3>
+
+          <p>
+
+            Inventario TI, control de equipos,
+            usuarios, mantenciones y documentación.
+
+          </p>
+
+          <div class="resource-state">
+            PRÓXIMAMENTE
+          </div>
+
+        </article>
+
+
+        <article class="resource">
+
+          <div class="resource-label">
+            CURSOS
+          </div>
+
+          <h3>
+            XineCom Academy
+          </h3>
+
+          <p>
+
+            Guías y cursos prácticos sobre
+            soporte TI, Windows, automatización
+            y herramientas digitales.
+
+          </p>
+
+          <div class="resource-state">
+            PRÓXIMAMENTE
+          </div>
+
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ======================================================
+       CONFIANZA
+       ====================================================== -->
+
+  <section class="trust">
+
+    <div class="container">
+
+      <div class="eyebrow">
+        NUESTRA FORMA DE TRABAJAR
+      </div>
+
+
+      <h2 class="section-title">
+
+        Tecnología sin
+
+        <span class="green">
+          complicaciones.
+        </span>
+
+      </h2>
+
+
+      <p class="section-description">
+
+        Queremos que entiendas qué ocurre,
+        qué estamos haciendo y qué solución
+        recomendamos.
+
       </p>
 
 
       <div class="trust-grid">
 
 
-        <div class="trust">
+        <article class="trust-card">
 
           <h3>
-            ⚡ Rápido
+            ⚡ Eficiente
           </h3>
 
           <p>
-            Buscamos resolver los problemas de manera
-            eficiente y directa.
+            Buscamos resolver cada problema de forma práctica y directa.
           </p>
 
-        </div>
+        </article>
 
 
-        <div class="trust">
+        <article class="trust-card">
 
           <h3>
             🧠 Claro
           </h3>
 
           <p>
-            Te explicamos qué ocurre y qué estamos haciendo
-            para solucionarlo.
+            Explicamos las soluciones sin tecnicismos innecesarios.
           </p>
 
-        </div>
+        </article>
 
 
-        <div class="trust">
+        <article class="trust-card">
 
           <h3>
             💚 Cercano
           </h3>
 
           <p>
-            Atención pensada para personas y pequeños
-            emprendedores.
+            Atención pensada para personas y pequeños negocios.
           </p>
 
-        </div>
+        </article>
 
+
+        <article class="trust-card">
+
+          <h3>
+            🛡️ Garantía
+          </h3>
+
+          <p>
+            Nuestros servicios de soporte cuentan con 15 días de garantía según el trabajo realizado.
+          </p>
+
+        </article>
 
       </div>
 
@@ -1054,15 +4111,29 @@
   </section>
 
 
-  <!-- FAQ -->
+  <!-- ======================================================
+       FAQ
+       ====================================================== -->
 
   <section id="faq">
 
     <div class="container">
 
+      <div class="eyebrow">
+        FAQ
+      </div>
+
+
       <h2 class="section-title">
-        Preguntas <span>frecuentes</span>
+
+        Preguntas
+
+        <span class="green">
+          frecuentes.
+        </span>
+
       </h2>
+
 
       <div class="faq">
 
@@ -1070,13 +4141,15 @@
         <div class="faq-item">
 
           <div class="faq-question">
-            ¿Atienden computadores lentos?
+            ¿XineCom atiende personas?
           </div>
 
           <div class="faq-answer">
-            Sí. Revisamos Windows, programas,
-            almacenamiento, memoria y otros factores
-            que puedan afectar el rendimiento.
+
+            Sí. Podemos ayudarte con problemas
+            de computadores, Windows, programas,
+            rendimiento y otras necesidades de soporte.
+
           </div>
 
         </div>
@@ -1085,12 +4158,15 @@
         <div class="faq-item">
 
           <div class="faq-question">
-            ¿Pueden instalar Windows?
+            ¿Trabajan con pequeñas empresas?
           </div>
 
           <div class="faq-answer">
-            Sí. Podemos realizar la instalación y
-            configuración correspondiente.
+
+            Sí. Uno de nuestros principales enfoques
+            es ayudar a pequeños negocios que necesitan
+            soporte TI y soluciones digitales.
+
           </div>
 
         </div>
@@ -1099,12 +4175,16 @@
         <div class="faq-item">
 
           <div class="faq-question">
-            ¿Trabajan con emprendedores?
+            ¿Qué se puede automatizar?
           </div>
 
           <div class="faq-answer">
-            Sí. También desarrollamos soluciones de
-            automatización para pequeños negocios.
+
+            Formularios, registro de clientes,
+            correos, planillas, notificaciones,
+            tareas repetitivas e integraciones entre
+            diferentes herramientas, entre otros procesos.
+
           </div>
 
         </div>
@@ -1117,12 +4197,48 @@
           </div>
 
           <div class="faq-answer">
-            Sí. Primero revisamos el proceso que quieres
-            automatizar y luego evaluamos la solución.
+
+            Sí. Primero revisamos el proceso,
+            identificamos qué tareas pueden automatizarse
+            y luego evaluamos la solución adecuada.
+
           </div>
 
         </div>
 
+
+        <div class="faq-item">
+
+          <div class="faq-question">
+            ¿Las herramientas gratuitas tienen costo?
+          </div>
+
+          <div class="faq-answer">
+
+            No. Las herramientas identificadas como
+            gratuitas pueden utilizarse directamente
+            desde XineCom Digital.
+
+          </div>
+
+        </div>
+
+
+        <div class="faq-item">
+
+          <div class="faq-question">
+            ¿Ofrecen garantía?
+          </div>
+
+          <div class="faq-answer">
+
+            Los servicios de soporte pueden contar con
+            15 días de garantía sobre el trabajo realizado,
+            según las condiciones del servicio.
+
+          </div>
+
+        </div>
 
       </div>
 
@@ -1131,172 +4247,236 @@
   </section>
 
 
-  <!-- CONTACTO -->
+  <!-- ======================================================
+       CONTACTO
+       ====================================================== -->
 
-  <section id="contacto">
+  <section
+    class="contact"
+    id="contacto"
+  >
 
-    <div class="container">
-
-      <div class="contact-wrapper">
+    <div class="container contact-grid">
 
 
-        <div class="contact-info">
+      <div class="contact-info">
 
-          <h2>
-            Hablemos de tu
-            <span>problema.</span>
-          </h2>
-
-          <p>
-            Cuéntanos qué necesitas y revisaremos
-            cómo podemos ayudarte.
-          </p>
-
-          <div class="contact-email">
-            xinecomdigital@gmail.com
-          </div>
-
+        <div class="eyebrow">
+          CONTACTO
         </div>
 
 
-        <!-- FORMULARIO -->
+        <h2>
 
-        <form
-          class="form"
-          onsubmit="sendEmail(event)"
+          Cuéntanos qué
+
+          <span class="green">
+            necesitas.
+          </span>
+
+        </h2>
+
+
+        <p>
+
+          Describe tu problema, proyecto o idea.
+          Revisaremos tu solicitud para evaluar
+          cómo podemos ayudarte.
+
+        </p>
+
+
+        <a
+          class="contact-email"
+          href="mailto:xinecomdigital@gmail.com"
         >
-
-          <div class="form-group">
-
-            <label for="contactName">
-              Nombre
-            </label>
-
-            <input
-              type="text"
-              id="contactName"
-              placeholder="Tu nombre"
-              required
-            >
-
-          </div>
+          xinecomdigital@gmail.com
+        </a>
 
 
-          <div class="form-group">
+        <div class="contact-extra">
 
-            <label for="contactEmail">
-              Correo electrónico
-            </label>
+          Soporte TI · Automatización ·
+          Pequeñas empresas · Chile
 
-            <input
-              type="email"
-              id="contactEmail"
-              placeholder="tu@email.com"
-              required
-            >
-
-          </div>
-
-
-          <div class="form-group">
-
-            <label for="contactService">
-              Servicio
-            </label>
-
-            <select
-              id="contactService"
-              required
-            >
-
-              <option value="">
-                Selecciona un servicio
-              </option>
-
-              <option value="Soporte TI">
-                Soporte TI
-              </option>
-
-              <option value="Optimización de PC">
-                Optimización de PC
-              </option>
-
-              <option value="Instalación de Windows">
-                Instalación de Windows
-              </option>
-
-              <option value="Seguridad informática">
-                Seguridad informática
-              </option>
-
-              <option value="Diagnóstico de PC">
-                Diagnóstico de PC
-              </option>
-
-              <option value="Automatización con IA">
-                Automatización con IA
-              </option>
-
-              <option value="Otro">
-                Otro
-              </option>
-
-            </select>
-
-          </div>
-
-
-          <div class="form-group">
-
-            <label for="contactMessage">
-              Mensaje
-            </label>
-
-            <textarea
-              id="contactMessage"
-              placeholder="Cuéntanos qué necesitas..."
-              required
-            ></textarea>
-
-          </div>
-
-
-          <button
-            class="btn"
-            type="submit"
-            id="contactSubmit"
-          >
-            Enviar solicitud
-          </button>
-
-
-          <div
-            class="notice"
-            id="contactStatus"
-            style="display:none;"
-          ></div>
-
-        </form>
+        </div>
 
       </div>
+
+
+      <!-- ==================================================
+           FORMULARIO
+           ================================================== -->
+
+      <form
+        class="form"
+        id="contactForm"
+        onsubmit="sendLead(event)"
+      >
+
+        <h3 class="form-title">
+          Solicitar información
+        </h3>
+
+
+        <div class="form-group">
+
+          <label for="contactName">
+            Nombre
+          </label>
+
+          <input
+            type="text"
+            id="contactName"
+            name="nombre"
+            placeholder="Tu nombre"
+            autocomplete="name"
+            required
+          >
+
+        </div>
+
+
+        <div class="form-group">
+
+          <label for="contactEmail">
+            Correo electrónico
+          </label>
+
+          <input
+            type="email"
+            id="contactEmail"
+            name="correo"
+            placeholder="tu@email.com"
+            autocomplete="email"
+            required
+          >
+
+        </div>
+
+
+        <div class="form-group">
+
+          <label for="contactService">
+            ¿En qué podemos ayudarte?
+          </label>
+
+          <select
+            id="contactService"
+            name="servicio"
+            required
+          >
+
+            <option value="">
+              Selecciona un servicio
+            </option>
+
+            <option value="Soporte TI">
+              Soporte TI
+            </option>
+
+            <option value="Soporte para empresa">
+              Soporte para empresa
+            </option>
+
+            <option value="Optimización de PC">
+              Optimización de PC
+            </option>
+
+            <option value="Instalación de Windows">
+              Instalación de Windows
+            </option>
+
+            <option value="Seguridad informática">
+              Seguridad informática
+            </option>
+
+            <option value="Diagnóstico de PC">
+              Diagnóstico de PC
+            </option>
+
+            <option value="Automatización">
+              Automatización
+            </option>
+
+            <option value="Automatización con IA">
+              Automatización con IA
+            </option>
+
+            <option value="Recursos digitales">
+              Recursos digitales
+            </option>
+
+            <option value="Otro">
+              Otro
+            </option>
+
+          </select>
+
+        </div>
+
+
+        <div class="form-group">
+
+          <label for="contactMessage">
+            Mensaje
+          </label>
+
+          <textarea
+            id="contactMessage"
+            name="mensaje"
+            placeholder="Cuéntanos qué necesitas..."
+            required
+          ></textarea>
+
+        </div>
+
+
+        <button
+          class="btn"
+          id="contactSubmit"
+          type="submit"
+        >
+          Enviar solicitud →
+        </button>
+
+
+        <div
+          class="notice"
+          id="contactStatus"
+          aria-live="polite"
+        ></div>
+
+      </form>
 
     </div>
 
   </section>
 
 
-  <!-- FOOTER -->
+  <!-- ======================================================
+       FOOTER
+       ====================================================== -->
 
   <footer>
 
-    <div class="container footer-content">
+    <div class="container footer-grid">
 
       <div>
-        © 2026 XineCom Digital
+
+        <span class="footer-brand">
+          XineCom Digital
+        </span>
+
+        · © 2026
+
       </div>
 
+
       <div>
+
         Soporte TI · Automatización · Tecnología
+
       </div>
 
     </div>
@@ -1304,149 +4484,109 @@
   </footer>
 
 
-  <!-- SCRIPTS -->
+  <!-- ======================================================
+       JAVASCRIPT
+       ====================================================== -->
 
   <script>
 
-    /*
-      ============================================================
-      CONFIGURACIÓN N8N
-      ============================================================
+    "use strict";
 
-      CUANDO TENGAMOS EL WEBHOOK PÚBLICO DE N8N,
-      CAMBIA SOLAMENTE ESTA URL.
 
-      Ejemplo:
+    /* ======================================================
+       CONFIGURACIÓN N8N
 
-      const N8N_WEBHOOK_URL =
-      "https://samples-detail-fighters-choosing.trycloudflare.com/webhook/xinecom-lead";
+       IMPORTANTE:
+       Esta es la ÚNICA variable del webhook en todo
+       el archivo.
 
-      NO pongas localhost aquí si la página está publicada
-      en GitHub Pages.
-    */
+       Mientras utilicemos Quick Tunnel de Cloudflare,
+       esta URL tendrá que actualizarse cuando cambie
+       el túnel.
+
+       Más adelante configuraremos un endpoint
+       permanente.
+       ====================================================== */
 
     const N8N_WEBHOOK_URL =
       "https://samples-detail-fighters-choosing.trycloudflare.com/webhook/xinecom-lead";
 
 
-    /*
-      ============================================================
-      FORMULARIO DE CONTACTO
-      ============================================================
-    */
+    /* ======================================================
+       FORMULARIO XINECOM
+       ====================================================== */
 
-    async function sendEmail(event) {
+    async function sendLead(event) {
 
       event.preventDefault();
 
 
       const form =
-        document.querySelector(".form");
-
-
-      const name =
-        document.getElementById("contactName")
-          .value
-          .trim();
-
-
-      const email =
-        document.getElementById("contactEmail")
-          .value
-          .trim();
-
-
-      const service =
-        document.getElementById("contactService")
-          .value;
-
-
-      const message =
-        document.getElementById("contactMessage")
-          .value
-          .trim();
-
-
-      const status =
-        document.getElementById("contactStatus");
+        document.getElementById(
+          "contactForm"
+        );
 
 
       const button =
-        document.getElementById("contactSubmit");
+        document.getElementById(
+          "contactSubmit"
+        );
 
 
-      /*
-        Información que enviaremos a n8n.
-      */
-
-      const data = {
-
-        nombre: name,
-
-        correo: email,
-
-        servicio: service,
-
-        mensaje: message,
-
-        tipo_lead: "Nuevo Cliente",
-
-        origen: "Sitio web XineCom Digital",
-
-        fecha:
-          new Date().toISOString()
-
-      };
+      const status =
+        document.getElementById(
+          "contactStatus"
+        );
 
 
-      /*
-        ==========================================================
-        MODO DE RESPALDO
-        ==========================================================
+      const name =
+        document.getElementById(
+          "contactName"
+        )
+        .value
+        .trim();
 
-        Mientras no tengamos el webhook público de n8n,
-        el formulario abrirá el correo de XineCom.
 
-        Esto permite que la página siga funcionando.
-      */
+      const email =
+        document.getElementById(
+          "contactEmail"
+        )
+        .value
+        .trim();
+
+
+      const service =
+        document.getElementById(
+          "contactService"
+        )
+        .value;
+
+
+      const message =
+        document.getElementById(
+          "contactMessage"
+        )
+        .value
+        .trim();
+
+
+      /* ------------------------------------------------------
+         VALIDACIÓN BÁSICA
+         ------------------------------------------------------ */
 
       if (
-        N8N_WEBHOOK_URL.includes(
-          "TU-WEBHOOK-PUBLICO-DE-N8N"
-        )
+        !name ||
+        !email ||
+        !service ||
+        !message
       ) {
 
-        const subject =
-          encodeURIComponent(
-            "Consulta XineCom Digital - " +
-            service
-          );
+        status.style.display =
+          "block";
 
 
-        const body =
-          encodeURIComponent(
-
-            "Nombre: " +
-            name +
-
-            "\nCorreo: " +
-            email +
-
-            "\nServicio: " +
-            service +
-
-            "\n\nMensaje:\n" +
-            message
-
-          );
-
-
-        window.location.href =
-          "mailto:xinecomdigital@gmail.com" +
-          "?subject=" +
-          subject +
-          "&body=" +
-          body;
+        status.textContent =
+          "⚠️ Completa todos los campos antes de enviar.";
 
 
         return;
@@ -1454,15 +4594,53 @@
       }
 
 
-      /*
-        ==========================================================
-        ENVÍO A N8N
-        ==========================================================
-      */
+      /* ------------------------------------------------------
+         PAYLOAD PARA N8N
+
+         Estos nombres deben mantenerse porque nuestro
+         workflow utiliza:
+
+         nombre
+         correo
+         servicio
+         mensaje
+         tipo_lead
+         origen
+         fecha
+         ------------------------------------------------------ */
+
+      const data = {
+
+        nombre:
+          name,
+
+        correo:
+          email,
+
+        servicio:
+          service,
+
+        mensaje:
+          message,
+
+        tipo_lead:
+          "Nuevo Cliente",
+
+        origen:
+          "Sitio web XineCom Digital",
+
+        fecha:
+          new Date().toISOString()
+
+      };
+
 
       try {
 
-        button.disabled = true;
+
+        button.disabled =
+          true;
+
 
         button.textContent =
           "Enviando...";
@@ -1474,24 +4652,32 @@
 
         const response =
           await fetch(
+
             N8N_WEBHOOK_URL,
+
             {
 
-              method: "POST",
+              method:
+                "POST",
 
               headers: {
+
                 "Content-Type":
                   "application/json"
+
               },
 
               body:
                 JSON.stringify(data)
 
             }
+
           );
 
 
-        if (!response.ok) {
+        if (
+          !response.ok
+        ) {
 
           throw new Error(
             "Error HTTP " +
@@ -1501,10 +4687,9 @@
         }
 
 
-        /*
-          Si llegamos aquí,
-          n8n recibió correctamente el lead.
-        */
+        /* ----------------------------------------------------
+           ÉXITO
+           ---------------------------------------------------- */
 
         status.style.display =
           "block";
@@ -1519,120 +4704,293 @@
 
       } catch (error) {
 
+
         console.error(
-          "Error enviando lead:",
+          "Error enviando lead a XineCom:",
           error
         );
 
+
+        /* ----------------------------------------------------
+           RESPALDO
+
+           No abrimos automáticamente el correo porque
+           puede resultar confuso para el usuario.
+
+           Mostramos nuestro correo para que pueda
+           contactarnos manualmente.
+           ---------------------------------------------------- */
 
         status.style.display =
           "block";
 
 
         status.textContent =
-          "⚠️ No pudimos enviar la solicitud automáticamente. Escríbenos a xinecomdigital@gmail.com.";
+          "⚠️ No pudimos enviar la solicitud automáticamente. Puedes escribirnos a xinecomdigital@gmail.com.";
+
 
       } finally {
 
-        button.disabled = false;
+
+        button.disabled =
+          false;
+
 
         button.textContent =
-          "Enviar solicitud";
+          "Enviar solicitud →";
+
 
       }
 
     }
 
 
-    /*
-      ============================================================
-      CALCULADORA DE PORCENTAJES
-      ============================================================
+    /* ======================================================
+       CALCULADORA DE PORCENTAJES
+       ====================================================== */
 
-      Función preparada para utilizarla en la herramienta
-      gratuita cuando agreguemos la interfaz.
-    */
+    function togglePercentageCalculator() {
 
-    function calcularPorcentaje(
-      numero,
-      porcentaje
+      const calculator =
+        document.getElementById(
+          "percentageCalculator"
+        );
+
+
+      const passwordBox =
+        document.getElementById(
+          "passwordGenerator"
+        );
+
+
+      passwordBox.classList.remove(
+        "active"
+      );
+
+
+      calculator.classList.toggle(
+        "active"
+      );
+
+
+      if (
+        calculator.classList.contains(
+          "active"
+        )
+      ) {
+
+        calculator.scrollIntoView({
+
+          behavior:
+            "smooth",
+
+          block:
+            "center"
+
+        });
+
+      }
+
+    }
+
+
+    function calculatePercentage(
+      number,
+      percentage
     ) {
 
       return (
-        Number(numero) *
-        Number(porcentaje)
+        Number(number) *
+        Number(percentage)
       ) / 100;
 
     }
 
 
-    /*
-      ============================================================
-      CONVERSOR DE ALMACENAMIENTO
-      ============================================================
-    */
+    function calculatePercentageUI() {
 
-    function convertirGBaMB(gb) {
+      const number =
+        document.getElementById(
+          "percentageNumber"
+        ).value;
 
-      return Number(gb) * 1024;
+
+      const percentage =
+        document.getElementById(
+          "percentageValue"
+        ).value;
+
+
+      const result =
+        document.getElementById(
+          "percentageResult"
+        );
+
+
+      if (
+        number === "" ||
+        percentage === ""
+      ) {
+
+        result.textContent =
+          "Ingresa una cantidad y un porcentaje.";
+
+
+        return;
+
+      }
+
+
+      const calculated =
+        calculatePercentage(
+          number,
+          percentage
+        );
+
+
+      result.textContent =
+        percentage +
+        "% de " +
+        Number(number).toLocaleString(
+          "es-CL"
+        ) +
+        " es " +
+        calculated.toLocaleString(
+          "es-CL"
+        );
 
     }
 
 
-    function convertirMBaGB(mb) {
+    /* ======================================================
+       GENERADOR DE CONTRASEÑAS
+       ====================================================== */
 
-      return Number(mb) / 1024;
+    function showPasswordGenerator() {
+
+      const passwordBox =
+        document.getElementById(
+          "passwordGenerator"
+        );
+
+
+      const calculator =
+        document.getElementById(
+          "percentageCalculator"
+        );
+
+
+      calculator.classList.remove(
+        "active"
+      );
+
+
+      passwordBox.classList.add(
+        "active"
+      );
+
+
+      generatePasswordUI();
+
+
+      passwordBox.scrollIntoView({
+
+        behavior:
+          "smooth",
+
+        block:
+          "center"
+
+      });
 
     }
 
 
-    function convertirGBaTB(gb) {
+    function generatePassword(
+      length = 16
+    ) {
 
-      return Number(gb) / 1024;
-
-    }
-
-
-    function convertirTBaGB(tb) {
-
-      return Number(tb) * 1024;
-
-    }
-
-
-    /*
-      ============================================================
-      GENERADOR DE CONTRASEÑAS
-      ============================================================
-    */
-
-    function generarPassword(longitud = 16) {
-
-      const caracteres =
+      const chars =
         "ABCDEFGHIJKLMNOPQRSTUVWXYZ" +
         "abcdefghijklmnopqrstuvwxyz" +
         "0123456789" +
         "!@#$%^&*()_+-=";
 
 
-      let password = "";
+      let password =
+        "";
 
+
+      const safeLength =
+        Math.min(
+          Math.max(
+            Number(length) || 16,
+            8
+          ),
+          64
+        );
+
+
+      /* ------------------------------------------------------
+         Usamos crypto cuando está disponible para obtener
+         números aleatorios más adecuados que Math.random().
+         ------------------------------------------------------ */
+
+      if (
+        window.crypto &&
+        window.crypto.getRandomValues
+      ) {
+
+        const values =
+          new Uint32Array(
+            safeLength
+          );
+
+
+        window.crypto.getRandomValues(
+          values
+        );
+
+
+        for (
+          let i = 0;
+          i < safeLength;
+          i++
+        ) {
+
+          password +=
+            chars[
+              values[i] %
+              chars.length
+            ];
+
+        }
+
+
+        return password;
+
+      }
+
+
+      /* ------------------------------------------------------
+         FALLBACK
+         ------------------------------------------------------ */
 
       for (
         let i = 0;
-        i < longitud;
+        i < safeLength;
         i++
       ) {
 
-        const posicion =
+        const position =
           Math.floor(
             Math.random() *
-            caracteres.length
+            chars.length
           );
 
 
         password +=
-          caracteres[posicion];
+          chars[position];
 
       }
 
@@ -1642,34 +5000,97 @@
     }
 
 
-    /*
-      ============================================================
-      CONTADOR DE TEXTO
-      ============================================================
-    */
+    function generatePasswordUI() {
 
-    function contarTexto(texto) {
+      const length =
+        document.getElementById(
+          "passwordLength"
+        ).value;
 
-      const palabras =
-        texto
-          .trim()
-          .split(/\s+/)
-          .filter(Boolean);
+
+      const result =
+        document.getElementById(
+          "passwordResult"
+        );
+
+
+      result.textContent =
+        generatePassword(
+          length
+        );
+
+    }
+
+
+    /* ======================================================
+       FUNCIONES PREPARADAS PARA FUTURAS HERRAMIENTAS
+       ====================================================== */
+
+
+    /* ------------------------------------------------------
+       ALMACENAMIENTO
+       ------------------------------------------------------ */
+
+    function GBtoMB(gb) {
+
+      return Number(gb) * 1024;
+
+    }
+
+
+    function MBtoGB(mb) {
+
+      return Number(mb) / 1024;
+
+    }
+
+
+    function GBtoTB(gb) {
+
+      return Number(gb) / 1024;
+
+    }
+
+
+    function TBtoGB(tb) {
+
+      return Number(tb) * 1024;
+
+    }
+
+
+    /* ------------------------------------------------------
+       CONTADOR DE TEXTO
+       ------------------------------------------------------ */
+
+    function countText(text) {
+
+      const words =
+        text
+        .trim()
+        .split(/\s+/)
+        .filter(Boolean);
 
 
       return {
 
-        caracteres:
-          texto.length,
+        characters:
+          text.length,
 
-        palabras:
-          palabras.length
+        words:
+          words.length
 
       };
 
     }
 
+
+    /* ======================================================
+       FIN
+       ====================================================== */
+
   </script>
+
 
 </body>
 </html>
