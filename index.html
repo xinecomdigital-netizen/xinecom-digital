@@ -44,7 +44,7 @@
 
   <meta
     property="og:description"
-    content="Soporte TI, automatización y herramientas digitales para personas, emprendedores y pequeñas empresas."
+    content="Soporte TI, automatización y herramientas digitales para personas, emprendedores y Más simple."
   >
 
   <meta
@@ -2724,7 +2724,12 @@
 
     }
 
-  </style>
+    .nav-links{gap:14px;flex-wrap:wrap}.nav-links a{font-size:12px}.tool .btn{margin-top:auto}section{scroll-margin-top:76px}
+  @media(max-width:760px){.nav-links{display:flex;overflow-x:auto;flex-wrap:nowrap;max-width:100%;padding:8px 0}.nav-container{flex-wrap:wrap;gap:2px}.nav-links li{white-space:nowrap}.hero{padding:55px 0}}
+</style>
+<style>
+.x-tool-panel{margin-top:35px;border:1px solid var(--border-green);border-radius:20px;background:#0b100d;padding:clamp(18px,4vw,30px)}.x-tool-panel[hidden],.x-tool-body[hidden]{display:none!important}.x-tool-header{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-bottom:18px}.x-tool-header h3{font-size:23px}.x-tool-body p{color:var(--muted);margin-bottom:16px}.x-tool-fields{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin-bottom:18px}.x-tool-body label{display:block;color:#c6d0c8;font-size:13px;font-weight:700;margin-bottom:12px}.x-tool-body input,.x-tool-body select,.x-tool-body textarea{display:block;width:100%;margin-top:7px;padding:12px;background:#050706;color:white;border:1px solid #364339;border-radius:9px;font:inherit}.x-tool-result{margin-top:18px;padding:16px;border:1px solid var(--border-green);background:rgba(0,255,136,.06);color:var(--green);border-radius:10px;font-weight:800}.x-grade-row{display:grid;grid-template-columns:1fr 1fr auto;gap:12px;align-items:end;margin-bottom:8px}.x-grade-row button{margin-bottom:12px}.x-tool-hint{font-size:12px;margin-top:14px}.x-tool-panel .btn{margin-top:4px}@media(max-width:600px){.x-grade-row{grid-template-columns:1fr 1fr}.x-grade-row button{grid-column:span 2}}
+</style>
 </head>
 
 
@@ -2840,8 +2845,8 @@
 
         <h1>
 
-          Tecnología simple
-          para
+          Tu tecnología.
+          
 
           <span class="green">
             pequeñas empresas.
@@ -2872,10 +2877,10 @@
 
 
           <a
-            href="#herramientas"
+            href="#servicios"
             class="btn btn-secondary"
           >
-            Herramientas Gratis
+            Ver servicios
           </a>
 
         </div>
@@ -3554,354 +3559,23 @@
        HERRAMIENTAS GRATIS
        ====================================================== -->
 
-  <section
-    class="tools"
-    id="herramientas"
-  >
-
-    <div class="container">
-
-
-      <div class="tools-heading">
-
-        <div>
-
-          <div class="eyebrow">
-            100% GRATIS
-          </div>
-
-
-          <h2 class="section-title">
-
-            Herramientas que
-
-            <span class="green">
-              sí sirven.
-            </span>
-
-          </h2>
-
-
-          <p class="section-description">
-
-            Utilidades rápidas para resolver
-            cálculos y tareas del día a día.
-            Iremos agregando nuevas herramientas
-            progresivamente.
-
-          </p>
-
-        </div>
-
-
-        <div class="tools-label">
-          XINECOM TOOLS
-        </div>
-
-      </div>
-
-
-      <div class="tools-grid">
-
-
-        <!-- PORCENTAJES -->
-
-        <article class="tool">
-
-          <div class="tool-icon">
-            🧮
-          </div>
-
-          <h3>
-            Calculadora de porcentajes
-          </h3>
-
-          <p>
-            Calcula rápidamente un porcentaje de cualquier cantidad.
-          </p>
-
-          <button
-            class="btn btn-small"
-            type="button"
-            onclick="togglePercentageCalculator()"
-          >
-            Usar herramienta
-          </button>
-
-          <div class="tool-status">
-            DISPONIBLE
-          </div>
-
-        </article>
-
-
-        <!-- SUELDO -->
-
-        <article class="tool">
-
-          <div class="tool-icon">
-            💰
-          </div>
-
-          <h3>
-            Sueldo líquido Chile
-          </h3>
-
-          <p>
-            Estimación del sueldo líquido a partir del sueldo bruto.
-          </p>
-
-          <div class="tool-status coming">
-            PRÓXIMAMENTE
-          </div>
-
-        </article>
-
-
-        <!-- FINIQUITO -->
-
-        <article class="tool">
-
-          <div class="tool-icon">
-            📄
-          </div>
-
-          <h3>
-            Calculadora de finiquito
-          </h3>
-
-          <p>
-            Herramienta orientativa para estimar un finiquito.
-          </p>
-
-          <div class="tool-status coming">
-            PRÓXIMAMENTE
-          </div>
-
-        </article>
-
-
-        <!-- PASSWORD -->
-
-        <article class="tool">
-
-          <div class="tool-icon">
-            🔐
-          </div>
-
-          <h3>
-            Generador de contraseñas
-          </h3>
-
-          <p>
-            Genera contraseñas aleatorias para mejorar tu seguridad.
-          </p>
-
-          <button
-            class="btn btn-small"
-            type="button"
-            onclick="showPasswordGenerator()"
-          >
-            Generar
-          </button>
-
-          <div class="tool-status">
-            DISPONIBLE
-          </div>
-
-        </article>
-
-
-        <!-- IVA -->
-
-        <article class="tool">
-
-          <div class="tool-icon">
-            🧾
-          </div>
-
-          <h3>
-            Calculadora IVA
-          </h3>
-
-          <p>
-            Calcula valores netos, IVA y totales.
-          </p>
-
-          <div class="tool-status coming">
-            PRÓXIMAMENTE
-          </div>
-
-        </article>
-
-
-        <!-- STORAGE -->
-
-        <article class="tool">
-
-          <div class="tool-icon">
-            💾
-          </div>
-
-          <h3>
-            Conversor de almacenamiento
-          </h3>
-
-          <p>
-            Convierte fácilmente MB, GB y TB.
-          </p>
-
-          <div class="tool-status coming">
-            PRÓXIMAMENTE
-          </div>
-
-        </article>
-
-
-        <!-- QR -->
-
-        <article class="tool">
-
-          <div class="tool-icon">
-            ▦
-          </div>
-
-          <h3>
-            Generador QR
-          </h3>
-
-          <p>
-            Convierte enlaces o información en códigos QR.
-          </p>
-
-          <div class="tool-status coming">
-            PRÓXIMAMENTE
-          </div>
-
-        </article>
-
-
-        <!-- TEXT -->
-
-        <article class="tool">
-
-          <div class="tool-icon">
-            📝
-          </div>
-
-          <h3>
-            Contador de texto
-          </h3>
-
-          <p>
-            Cuenta caracteres y palabras de cualquier texto.
-          </p>
-
-          <div class="tool-status coming">
-            PRÓXIMAMENTE
-          </div>
-
-        </article>
-
-      </div>
-
-
-      <!-- CALCULADORA PORCENTAJES -->
-
-      <div
-        class="calculator-box"
-        id="percentageCalculator"
-      >
-
-        <h3>
-          🧮 Calculadora de porcentajes
-        </h3>
-
-
-        <div class="calc-grid">
-
-          <input
-            type="number"
-            id="percentageNumber"
-            placeholder="Cantidad"
-          >
-
-          <input
-            type="number"
-            id="percentageValue"
-            placeholder="Porcentaje (%)"
-          >
-
-        </div>
-
-
-        <button
-          class="btn"
-          type="button"
-          onclick="calculatePercentageUI()"
-        >
-          Calcular
-        </button>
-
-
-        <div
-          class="calc-result"
-          id="percentageResult"
-        >
-          Ingresa los valores para calcular.
-        </div>
-
-      </div>
-
-
-      <!-- GENERADOR CONTRASEÑAS -->
-
-      <div
-        class="calculator-box"
-        id="passwordGenerator"
-      >
-
-        <h3>
-          🔐 Generador de contraseñas
-        </h3>
-
-
-        <div class="calc-grid">
-
-          <input
-            type="number"
-            id="passwordLength"
-            min="8"
-            max="64"
-            value="16"
-            placeholder="Longitud"
-          >
-
-          <button
-            class="btn"
-            type="button"
-            onclick="generatePasswordUI()"
-          >
-            Generar contraseña
-          </button>
-
-        </div>
-
-
-        <div
-          class="calc-result"
-          id="passwordResult"
-        >
-          Presiona generar para crear una contraseña.
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
+<section class="tools" id="herramientas"><div class="container"><div class="eyebrow">XINECOM TOOLS · GRATIS</div><h2 class="section-title">Herramientas que <span class="green">sí sirven.</span></h2><p class="section-description">Calculadoras y utilidades gratuitas para estudiantes, personas y profesionales. Todo desde esta página.</p><div class="tools-grid"><article class="tool"><div class="tool-icon">🧮</div><h3>Calculadora de porcentajes</h3><p>Porcentajes, descuentos y aumentos.</p><button class="btn btn-small" type="button" onclick="openXTool('percent')">Usar herramienta →</button><div class="tool-status">DISPONIBLE</div></article>
+<article class="tool"><div class="tool-icon">🎓</div><h3>Mi promedio universitario</h3><p>Promedio ponderado y nota necesaria para aprobar.</p><button class="btn btn-small" type="button" onclick="openXTool('grades')">Usar herramienta →</button><div class="tool-status">DISPONIBLE</div></article>
+<article class="tool"><div class="tool-icon">🔐</div><h3>Generador de contraseñas</h3><p>Crea contraseñas aleatorias en tu navegador.</p><button class="btn btn-small" type="button" onclick="openXTool('password')">Usar herramienta →</button><div class="tool-status">DISPONIBLE</div></article>
+<article class="tool"><div class="tool-icon">💰</div><h3>Sueldo líquido Chile</h3><p>Estimación de remuneración líquida.</p><div class="tool-status coming">EN DESARROLLO</div></article>
+<article class="tool"><div class="tool-icon">📄</div><h3>Finiquito Chile</h3><p>Estimación orientativa de finiquito.</p><div class="tool-status coming">EN DESARROLLO</div></article>
+<article class="tool"><div class="tool-icon">🖥️</div><h3>Diagnóstico básico de PC</h3><p>Guía para detectar problemas comunes.</p><div class="tool-status coming">EN DESARROLLO</div></article>
+<article class="tool"><div class="tool-icon">💾</div><h3>Conversor MB / GB / TB</h3><p>Conversión de unidades de almacenamiento.</p><button class="btn btn-small" type="button" onclick="openXTool('storage')">Usar herramienta →</button><div class="tool-status">DISPONIBLE</div></article>
+<article class="tool"><div class="tool-icon">📝</div><h3>Contador de palabras</h3><p>Cuenta palabras y caracteres al instante.</p><button class="btn btn-small" type="button" onclick="openXTool('words')">Usar herramienta →</button><div class="tool-status">DISPONIBLE</div></article>
+<article class="tool"><div class="tool-icon">💻</div><h3>¿Cuánta RAM necesito?</h3><p>Recomendaciones según el uso de tu equipo.</p><div class="tool-status coming">EN DESARROLLO</div></article></div>
+<div class="x-tool-panel" id="x-tool-panel" hidden>
+<div class="x-tool-header"><h3 id="x-tool-title">Herramienta</h3><button class="btn btn-secondary btn-small" type="button" onclick="document.getElementById('x-tool-panel').hidden=true">Cerrar ✕</button></div>
+<div id="xt-percent" class="x-tool-body" hidden><p>Calcula el porcentaje de una cantidad o el precio tras un descuento o aumento.</p><div class="x-tool-fields"><label>Cantidad <input id="xt-amount" type="number" value="10000" step="any"></label><label>Porcentaje (%) <input id="xt-rate" type="number" value="19" step="any"></label><label>Operación <select id="xt-operation"><option value="part">¿Cuánto es el porcentaje?</option><option value="discount">Aplicar descuento</option><option value="increase">Aplicar aumento</option></select></label></div><button class="btn" type="button" onclick="xtPercentage()">Calcular</button><div class="x-tool-result" id="xt-percent-result" role="status"></div></div>
+<div id="xt-grades" class="x-tool-body" hidden><p>Ingresa notas y ponderaciones que sumen 100%. Deja una nota vacía para saber qué necesitas en esa evaluación.</p><div class="x-tool-fields"><label>Nota máxima <select id="xt-scale"><option value="7">7,0 (Chile)</option><option value="10">10</option><option value="100">100</option></select></label><label>Promedio objetivo <input type="number" id="xt-target" value="4" step="0.1"></label></div><div id="xt-grade-rows"></div><button class="btn btn-secondary" type="button" onclick="xtAddGrade()">+ Agregar evaluación</button> <button class="btn" type="button" onclick="xtGrades()">Calcular promedio</button><div class="x-tool-result" id="xt-grades-result" role="status"></div><p class="x-tool-hint">El redondeo y los requisitos pueden variar según tu institución.</p></div>
+<div id="xt-password" class="x-tool-body" hidden><p>La contraseña se genera localmente en tu navegador y no se envía a XineCom.</p><div class="x-tool-fields"><label>Longitud (8–64) <input type="number" id="xt-pass-length" value="18" min="8" max="64"></label></div><button class="btn" type="button" onclick="xtPassword()">Generar contraseña</button><div class="x-tool-result" id="xt-password-result" role="status" style="overflow-wrap:anywhere"></div></div>
+<div id="xt-storage" class="x-tool-body" hidden><p>Conversión binaria: 1 GB = 1024 MB; 1 TB = 1024 GB.</p><div class="x-tool-fields"><label>Valor <input type="number" id="xt-storage-value" value="1" step="any"></label><label>Desde <select id="xt-storage-from"><option>MB</option><option selected>GB</option><option>TB</option></select></label><label>Hasta <select id="xt-storage-to"><option selected>MB</option><option>GB</option><option>TB</option></select></label></div><button class="btn" type="button" onclick="xtStorage()">Convertir</button><div class="x-tool-result" id="xt-storage-result" role="status"></div></div>
+<div id="xt-words" class="x-tool-body" hidden><p>Escribe o pega el texto para obtener sus estadísticas.</p><label>Tu texto <textarea id="xt-text" rows="6" oninput="xtWords()" placeholder="Escribe aquí..."></textarea></label><div class="x-tool-result" id="xt-words-result" role="status">0 palabras · 0 caracteres</div></div>
+</div></div></section>
   <!-- ======================================================
        RECURSOS DIGITALES
        ====================================================== -->
@@ -4115,7 +3789,8 @@
        FAQ
        ====================================================== -->
 
-  <section id="faq">
+  <section id="academy" style="background:#080c0a"><div class="container"><div class="eyebrow">XINECOM ACADEMY</div><h2 class="section-title">Aprende tecnología <span class="green">sin complicaciones.</span></h2><p class="section-description">Próximamente compartiremos guías prácticas sobre Windows, Microsoft 365, seguridad digital, n8n y automatización.</p><a class="btn" href="#contacto">Proponer un tema →</a></div></section>
+<section id="faq">
 
     <div class="container">
 
@@ -5092,5 +4767,19 @@
   </script>
 
 
+<script>
+(function(){'use strict';
+const labels={percent:'🧮 Calculadora de porcentajes',grades:'🎓 Mi promedio universitario',password:'🔐 Generador de contraseñas',storage:'💾 Conversor de almacenamiento',words:'📝 Contador de palabras'};
+window.openXTool=function(key){const panel=document.getElementById('x-tool-panel');panel.hidden=false;document.getElementById('x-tool-title').textContent=labels[key];document.querySelectorAll('.x-tool-body').forEach(el=>el.hidden=el.id!=='xt-'+key);panel.scrollIntoView({behavior:'smooth',block:'start'});};
+const fmt=n=>Number(n).toLocaleString('es-CL',{maximumFractionDigits:2});
+window.xtPercentage=function(){const a=Number(document.getElementById('xt-amount').value),p=Number(document.getElementById('xt-rate').value),op=document.getElementById('xt-operation').value,r=document.getElementById('xt-percent-result');if(!Number.isFinite(a)||!Number.isFinite(p)||document.getElementById('xt-amount').value===''||document.getElementById('xt-rate').value===''){r.textContent='Ingresa ambos valores.';return;}const val=op==='part'?a*p/100:op==='discount'?a*(1-p/100):a*(1+p/100);r.textContent='Resultado: '+fmt(val);};
+let gradeCount=0;window.xtAddGrade=function(note='',weight=''){gradeCount++;const div=document.createElement('div');div.className='x-grade-row';const n=document.createElement('label');n.textContent='Nota '+gradeCount;const ni=document.createElement('input');ni.type='number';ni.step='0.01';ni.placeholder='Vacía si pendiente';ni.className='xt-grade-note';ni.value=note;n.appendChild(ni);const w=document.createElement('label');w.textContent='Ponderación (%)';const wi=document.createElement('input');wi.type='number';wi.step='0.01';wi.className='xt-grade-weight';wi.value=weight;w.appendChild(wi);const remove=document.createElement('button');remove.type='button';remove.className='btn btn-secondary btn-small';remove.textContent='Quitar';remove.onclick=()=>div.remove();div.append(n,w,remove);document.getElementById('xt-grade-rows').appendChild(div);};
+window.xtGrades=function(){const rows=[...document.querySelectorAll('.x-grade-row')],max=Number(document.getElementById('xt-scale').value),target=Number(document.getElementById('xt-target').value),out=document.getElementById('xt-grades-result');let sum=0,weighted=0,missing=[];if(!rows.length||!Number.isFinite(target)||target<0||target>max){out.textContent='Revisa el objetivo y agrega evaluaciones.';return;}for(const row of rows){const n=row.querySelector('.xt-grade-note'),w=row.querySelector('.xt-grade-weight'),weight=Number(w.value);if(w.value===''||!Number.isFinite(weight)||weight<=0){out.textContent='Todas las ponderaciones deben ser mayores que cero.';return;}sum+=weight;if(n.value===''){missing.push(weight);continue;}const note=Number(n.value);if(!Number.isFinite(note)||note<0||note>max){out.textContent='Revisa las notas según tu escala.';return;}weighted+=note*weight/100;}if(Math.abs(sum-100)>0.001){out.textContent='Las ponderaciones suman '+fmt(sum)+'%. Deben sumar 100%.';return;}if(missing.length>1){out.textContent='Deja como máximo una evaluación pendiente.';return;}if(missing.length===1){const need=(target-weighted)/(missing[0]/100);out.textContent='Nota necesaria: '+fmt(need)+(need>max?' (supera la nota máxima)':need<0?' (ya alcanzaste el objetivo)':'');}else{out.textContent='Promedio ponderado: '+fmt(weighted)+(weighted>=target?' · Objetivo alcanzado':' · Bajo el objetivo');}};
+window.xtPassword=function(){const out=document.getElementById('xt-password-result'),length=Number(document.getElementById('xt-pass-length').value);if(!Number.isInteger(length)||length<8||length>64){out.textContent='Elige una longitud entre 8 y 64.';return;}if(!window.crypto||!window.crypto.getRandomValues){out.textContent='Tu navegador no permite generar contraseñas seguras en este contexto.';return;}const chars='ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz23456789!@#$%&*?';let s='';const max=Math.floor(256/chars.length)*chars.length;while(s.length<length){const bytes=new Uint8Array(length*2);crypto.getRandomValues(bytes);for(const b of bytes){if(b<max)s+=chars[b%chars.length];if(s.length===length)break;}}out.textContent=s;};
+window.xtStorage=function(){const raw=document.getElementById('xt-storage-value').value,n=Number(raw),a=document.getElementById('xt-storage-from').value,b=document.getElementById('xt-storage-to').value,out=document.getElementById('xt-storage-result');if(raw===''||!Number.isFinite(n)||n<0){out.textContent='Ingresa un valor válido.';return;}const exp={MB:0,GB:1,TB:2};out.textContent=fmt(n*Math.pow(1024,exp[a]-exp[b]))+' '+b;};
+window.xtWords=function(){const t=document.getElementById('xt-text').value;document.getElementById('xt-words-result').textContent=(t.trim()?t.trim().split(/\s+/u).length:0)+' palabras · '+[...t].length+' caracteres';};
+xtAddGrade('5','30');xtAddGrade('6','30');xtAddGrade('','40');
+})();
+</script>
 </body>
 </html>
