@@ -3995,6 +3995,8 @@
       <form
         class="form"
         id="contactForm"
+        action="https://formspree.io/f/mzedgdrv"
+        method="POST"
         onsubmit="sendLead(event)"
       >
 
@@ -4030,7 +4032,7 @@
           <input
             type="email"
             id="contactEmail"
-            name="correo"
+            name="email"
             placeholder="tu@email.com"
             autocomplete="email"
             required
@@ -4201,231 +4203,39 @@
        ====================================================== */
 
     async function sendLead(event) {
-
       event.preventDefault();
+      const form = document.getElementById("contactForm");
+      const button = document.getElementById("contactSubmit");
+      const status = document.getElementById("contactStatus");
+      if (!form.reportValidity()) return;
 
-
-      const form =
-        document.getElementById(
-          "contactForm"
-        );
-
-
-      const button =
-        document.getElementById(
-          "contactSubmit"
-        );
-
-
-      const status =
-        document.getElementById(
-          "contactStatus"
-        );
-
-
-      const name =
-        document.getElementById(
-          "contactName"
-        )
-        .value
-        .trim();
-
-
-      const email =
-        document.getElementById(
-          "contactEmail"
-        )
-        .value
-        .trim();
-
-
-      const service =
-        document.getElementById(
-          "contactService"
-        )
-        .value;
-
-
-      const message =
-        document.getElementById(
-          "contactMessage"
-        )
-        .value
-        .trim();
-
-
-      /* ------------------------------------------------------
-         VALIDACIÓN BÁSICA
-         ------------------------------------------------------ */
-
-      if (
-        !name ||
-        !email ||
-        !service ||
-        !message
-      ) {
-
-        status.style.display =
-          "block";
-
-
-        status.textContent =
-          "⚠️ Completa todos los campos antes de enviar.";
-
-
-        return;
-
-      }
-
-
-      /* ------------------------------------------------------
-         PAYLOAD PARA N8N
-
-         Estos nombres deben mantenerse porque nuestro
-         workflow utiliza:
-
-         nombre
-         correo
-         servicio
-         mensaje
-         tipo_lead
-         origen
-         fecha
-         ------------------------------------------------------ */
-
-      const data = {
-
-        nombre:
-          name,
-
-        correo:
-          email,
-
-        servicio:
-          service,
-
-        mensaje:
-          message,
-
-        tipo_lead:
-          "Nuevo Cliente",
-
-        origen:
-          "Sitio web XineCom Digital",
-
-        fecha:
-          new Date().toISOString()
-
-      };
-
+      button.disabled = true;
+      button.textContent = "Enviando...";
+      status.style.display = "none";
+      status.setAttribute("role", "status");
 
       try {
-
-
-        button.disabled =
-          true;
-
-
-        button.textContent =
-          "Enviando...";
-
-
-        status.style.display =
-          "none";
-
-
-        const response =
-          await fetch(
-
-            N8N_WEBHOOK_URL,
-
-            {
-
-              method:
-                "POST",
-
-              headers: {
-
-                "Content-Type":
-                  "application/json"
-
-              },
-
-              body:
-                JSON.stringify(data)
-
-            }
-
-          );
-
-
-        if (
-          !response.ok
-        ) {
-
-          throw new Error(
-            "Error HTTP " +
-            response.status
-          );
-
-        }
-
-
-        /* ----------------------------------------------------
-           ÉXITO
-           ---------------------------------------------------- */
-
-        status.style.display =
-          "block";
-
-
-        status.textContent =
-          "✅ Solicitud enviada correctamente. Nos pondremos en contacto contigo.";
-
-
+        const data = new FormData(form);
+        data.append("tipo_lead", "Nuevo Cliente");
+        data.append("origen", "Sitio web XineCom Digital");
+        data.append("fecha", new Date().toISOString());
+        const response = await fetch(form.action, {
+          method: "POST",
+          body: data,
+          headers: { "Accept": "application/json" }
+        });
+        if (!response.ok) throw new Error("Error HTTP " + response.status);
+        status.textContent = "✅ Solicitud enviada correctamente. Nos pondremos en contacto contigo.";
+        status.style.display = "block";
         form.reset();
-
-
       } catch (error) {
-
-
-        console.error(
-          "Error enviando lead a XineCom:",
-          error
-        );
-
-
-        /* ----------------------------------------------------
-           RESPALDO
-
-           No abrimos automáticamente el correo porque
-           puede resultar confuso para el usuario.
-
-           Mostramos nuestro correo para que pueda
-           contactarnos manualmente.
-           ---------------------------------------------------- */
-
-        status.style.display =
-          "block";
-
-
-        status.textContent =
-          "⚠️ No pudimos enviar la solicitud automáticamente. Puedes escribirnos a xinecomdigital@gmail.com.";
-
-
+        console.error("Error enviando formulario XineCom:", error);
+        status.textContent = "⚠️ No pudimos enviar la solicitud. Intenta nuevamente o escríbenos a xinecomdigital@gmail.com.";
+        status.style.display = "block";
       } finally {
-
-
-        button.disabled =
-          false;
-
-
-        button.textContent =
-          "Enviar solicitud →";
-
-
+        button.disabled = false;
+        button.textContent = "Enviar solicitud →";
       }
-
     }
 
 
