@@ -2772,6 +2772,17 @@ body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-ser
 @media(max-width:760px){.xc-price-panel{padding:21px}.xc-price-list div{flex-wrap:wrap}.xc-hero-controls{padding-bottom:22px}}
 @media(prefers-reduced-motion:reduce){.xc-hero-slide{animation:none}}
 </style>
+
+<style id="xc-microbusiness-styles">
+.xc-microbusiness{margin-top:36px;padding:clamp(20px,4vw,38px);border:1px solid rgba(0,255,136,.34);border-radius:24px;background:linear-gradient(130deg,#0e2719,#07120c);box-shadow:0 24px 70px #0004}
+.xc-micro-kicker{display:block;color:#00ff88;font-size:11px;font-weight:800;letter-spacing:.14em;margin-bottom:12px}
+.xc-micro-intro h3{font-size:clamp(25px,3.5vw,39px);line-height:1.17;letter-spacing:-.04em}.xc-micro-intro h3 span{color:#00ff88}.xc-micro-intro>p{max-width:760px;color:#b9cdbf;margin:14px 0;line-height:1.7}.xc-micro-price{color:#d5e9d9;font-size:14px}.xc-micro-price strong{color:#00ff88}
+.xc-micro-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:25px 0}
+.xc-micro-item{background:#0a1910;border:1px solid #22583a;border-radius:14px;padding:18px;min-width:0}.xc-micro-item>span{font-size:24px}.xc-micro-item h4{font-size:15px;margin:10px 0 7px;color:#f0fff4}.xc-micro-item p{font-size:12px;line-height:1.65;color:#afc5b5}
+.xc-micro-footer{display:flex;align-items:center;justify-content:space-between;gap:24px}.xc-micro-footer p{max-width:680px;font-size:12px;color:#b6cdbb;line-height:1.65}.xc-micro-cta{flex-shrink:0;cursor:pointer;background:#00ff88;color:#05190d;font-weight:800;white-space:nowrap}
+@media(max-width:900px){.xc-micro-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.xc-micro-footer{flex-direction:column;align-items:stretch}.xc-micro-cta{width:100%}}
+@media(max-width:520px){.xc-micro-grid{grid-template-columns:1fr}.xc-microbusiness{padding:19px}.xc-micro-intro h3{font-size:27px}}
+</style>
 </head>
 <body>
 <!-- ======================================================
@@ -2944,11 +2955,11 @@ body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-ser
 <p>
 
             Solución de problemas de Windows,
-            programas, cuentas, conectividad,
+            programas, cuentas, impresoras,
             periféricos y errores frecuentes.
 
           </p>
-<div class="price">Desde $10.000</div><div class="xc-commercial-mode">Remoto o presencial</div><p class="xc-commercial-scope">Incluye revisión de Windows, programas, conectividad y periféricos. Reparaciones, repuestos o trabajos adicionales se cotizan por separado.</p>
+<div class="price">Desde $10.000</div><div class="xc-commercial-mode">Remoto o presencial</div><p class="xc-commercial-scope">Incluye revisión de Windows, programas y periféricos compatibles. Reparaciones, repuestos o trabajos adicionales se cotizan por separado.</p>
 <button class="btn btn-secondary btn-small xc-service-btn" data-service="Soporte TI" type="button">Solicitar soporte →</button></article>
 <!-- OPTIMIZACIÓN -->
 <article class="card">
@@ -3041,7 +3052,25 @@ body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-ser
 <article class="card"><div class="card-icon">🖨️</div><h3>Configuración de impresoras</h3><p>Instalación, conexión y configuración de impresoras compatibles.</p><div class="price">$15.000</div><div class="xc-commercial-mode">Remoto o presencial según el caso</div><p class="xc-commercial-scope">No incluye reparaciones físicas, repuestos ni consumibles.</p><button class="btn btn-secondary btn-small xc-service-btn" data-service="Configuración de impresoras" type="button">Configurar impresora →</button></article>
 <article class="card"><div class="card-icon">🧰</div><h3>Mantención física PC / notebook</h3><p>Limpieza interna preventiva de equipos convencionales, previa evaluación.</p><div class="price">Desde $25.000</div><div class="xc-commercial-mode">Presencial</div><p class="xc-commercial-scope">El alcance y cualquier material o trabajo adicional se acuerdan antes del servicio.</p><button class="btn btn-secondary btn-small xc-service-btn" data-service="Mantención física" type="button">Solicitar mantención →</button></article>
 <article class="card"><div class="card-icon">🤖</div><h3>Automatización personalizada</h3><p>Automatizaciones para negocios, adaptadas al flujo de trabajo y herramientas disponibles.</p><div class="price">Cotización</div><div class="xc-commercial-mode">Empresas · evaluación previa</div><p class="xc-commercial-scope">XineCom Stock está en desarrollo; se puede solicitar una demostración.</p><button class="btn btn-secondary btn-small xc-service-btn" data-service="Automatización" type="button">Cotizar automatización →</button></article>
-</div><div class="xc-support-lab"><div><span class="eyebrow">CENTRO DE AYUDA</span><h3>¿No sabes qué servicio elegir?</h3><p>Selecciona lo que te ocurre y te orientamos hacia la mejor opción.</p></div><div class="xc-issue-grid"><button data-service="Optimización de PC" type="button">🐢 Mi PC está lento <span>→</span></button><button data-service="Soporte TI" type="button">🌐 Problemas de internet <span>→</span></button><button data-service="Seguridad informática" type="button">🛡️ Sospecho de un virus <span>→</span></button><button data-service="Instalación de Windows" type="button">🪟 Problemas con Windows <span>→</span></button><button data-service="Soporte TI" type="button">📧 Problemas con correo <span>→</span></button><button data-service="Diagnóstico de PC" type="button">🔍 No sé qué le pasa <span>→</span></button></div></div>
+
+<!-- NUEVOS SERVICIOS TI · XINECOM -->
+<article class="card"><div class="card-icon">🧩</div><h3>Instalación de SSD y RAM</h3><p>Instalación o ampliación de almacenamiento SSD y memoria RAM compatible para tu equipo.</p><div class="price">Desde $15.000</div><div class="xc-commercial-mode">Presencial · previa evaluación</div><p class="xc-commercial-scope">Mano de obra. Componentes y migración de datos se cotizan aparte.</p><button class="btn btn-secondary btn-small xc-service-btn" data-service="Instalación de SSD y RAM" type="button">Mejorar mi equipo →</button></article>
+<article class="card"><div class="card-icon">📦</div><h3>Instalación de programas</h3><p>Instalación y configuración de aplicaciones compatibles, con revisión básica de funcionamiento.</p><div class="price">Desde $8.000</div><div class="xc-commercial-mode">Remoto o presencial</div><p class="xc-commercial-scope">No incluye licencias de software ni programas de pago.</p><button class="btn btn-secondary btn-small xc-service-btn" data-service="Instalación de programas" type="button">Instalar programas →</button></article>
+<article class="card"><div class="card-icon">📧</div><h3>Correo y Microsoft 365</h3><p>Configuración de Outlook, correo electrónico y aplicaciones Microsoft 365 con cuentas autorizadas.</p><div class="price">Desde $12.000</div><div class="xc-commercial-mode">Remoto o presencial</div><p class="xc-commercial-scope">Suscripciones, licencias y recuperación de cuentas se evalúan por separado.</p><button class="btn btn-secondary btn-small xc-service-btn" data-service="Correo y Microsoft 365" type="button">Configurar mi correo →</button></article>
+<article class="card"><div class="card-icon">🔄</div><h3>Migración de información</h3><p>Traslado de documentos y archivos personales entre equipos en funcionamiento.</p><div class="price">Desde $18.000</div><div class="xc-commercial-mode">Presencial o remoto según el caso</div><p class="xc-commercial-scope">Depende del volumen de datos. No incluye recuperación de unidades dañadas.</p><button class="btn btn-secondary btn-small xc-service-btn" data-service="Migración de información" type="button">Solicitar migración →</button></article>
+<article class="card"><div class="card-icon">🛠️</div><h3>Solución de errores de Windows</h3><p>Diagnóstico y solución de fallas de arranque, actualizaciones y errores del sistema operativo.</p><div class="price">Desde $15.000</div><div class="xc-commercial-mode">Remoto o presencial según el problema</div><p class="xc-commercial-scope">Reinstalaciones, respaldo y repuestos se cotizan por separado cuando sean necesarios.</p><button class="btn btn-secondary btn-small xc-service-btn" data-service="Errores de Windows" type="button">Solucionar Windows →</button></article>
+</div>
+<div class="xc-microbusiness" aria-labelledby="xc-micro-title">
+  <div class="xc-micro-intro"><span class="xc-micro-kicker">🏪 XINECOM PARA TU NEGOCIO</span><h3 id="xc-micro-title">Tu negocio funcionando. <span>Sin complicaciones.</span></h3><p>Soporte tecnológico para almacenes, minimarkets, oficinas y microempresas. Nos enfocamos en computadores, impresoras, programas y correo; sin servicios de redes ni cableado.</p><div class="xc-micro-price">Soporte para microempresas <strong>desde $30.000</strong> · alcance a cotizar</div></div>
+  <div class="xc-micro-grid">
+    <div class="xc-micro-item"><span>💻</span><h4>Computadores de trabajo</h4><p>Windows, optimización y solución de problemas cotidianos.</p></div>
+    <div class="xc-micro-item"><span>🖨️</span><h4>Impresoras y periféricos</h4><p>Instalación y configuración de dispositivos compatibles.</p></div>
+    <div class="xc-micro-item"><span>📧</span><h4>Correo y Microsoft 365</h4><p>Configuración de cuentas y aplicaciones de oficina.</p></div>
+    <div class="xc-micro-item"><span>📦</span><h4>XineCom Stock</h4><p>Inventario y alertas por correo. Solución en desarrollo; demostraciones sujetas a disponibilidad.</p></div>
+  </div>
+  <div class="xc-micro-footer"><p>Atención remota o presencial según el caso. Visitas en comunas de la Región Metropolitana, sujetas a disponibilidad, con recargo del 10 % sobre el servicio. El presupuesto se confirma antes de trabajar.</p><button class="btn xc-micro-cta" data-service="Soporte para empresa" data-message="Hola, quiero cotizar soporte TI para mi microempresa. Tipo de negocio: " type="button">Cotizar para mi negocio →</button></div>
+</div>
+<div class="xc-support-lab"><div><span class="eyebrow">CENTRO DE AYUDA</span><h3>¿No sabes qué servicio elegir?</h3><p>Selecciona lo que te ocurre y te orientamos hacia la mejor opción.</p></div><div class="xc-issue-grid"><button data-service="Optimización de PC" type="button">🐢 Mi PC está lento <span>→</span></button><button data-service="Configuración de impresoras" type="button">🖨️ Problemas con impresora <span>→</span></button><button data-service="Seguridad informática" type="button">🛡️ Sospecho de un virus <span>→</span></button><button data-service="Instalación de Windows" type="button">🪟 Problemas con Windows <span>→</span></button><button data-service="Soporte TI" type="button">📧 Problemas con correo <span>→</span></button><button data-service="Diagnóstico de PC" type="button">🔍 No sé qué le pasa <span>→</span></button></div></div>
 </div>
 </section><section class="tools" id="herramientas"><div class="container"><div class="eyebrow">XINECOM TOOLS · GRATIS</div><h2 class="section-title">Herramientas que <span class="green">sí sirven.</span></h2><p class="section-description">Calculadoras y utilidades gratuitas para estudiantes, personas y profesionales. Todo desde esta página.</p><div class="tools-grid"><article class="tool"><div class="tool-icon">🧮</div><h3>Calculadora de porcentajes</h3><p>Porcentajes, descuentos y aumentos.</p><button class="btn btn-small" onclick="openXTool('percent')" type="button">Usar herramienta →</button><div class="tool-status">DISPONIBLE</div></article>
 <article class="tool"><div class="tool-icon">🎓</div><h3>Mi promedio universitario</h3><p>Promedio ponderado y nota necesaria para aprobar.</p><button class="btn btn-small" onclick="openXTool('grades')" type="button">Usar herramienta →</button><div class="tool-status">DISPONIBLE</div></article>
@@ -3544,6 +3573,11 @@ body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-ser
 <option value="Diagnóstico de PC">
               Diagnóstico de PC
             </option>
+<option value="Instalación de SSD y RAM">Instalación de SSD y RAM</option>
+<option value="Instalación de programas">Instalación de programas</option>
+<option value="Correo y Microsoft 365">Correo y Microsoft 365</option>
+<option value="Migración de información">Migración de información</option>
+<option value="Errores de Windows">Solución de errores de Windows</option>
 <option value="Respaldo de archivos">Respaldo de archivos</option>
 <option value="Configuración de impresoras">Configuración de impresoras</option>
 <option value="Mantención física">Mantención física</option>
