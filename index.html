@@ -2979,8 +2979,263 @@ section:not(.hero):not(.xc-quicklinks){background-image:radial-gradient(circle a
 @media(max-width:650px){#herramientas .xc-network-art{top:-45px;height:320px;opacity:.38}#herramientas::before{top:-65px;height:145px}}
 @media(prefers-reduced-motion:reduce){#herramientas .xc-network-art svg{animation:none}}
 </style>
+<style id="xc-neotech-33-global-art">
+/* XineCom NeoTech 3.3 — ONE continuous technological canvas across the entire site. */
+:root{--xc-space:#080f17;--xc-cyan:#66dded;--xc-green:#00ff88}
+html{background:var(--xc-space)}
+body{background:transparent!important;isolation:isolate}
+body::before{
+ content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;
+ background:
+ radial-gradient(ellipse 85% 65% at 82% 8%,rgba(0,164,127,.105),transparent 74%),
+ radial-gradient(ellipse 65% 72% at 4% 82%,rgba(34,125,161,.12),transparent 80%),
+ linear-gradient(145deg,#070e13 0%,#0a1920 45%,#09151b 72%,#070e13 100%);
+}
+.xc-global-tech{
+ position:fixed;inset:0;z-index:-1;pointer-events:none;overflow:hidden;
+ opacity:.46;mask-image:linear-gradient(180deg,transparent 0%,#000 12%,#000 87%,transparent 100%);
+ -webkit-mask-image:linear-gradient(180deg,transparent 0%,#000 12%,#000 87%,transparent 100%);
+}
+.xc-global-tech svg{width:100%;height:100%;object-fit:cover;min-height:100%}
+.xc-global-tech .xc-wave{transform-origin:center;animation:xc-global-drift 24s ease-in-out infinite alternate}
+.xc-global-tech .xc-wave:nth-of-type(2){animation-duration:31s;animation-direction:alternate-reverse}
+@keyframes xc-global-drift{from{transform:translate(-13px,5px)}to{transform:translate(16px,-8px)}}
+/* No section-wide hard backgrounds: the same dark canvas is always visible. */
+body section,body .xc-quicklinks,body .value-bar,body .xc-about,
+body section#herramientas,body section#academy,body section#servicios,
+body section#automatizacion,body section#empresas,body section#recursos,
+body section#faq,body section#contacto,body section.trust,body section.contact,
+body section.services,body section.business,body section.xc-faq-section,
+body section.hero.xc-hero-carousel{
+ background-color:transparent!important;
+ background-image:none!important;
+}
+/* Separate content with a soft, gradual glow instead of a sharp color block. */
+body section{position:relative;isolation:isolate}
+body section:not(.hero)::before{
+ content:"";position:absolute;inset:-38px 0;z-index:-1;pointer-events:none;
+ background:radial-gradient(ellipse 64% 47% at 50% 45%,rgba(0,255,136,.035),transparent 85%);
+}
+body section:nth-of-type(3n)::before{
+ background:radial-gradient(ellipse 68% 50% at 75% 38%,rgba(74,191,222,.045),transparent 85%);
+}
+body section:nth-of-type(3n + 2)::before{
+ background:radial-gradient(ellipse 65% 55% at 16% 58%,rgba(0,255,136,.043),transparent 85%);
+}
+body section.hero.xc-hero-carousel{background:transparent!important}
+body section.hero.xc-hero-carousel::before{opacity:.55}
+body #herramientas::before{
+ content:"";position:absolute;inset:-90px 0!important;z-index:-1!important;
+ background:radial-gradient(ellipse 70% 50% at 65% 28%,rgba(0,235,155,.07),transparent 88%)!important;
+}
+body #herramientas::after{
+ content:"";position:absolute;inset:-80px 0;z-index:-1;pointer-events:none;
+ background:radial-gradient(ellipse 60% 50% at 28% 60%,rgba(64,192,225,.055),transparent 90%)!important;
+}
+body #herramientas .xc-network-art{opacity:.46;mask-image:linear-gradient(to bottom,transparent,#000 24%,#000 60%,transparent)}
+/* Consistent tech surfaces across all cards and panels */
+body .card,body .tool,body .xc-about-person,body .xc-business-benefits>div,
+body .xc-quicklinks a{
+ box-shadow:0 16px 48px rgba(0,0,0,.17),inset 0 1px rgba(255,255,255,.035);
+ backdrop-filter:blur(5px);-webkit-backdrop-filter:blur(5px);
+}
+body .card:hover,body .tool:hover{box-shadow:0 18px 48px rgba(0,0,0,.28),0 0 25px rgba(0,255,136,.075)}
+/* Subtle circuit accents on headings, without cluttering copy */
+body .section-title{position:relative}
+body .section-title::after{
+ content:"";display:block;width:58px;height:2px;margin-top:14px;
+ background:linear-gradient(90deg,#00ff88,#69dbea,transparent);
+ box-shadow:0 0 13px rgba(0,255,136,.18);
+}
+body .xc-tools-intro .section-title::after{display:none}
+@media(max-width:700px){
+ .xc-global-tech{opacity:.23}
+ body section:not(.hero)::before{inset:-20px 0}
+ body #herramientas .xc-network-art{opacity:.26}
+}
+@media(prefers-reduced-motion:reduce){.xc-global-tech .xc-wave{animation:none}}
+</style>
+
+<style id="xc-neotech-34-complete-redesign">
+:root{
+ --xc-space:#090b10!important;--xc-cyan:#b6a1ff!important;
+ --xc-violet:#b8a1ff;--xc-green:#00ff88;
+ --xc-line:rgba(184,161,255,.22);
+ --xc-panel:rgba(17,17,26,.82);
+}
+html{background:#090b10!important;scroll-behavior:smooth}
+body{background:transparent!important;color:#e9eaf0}
+body::before{
+ background:
+ radial-gradient(ellipse 70% 50% at 87% 7%,rgba(112,64,173,.13),transparent 78%),
+ radial-gradient(ellipse 70% 62% at 9% 50%,rgba(0,185,115,.065),transparent 85%),
+ radial-gradient(ellipse 75% 52% at 85% 92%,rgba(112,64,173,.09),transparent 82%),
+ linear-gradient(180deg,#080b0e,#101019 45%,#0a0e12 76%,#090b10)!important;
+}
+.xc-global-tech{opacity:.58!important}
+.xc-global-tech svg{filter:hue-rotate(43deg)}
+/* One continuous backdrop, without rectangular section backgrounds. */
+body header#inicio,body section,body footer{
+ background-color:transparent!important;background-image:none!important;
+}
+body section{position:relative;isolation:isolate;overflow:clip}
+body section::before{
+ content:""!important;position:absolute!important;inset:-12% 0!important;
+ pointer-events:none;z-index:-1!important;opacity:1!important;
+ background:radial-gradient(ellipse 65% 46% at 76% 43%,rgba(113,77,184,.072),transparent 84%)!important;
+}
+body section:nth-of-type(2n)::before{
+ background:radial-gradient(ellipse 64% 46% at 18% 48%,rgba(0,240,130,.046),transparent 86%)!important;
+}
+body #herramientas::before{
+ background:radial-gradient(ellipse 68% 49% at 75% 38%,rgba(135,91,204,.075),transparent 86%)!important;
+}
+body #herramientas::after{background:none!important}
+body #herramientas .xc-network-art{opacity:.32!important;filter:hue-rotate(38deg)}
+/* A fine digital track makes every section feel connected. */
+body section:not(.value-bar):not(.xc-quicklinks)::after{
+ content:"";position:absolute;pointer-events:none;z-index:0;
+ top:0;left:max(3%,calc((100vw - 1320px)/2));width:140px;height:1px;
+ background:linear-gradient(90deg,#00ff88,#b8a1ff,transparent);
+ box-shadow:0 0 16px rgba(184,161,255,.27);
+}
+body section>.container{position:relative;z-index:1}
+body section .section-title,body section h2{
+ letter-spacing:-.025em;text-wrap:balance;
+}
+body .section-title::after{
+ background:linear-gradient(90deg,#00ff88,#b8a1ff,transparent)!important;
+ box-shadow:0 0 16px rgba(184,161,255,.2)!important;
+}
+body section .eyebrow,body section .kicker,body .xc-eyebrow{
+ letter-spacing:.13em;
+}
+/* Translucent glass panels, rather than flat green blocks. */
+body .card,body .tool,body .feature,body .faq-item,
+body .xc-faq-item,body .business-card,body .resource-card,
+body .trust-card,body .xc-about-person,body .xc-quicklinks a,
+body .xc-tool-card,body .academy-card,body .automation-card,
+body .xc-business-benefits>div{
+ background:linear-gradient(145deg,rgba(24,22,34,.91),rgba(12,17,19,.9))!important;
+ border:1px solid rgba(160,135,214,.19)!important;
+ box-shadow:0 10px 34px rgba(0,0,0,.16),inset 0 1px rgba(255,255,255,.035)!important;
+ backdrop-filter:blur(7px);
+ -webkit-backdrop-filter:blur(7px);
+ transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease;
+}
+body .card:hover,body .tool:hover,body .xc-tool-card:hover,
+body .resource-card:hover,body .academy-card:hover{
+ border-color:rgba(0,255,136,.48)!important;
+ box-shadow:0 15px 42px rgba(0,0,0,.3),0 0 24px rgba(139,100,203,.095)!important;
+ transform:translateY(-3px);
+}
+/* Icons and section accents remain brand-green, violet adds atmosphere. */
+body .card .icon,body .tool .icon,body .xc-quicklinks svg{
+ filter:drop-shadow(0 0 7px rgba(0,255,136,.12));
+}
+body .badge,body .tag,body .pill{
+ border-color:rgba(184,161,255,.23);
+}
+body input,body select,body textarea{
+ background:rgba(11,14,19,.88)!important;
+ border-color:rgba(184,161,255,.25)!important;
+ color:#f1f3f6!important;
+}
+body input:focus,body select:focus,body textarea:focus{
+ outline-color:#b8a1ff!important;border-color:#b8a1ff!important;
+ box-shadow:0 0 0 3px rgba(184,161,255,.1)!important;
+}
+body button:focus-visible,body a:focus-visible{
+ outline:2px solid #b8a1ff!important;outline-offset:3px;
+}
+body .btn,body .xc-service-btn,body button[type="submit"]{
+ transition:transform .2s ease,box-shadow .2s ease,filter .2s ease;
+}
+body .btn:hover,body .xc-service-btn:hover,body button[type="submit"]:hover{
+ box-shadow:0 0 20px rgba(0,255,136,.12);
+}
+/* Header: a softly illuminated command deck, not a hard colored slab. */
+body header#inicio{
+ position:relative;isolation:isolate;overflow:hidden;
+ min-height:min(740px,100svh);
+}
+body header#inicio::before{
+ content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
+ background:
+ radial-gradient(ellipse 40% 60% at 85% 40%,rgba(149,94,210,.17),transparent 82%),
+ radial-gradient(ellipse 48% 55% at 22% 66%,rgba(0,255,136,.07),transparent 78%),
+ linear-gradient(180deg,rgba(12,12,19,.15),rgba(9,11,16,0) 75%,rgba(9,11,16,.05));
+}
+body header#inicio::after{
+ content:"";position:absolute;pointer-events:none;z-index:-1;
+ inset:0;opacity:.19;
+ background:repeating-linear-gradient(90deg,transparent 0 78px,rgba(184,161,255,.18) 79px 80px),
+ repeating-linear-gradient(0deg,transparent 0 78px,rgba(0,255,136,.10) 79px 80px);
+ mask-image:linear-gradient(90deg,transparent,#000 40%,#000 90%,transparent);
+}
+body .xc-hero-slide{background:transparent!important}
+body nav{
+ background:rgba(11,12,18,.84)!important;
+ border-color:rgba(184,161,255,.16)!important;
+ backdrop-filter:blur(18px)!important;-webkit-backdrop-filter:blur(18px)!important;
+}
+body nav a:hover{color:#b8a1ff}
+body .xc-quicklinks{background:transparent!important}
+body .value-bar{background:transparent!important}
+/* Flowing circuit design integrated into EVERY major section, not just Tools. */
+.xc34-section-art{
+ position:absolute;top:0;right:0;width:min(48%,640px);height:240px;
+ pointer-events:none;z-index:0;opacity:.28;
+ mask-image:linear-gradient(to left,#000 35%,transparent 100%);
+ -webkit-mask-image:linear-gradient(to left,#000 35%,transparent 100%);
+}
+.xc34-section-art svg{width:100%;height:100%}
+body section:nth-of-type(2n) .xc34-section-art{
+ left:0;right:auto;transform:scaleX(-1);opacity:.21;
+}
+.xc34-section-art path{fill:none;stroke:#b8a1ff;stroke-width:.9;stroke-opacity:.55}
+.xc34-section-art circle{fill:#00ff88;filter:drop-shadow(0 0 4px #00ff88)}
+.xc34-section-art .xc34-violet{fill:#b8a1ff;filter:drop-shadow(0 0 5px #b8a1ff)}
+/* Unified bottom-of-page contact and footer. */
+body #contacto{padding-bottom:clamp(70px,8vw,120px)}
+body footer{
+ border-top:1px solid rgba(184,161,255,.13)!important;
+ box-shadow:0 -25px 65px rgba(89,61,135,.04);
+}
+/* Better small-screen rhythm and accessible reduced motion. */
+@media(max-width:750px){
+ .xc34-section-art{width:80%;height:170px;opacity:.13}
+ body section:nth-of-type(2n) .xc34-section-art{opacity:.11}
+ body header#inicio{min-height:auto}
+ body header#inicio::after{opacity:.10}
+ body .card:hover,body .tool:hover,body .xc-tool-card:hover{transform:none}
+}
+@media(prefers-reduced-motion:reduce){
+ body .card,body .tool,body .xc-tool-card{transition:none!important}
+}
+</style>
 </head>
 <body>
+<div aria-hidden="true" class="xc-global-tech"><svg preserveaspectratio="xMidYMid slice" viewbox="0 0 1440 900" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<pattern height="72" id="xc33grid" patternunits="userSpaceOnUse" width="72"><path d="M72 0H0V72" fill="none" stroke="#9879c6" stroke-opacity=".14" stroke-width=".55"></path></pattern>
+<radialgradient id="xc33glow"><stop stop-color="#00ff88" stop-opacity=".22"></stop><stop offset="1" stop-color="#00ff88" stop-opacity="0"></stop></radialgradient>
+<lineargradient id="xc33line" x1="0" x2="1" y1="0" y2="0"><stop stop-color="#00ff88" stop-opacity="0"></stop><stop offset=".5" stop-color="#00ff88" stop-opacity=".43"></stop><stop offset="1" stop-color="#b8a1ff" stop-opacity=".04"></stop></lineargradient>
+</defs>
+<rect fill="url(#xc33grid)" height="900" width="1440"></rect>
+<ellipse cx="1130" cy="190" fill="url(#xc33glow)" rx="390" ry="230"></ellipse>
+<g class="xc-wave" fill="none" stroke="url(#xc33line)" stroke-width="1">
+<path d="M-90 380 C200 150 390 550 680 300 S1130 530 1530 195"></path>
+<path d="M-90 415 C230 200 440 575 710 330 S1150 550 1530 230"></path>
+<path d="M-90 450 C240 260 470 600 740 360 S1180 590 1530 275"></path>
+<path d="M-90 485 C280 320 500 625 770 395 S1210 610 1530 310"></path>
+</g>
+<g fill="none" stroke="#b8a1ff" stroke-opacity=".20" stroke-width="1">
+<path d="M35 710L155 660L268 704L375 605L490 650L612 575L730 625L850 535L970 580L1090 490L1230 530L1395 445"></path>
+<path d="M155 660L175 760L268 704L325 790L375 605L490 650L525 775L612 575L730 625L760 740L850 535L970 580L1035 700L1090 490L1230 530L1300 675L1395 445"></path>
+</g>
+<g fill="#6af6c6" fill-opacity=".48"><circle cx="155" cy="660" r="3"></circle><circle cx="268" cy="704" r="2"></circle><circle cx="375" cy="605" r="3"></circle><circle cx="490" cy="650" r="2"></circle><circle cx="612" cy="575" r="3"></circle><circle cx="730" cy="625" r="2"></circle><circle cx="850" cy="535" r="3"></circle><circle cx="970" cy="580" r="2"></circle><circle cx="1090" cy="490" r="3"></circle><circle cx="1230" cy="530" r="2"></circle><circle cx="1395" cy="445" r="3"></circle></g>
+</svg></div>
 <!-- ======================================================
        NAVEGACIÓN
        ====================================================== -->
@@ -3089,7 +3344,16 @@ section:not(.hero):not(.xc-quicklinks){background-image:radial-gradient(circle a
 <!-- ======================================================
        SERVICIOS
        ====================================================== -->
-<section class="services" id="servicios">
+<section class="services" id="servicios"><div aria-hidden="true" class="xc34-section-art"><svg preserveaspectratio="xMidYMid meet" viewbox="0 0 560 240">
+<path d="M0 92H105L138 60H220L260 106H345L375 78H455L490 120H560"></path>
+<path d="M75 200H180L220 170H298L328 198H410L455 155H560"></path>
+<path d="M200 0V42L245 86M405 0V35L360 75M290 240V205L340 170"></path>
+<path d="M100 0V25H175L210 60M470 240V210H510L540 175"></path>
+<circle cx="138" cy="60" r="3"></circle><circle cx="260" cy="106" r="3"></circle>
+<circle class="xc34-violet" cx="375" cy="78" r="3"></circle><circle cx="490" cy="120" r="3"></circle>
+<circle class="xc34-violet" cx="220" cy="170" r="3"></circle><circle cx="455" cy="155" r="3"></circle>
+<circle cx="245" cy="86" r="2.5"></circle><circle cx="340" cy="170" r="2.5"></circle>
+</svg></div>
 <div class="container">
 <div class="eyebrow">
         SERVICIOS
@@ -3238,7 +3502,16 @@ section:not(.hero):not(.xc-quicklinks){background-image:radial-gradient(circle a
 </div>
 <div class="xc-support-lab"><div><span class="eyebrow">CENTRO DE AYUDA</span><h3>¿No sabes qué servicio elegir?</h3><p>Selecciona lo que te ocurre y te orientamos hacia la mejor opción.</p></div><div class="xc-issue-grid"><button data-service="Optimización de PC" type="button">🐢 Mi PC está lento <span>→</span></button><button data-service="Configuración de impresoras" type="button">🖨️ Problemas con impresora <span>→</span></button><button data-service="Seguridad informática" type="button">🛡️ Sospecho de un virus <span>→</span></button><button data-service="Instalación de Windows" type="button">🪟 Problemas con Windows <span>→</span></button><button data-service="Soporte TI" type="button">📧 Problemas con correo <span>→</span></button><button data-service="Diagnóstico de PC" type="button">🔍 No sé qué le pasa <span>→</span></button></div></div>
 </div>
-</section><section class="tools" id="herramientas"><div class="xc-network-art" aria-hidden="true"><svg viewBox="0 0 1440 420" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="xc-net-line" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#00ff88" stop-opacity=".08"/><stop offset=".55" stop-color="#47ffbc" stop-opacity=".5"/><stop offset="1" stop-color="#64dfff" stop-opacity=".13"/></linearGradient><radialGradient id="xc-net-dot"><stop stop-color="#d5fff2"/><stop offset="1" stop-color="#00ff88" stop-opacity=".2"/></radialGradient></defs><g stroke="url(#xc-net-line)" stroke-width=".85"><line x1="-15.2" y1="71.1" x2="54.9" y2="97.7"/><line x1="-15.2" y1="71.1" x2="-2.6" y2="131.4"/><line x1="54.9" y1="97.7" x2="123.9" y2="101.9"/><line x1="54.9" y1="97.7" x2="61.2" y2="156.1"/><line x1="54.9" y1="97.7" x2="122.0" y2="156.7"/><line x1="123.9" y1="101.9" x2="171.6" y2="102.4"/><line x1="123.9" y1="101.9" x2="122.0" y2="156.7"/><line x1="123.9" y1="101.9" x2="171.3" y2="140.5"/><line x1="171.6" y1="102.4" x2="260.4" y2="104.5"/><line x1="171.6" y1="102.4" x2="171.3" y2="140.5"/><line x1="171.6" y1="102.4" x2="253.8" y2="135.4"/><line x1="260.4" y1="104.5" x2="326.0" y2="110.8"/><line x1="260.4" y1="104.5" x2="253.8" y2="135.4"/><line x1="260.4" y1="104.5" x2="302.9" y2="135.5"/><line x1="326.0" y1="110.8" x2="367.4" y2="83.6"/><line x1="326.0" y1="110.8" x2="302.9" y2="135.5"/><line x1="326.0" y1="110.8" x2="361.0" y2="117.3"/><line x1="367.4" y1="83.6" x2="443.2" y2="77.7"/><line x1="367.4" y1="83.6" x2="361.0" y2="117.3"/><line x1="367.4" y1="83.6" x2="416.2" y2="128.9"/><line x1="443.2" y1="77.7" x2="478.3" y2="82.0"/><line x1="443.2" y1="77.7" x2="416.2" y2="128.9"/><line x1="443.2" y1="77.7" x2="502.8" y2="119.9"/><line x1="478.3" y1="82.0" x2="570.3" y2="74.6"/><line x1="478.3" y1="82.0" x2="502.8" y2="119.9"/><line x1="478.3" y1="82.0" x2="557.7" y2="113.6"/><line x1="570.3" y1="74.6" x2="636.3" y2="51.2"/><line x1="570.3" y1="74.6" x2="557.7" y2="113.6"/><line x1="570.3" y1="74.6" x2="633.1" y2="102.9"/><line x1="636.3" y1="51.2" x2="666.9" y2="44.2"/><line x1="636.3" y1="51.2" x2="633.1" y2="102.9"/><line x1="636.3" y1="51.2" x2="682.9" y2="101.7"/><line x1="666.9" y1="44.2" x2="761.2" y2="42.8"/><line x1="666.9" y1="44.2" x2="682.9" y2="101.7"/><line x1="666.9" y1="44.2" x2="734.1" y2="103.8"/><line x1="761.2" y1="42.8" x2="793.7" y2="43.5"/><line x1="761.2" y1="42.8" x2="734.1" y2="103.8"/><line x1="761.2" y1="42.8" x2="814.0" y2="107.8"/><line x1="793.7" y1="43.5" x2="851.8" y2="50.5"/><line x1="793.7" y1="43.5" x2="814.0" y2="107.8"/><line x1="851.8" y1="50.5" x2="924.7" y2="62.7"/><line x1="851.8" y1="50.5" x2="880.6" y2="125.4"/><line x1="924.7" y1="62.7" x2="985.1" y2="91.3"/><line x1="924.7" y1="62.7" x2="933.8" y2="143.0"/><line x1="924.7" y1="62.7" x2="997.3" y2="135.3"/><line x1="985.1" y1="91.3" x2="1042.0" y2="98.4"/><line x1="985.1" y1="91.3" x2="997.3" y2="135.3"/><line x1="985.1" y1="91.3" x2="1044.9" y2="137.9"/><line x1="1042.0" y1="98.4" x2="1124.6" y2="100.3"/><line x1="1042.0" y1="98.4" x2="1044.9" y2="137.9"/><line x1="1042.0" y1="98.4" x2="1099.0" y2="162.8"/><line x1="1124.6" y1="100.3" x2="1180.7" y2="109.6"/><line x1="1124.6" y1="100.3" x2="1099.0" y2="162.8"/><line x1="1124.6" y1="100.3" x2="1181.3" y2="161.2"/><line x1="1180.7" y1="109.6" x2="1243.1" y2="97.2"/><line x1="1180.7" y1="109.6" x2="1181.3" y2="161.2"/><line x1="1180.7" y1="109.6" x2="1250.1" y2="139.8"/><line x1="1243.1" y1="97.2" x2="1295.9" y2="94.1"/><line x1="1243.1" y1="97.2" x2="1250.1" y2="139.8"/><line x1="1243.1" y1="97.2" x2="1318.8" y2="145.7"/><line x1="1295.9" y1="94.1" x2="1360.4" y2="104.9"/><line x1="1295.9" y1="94.1" x2="1318.8" y2="145.7"/><line x1="1295.9" y1="94.1" x2="1362.4" y2="115.3"/><line x1="1360.4" y1="104.9" x2="1362.4" y2="115.3"/><line x1="-2.6" y1="131.4" x2="61.2" y2="156.1"/><line x1="-2.6" y1="131.4" x2="-6.5" y2="191.0"/><line x1="-2.6" y1="131.4" x2="57.2" y2="189.8"/><line x1="61.2" y1="156.1" x2="122.0" y2="156.7"/><line x1="61.2" y1="156.1" x2="57.2" y2="189.8"/><line x1="61.2" y1="156.1" x2="131.7" y2="208.0"/><line x1="122.0" y1="156.7" x2="171.3" y2="140.5"/><line x1="122.0" y1="156.7" x2="131.7" y2="208.0"/><line x1="122.0" y1="156.7" x2="175.6" y2="196.3"/><line x1="171.3" y1="140.5" x2="253.8" y2="135.4"/><line x1="171.3" y1="140.5" x2="175.6" y2="196.3"/><line x1="171.3" y1="140.5" x2="251.0" y2="179.8"/><line x1="253.8" y1="135.4" x2="302.9" y2="135.5"/><line x1="253.8" y1="135.4" x2="251.0" y2="179.8"/><line x1="253.8" y1="135.4" x2="324.7" y2="167.0"/><line x1="302.9" y1="135.5" x2="361.0" y2="117.3"/><line x1="302.9" y1="135.5" x2="324.7" y2="167.0"/><line x1="302.9" y1="135.5" x2="383.6" y2="149.1"/><line x1="361.0" y1="117.3" x2="416.2" y2="128.9"/><line x1="361.0" y1="117.3" x2="383.6" y2="149.1"/><line x1="361.0" y1="117.3" x2="450.8" y2="145.1"/><line x1="416.2" y1="128.9" x2="502.8" y2="119.9"/><line x1="416.2" y1="128.9" x2="450.8" y2="145.1"/><line x1="416.2" y1="128.9" x2="478.1" y2="157.7"/><line x1="502.8" y1="119.9" x2="557.7" y2="113.6"/><line x1="502.8" y1="119.9" x2="478.1" y2="157.7"/><line x1="502.8" y1="119.9" x2="566.0" y2="152.7"/><line x1="557.7" y1="113.6" x2="633.1" y2="102.9"/><line x1="557.7" y1="113.6" x2="566.0" y2="152.7"/><line x1="557.7" y1="113.6" x2="629.6" y2="149.4"/><line x1="633.1" y1="102.9" x2="682.9" y2="101.7"/><line x1="633.1" y1="102.9" x2="629.6" y2="149.4"/><line x1="633.1" y1="102.9" x2="668.1" y2="155.3"/><line x1="682.9" y1="101.7" x2="734.1" y2="103.8"/><line x1="682.9" y1="101.7" x2="668.1" y2="155.3"/><line x1="734.1" y1="103.8" x2="814.0" y2="107.8"/><line x1="734.1" y1="103.8" x2="760.3" y2="180.8"/><line x1="734.1" y1="103.8" x2="796.3" y2="178.2"/><line x1="814.0" y1="107.8" x2="880.6" y2="125.4"/><line x1="814.0" y1="107.8" x2="796.3" y2="178.2"/><line x1="814.0" y1="107.8" x2="866.2" y2="198.7"/><line x1="880.6" y1="125.4" x2="933.8" y2="143.0"/><line x1="880.6" y1="125.4" x2="866.2" y2="198.7"/><line x1="880.6" y1="125.4" x2="912.2" y2="204.0"/><line x1="933.8" y1="143.0" x2="997.3" y2="135.3"/><line x1="933.8" y1="143.0" x2="912.2" y2="204.0"/><line x1="933.8" y1="143.0" x2="983.1" y2="200.9"/><line x1="997.3" y1="135.3" x2="1044.9" y2="137.9"/><line x1="997.3" y1="135.3" x2="983.1" y2="200.9"/><line x1="997.3" y1="135.3" x2="1040.6" y2="189.2"/><line x1="1044.9" y1="137.9" x2="1099.0" y2="162.8"/><line x1="1044.9" y1="137.9" x2="1040.6" y2="189.2"/><line x1="1044.9" y1="137.9" x2="1129.8" y2="194.8"/><line x1="1099.0" y1="162.8" x2="1181.3" y2="161.2"/><line x1="1099.0" y1="162.8" x2="1129.8" y2="194.8"/><line x1="1099.0" y1="162.8" x2="1195.0" y2="195.8"/><line x1="1181.3" y1="161.2" x2="1250.1" y2="139.8"/><line x1="1181.3" y1="161.2" x2="1195.0" y2="195.8"/><line x1="1181.3" y1="161.2" x2="1249.1" y2="167.0"/><line x1="1250.1" y1="139.8" x2="1318.8" y2="145.7"/><line x1="1250.1" y1="139.8" x2="1249.1" y2="167.0"/><line x1="1250.1" y1="139.8" x2="1305.2" y2="178.7"/><line x1="1318.8" y1="145.7" x2="1362.4" y2="115.3"/><line x1="1318.8" y1="145.7" x2="1305.2" y2="178.7"/><line x1="1318.8" y1="145.7" x2="1364.1" y2="147.3"/><line x1="1362.4" y1="115.3" x2="1364.1" y2="147.3"/><line x1="-6.5" y1="191.0" x2="57.2" y2="189.8"/><line x1="-6.5" y1="191.0" x2="-11.4" y2="257.9"/><line x1="-6.5" y1="191.0" x2="79.2" y2="234.4"/><line x1="57.2" y1="189.8" x2="131.7" y2="208.0"/><line x1="57.2" y1="189.8" x2="79.2" y2="234.4"/><line x1="57.2" y1="189.8" x2="117.5" y2="237.1"/><line x1="131.7" y1="208.0" x2="175.6" y2="196.3"/><line x1="131.7" y1="208.0" x2="117.5" y2="237.1"/><line x1="131.7" y1="208.0" x2="186.3" y2="214.2"/><line x1="175.6" y1="196.3" x2="251.0" y2="179.8"/><line x1="175.6" y1="196.3" x2="186.3" y2="214.2"/><line x1="175.6" y1="196.3" x2="265.4" y2="214.6"/><line x1="251.0" y1="179.8" x2="324.7" y2="167.0"/><line x1="251.0" y1="179.8" x2="265.4" y2="214.6"/><line x1="251.0" y1="179.8" x2="305.1" y2="191.7"/><line x1="324.7" y1="167.0" x2="383.6" y2="149.1"/><line x1="324.7" y1="167.0" x2="305.1" y2="191.7"/><line x1="324.7" y1="167.0" x2="372.4" y2="203.7"/><line x1="383.6" y1="149.1" x2="450.8" y2="145.1"/><line x1="383.6" y1="149.1" x2="372.4" y2="203.7"/><line x1="383.6" y1="149.1" x2="422.4" y2="186.1"/><line x1="450.8" y1="145.1" x2="478.1" y2="157.7"/><line x1="450.8" y1="145.1" x2="422.4" y2="186.1"/><line x1="450.8" y1="145.1" x2="504.1" y2="208.5"/><line x1="478.1" y1="157.7" x2="566.0" y2="152.7"/><line x1="478.1" y1="157.7" x2="504.1" y2="208.5"/><line x1="478.1" y1="157.7" x2="553.6" y2="204.0"/><line x1="566.0" y1="152.7" x2="629.6" y2="149.4"/><line x1="566.0" y1="152.7" x2="553.6" y2="204.0"/><line x1="566.0" y1="152.7" x2="624.9" y2="214.0"/><line x1="629.6" y1="149.4" x2="668.1" y2="155.3"/><line x1="629.6" y1="149.4" x2="624.9" y2="214.0"/><line x1="629.6" y1="149.4" x2="668.6" y2="218.3"/><line x1="668.1" y1="155.3" x2="760.3" y2="180.8"/><line x1="668.1" y1="155.3" x2="668.6" y2="218.3"/><line x1="668.1" y1="155.3" x2="733.4" y2="226.4"/><line x1="760.3" y1="180.8" x2="796.3" y2="178.2"/><line x1="760.3" y1="180.8" x2="733.4" y2="226.4"/><line x1="760.3" y1="180.8" x2="791.2" y2="239.2"/><line x1="796.3" y1="178.2" x2="866.2" y2="198.7"/><line x1="796.3" y1="178.2" x2="791.2" y2="239.2"/><line x1="796.3" y1="178.2" x2="857.9" y2="255.1"/><line x1="866.2" y1="198.7" x2="912.2" y2="204.0"/><line x1="866.2" y1="198.7" x2="857.9" y2="255.1"/><line x1="866.2" y1="198.7" x2="923.6" y2="259.0"/><line x1="912.2" y1="204.0" x2="983.1" y2="200.9"/><line x1="912.2" y1="204.0" x2="923.6" y2="259.0"/><line x1="912.2" y1="204.0" x2="1003.2" y2="239.3"/><line x1="983.1" y1="200.9" x2="1040.6" y2="189.2"/><line x1="983.1" y1="200.9" x2="1003.2" y2="239.3"/><line x1="983.1" y1="200.9" x2="1041.5" y2="240.0"/><line x1="1040.6" y1="189.2" x2="1129.8" y2="194.8"/><line x1="1040.6" y1="189.2" x2="1041.5" y2="240.0"/><line x1="1040.6" y1="189.2" x2="1115.1" y2="229.9"/><line x1="1129.8" y1="194.8" x2="1195.0" y2="195.8"/><line x1="1129.8" y1="194.8" x2="1115.1" y2="229.9"/><line x1="1129.8" y1="194.8" x2="1164.4" y2="219.5"/><line x1="1195.0" y1="195.8" x2="1249.1" y2="167.0"/><line x1="1195.0" y1="195.8" x2="1164.4" y2="219.5"/><line x1="1195.0" y1="195.8" x2="1249.3" y2="207.6"/><line x1="1249.1" y1="167.0" x2="1305.2" y2="178.7"/><line x1="1249.1" y1="167.0" x2="1249.3" y2="207.6"/><line x1="1249.1" y1="167.0" x2="1293.2" y2="211.4"/><line x1="1305.2" y1="178.7" x2="1364.1" y2="147.3"/><line x1="1305.2" y1="178.7" x2="1293.2" y2="211.4"/><line x1="1305.2" y1="178.7" x2="1356.7" y2="208.7"/><line x1="1364.1" y1="147.3" x2="1356.7" y2="208.7"/><line x1="-11.4" y1="257.9" x2="79.2" y2="234.4"/><line x1="-11.4" y1="257.9" x2="6.8" y2="271.5"/><line x1="-11.4" y1="257.9" x2="60.1" y2="265.2"/><line x1="79.2" y1="234.4" x2="117.5" y2="237.1"/><line x1="79.2" y1="234.4" x2="60.1" y2="265.2"/><line x1="79.2" y1="234.4" x2="134.3" y2="261.5"/><line x1="117.5" y1="237.1" x2="186.3" y2="214.2"/><line x1="117.5" y1="237.1" x2="134.3" y2="261.5"/><line x1="117.5" y1="237.1" x2="171.1" y2="264.9"/><line x1="186.3" y1="214.2" x2="265.4" y2="214.6"/><line x1="186.3" y1="214.2" x2="171.1" y2="264.9"/><line x1="186.3" y1="214.2" x2="258.8" y2="249.9"/><line x1="265.4" y1="214.6" x2="305.1" y2="191.7"/><line x1="265.4" y1="214.6" x2="258.8" y2="249.9"/><line x1="265.4" y1="214.6" x2="312.4" y2="233.9"/><line x1="305.1" y1="191.7" x2="372.4" y2="203.7"/><line x1="305.1" y1="191.7" x2="312.4" y2="233.9"/><line x1="305.1" y1="191.7" x2="389.4" y2="240.3"/><line x1="372.4" y1="203.7" x2="422.4" y2="186.1"/><line x1="372.4" y1="203.7" x2="389.4" y2="240.3"/><line x1="372.4" y1="203.7" x2="434.9" y2="249.7"/><line x1="422.4" y1="186.1" x2="504.1" y2="208.5"/><line x1="422.4" y1="186.1" x2="434.9" y2="249.7"/><line x1="422.4" y1="186.1" x2="495.0" y2="246.4"/><line x1="504.1" y1="208.5" x2="553.6" y2="204.0"/><line x1="504.1" y1="208.5" x2="495.0" y2="246.4"/><line x1="504.1" y1="208.5" x2="572.2" y2="267.7"/><line x1="553.6" y1="204.0" x2="624.9" y2="214.0"/><line x1="553.6" y1="204.0" x2="572.2" y2="267.7"/><line x1="553.6" y1="204.0" x2="616.2" y2="286.8"/><line x1="624.9" y1="214.0" x2="668.6" y2="218.3"/><line x1="624.9" y1="214.0" x2="616.2" y2="286.8"/><line x1="624.9" y1="214.0" x2="695.0" y2="292.3"/><line x1="668.6" y1="218.3" x2="733.4" y2="226.4"/><line x1="668.6" y1="218.3" x2="695.0" y2="292.3"/><line x1="733.4" y1="226.4" x2="791.2" y2="239.2"/><line x1="733.4" y1="226.4" x2="758.7" y2="289.8"/><line x1="733.4" y1="226.4" x2="791.8" y2="292.3"/><line x1="791.2" y1="239.2" x2="857.9" y2="255.1"/><line x1="791.2" y1="239.2" x2="791.8" y2="292.3"/><line x1="791.2" y1="239.2" x2="871.7" y2="301.3"/><line x1="857.9" y1="255.1" x2="923.6" y2="259.0"/><line x1="857.9" y1="255.1" x2="871.7" y2="301.3"/><line x1="857.9" y1="255.1" x2="938.4" y2="292.2"/><line x1="923.6" y1="259.0" x2="1003.2" y2="239.3"/><line x1="923.6" y1="259.0" x2="938.4" y2="292.2"/><line x1="923.6" y1="259.0" x2="995.6" y2="284.7"/><line x1="1003.2" y1="239.3" x2="1041.5" y2="240.0"/><line x1="1003.2" y1="239.3" x2="995.6" y2="284.7"/><line x1="1003.2" y1="239.3" x2="1056.7" y2="259.0"/><line x1="1041.5" y1="240.0" x2="1115.1" y2="229.9"/><line x1="1041.5" y1="240.0" x2="1056.7" y2="259.0"/><line x1="1041.5" y1="240.0" x2="1117.7" y2="255.1"/><line x1="1115.1" y1="229.9" x2="1164.4" y2="219.5"/><line x1="1115.1" y1="229.9" x2="1117.7" y2="255.1"/><line x1="1115.1" y1="229.9" x2="1162.6" y2="254.5"/><line x1="1164.4" y1="219.5" x2="1249.3" y2="207.6"/><line x1="1164.4" y1="219.5" x2="1162.6" y2="254.5"/><line x1="1164.4" y1="219.5" x2="1252.3" y2="240.8"/><line x1="1249.3" y1="207.6" x2="1293.2" y2="211.4"/><line x1="1249.3" y1="207.6" x2="1252.3" y2="240.8"/><line x1="1249.3" y1="207.6" x2="1308.1" y2="247.0"/><line x1="1293.2" y1="211.4" x2="1356.7" y2="208.7"/><line x1="1293.2" y1="211.4" x2="1308.1" y2="247.0"/><line x1="1293.2" y1="211.4" x2="1370.5" y2="255.0"/><line x1="1356.7" y1="208.7" x2="1370.5" y2="255.0"/><line x1="6.8" y1="271.5" x2="60.1" y2="265.2"/><line x1="6.8" y1="271.5" x2="7.0" y2="305.1"/><line x1="6.8" y1="271.5" x2="66.2" y2="301.7"/><line x1="60.1" y1="265.2" x2="134.3" y2="261.5"/><line x1="60.1" y1="265.2" x2="66.2" y2="301.7"/><line x1="60.1" y1="265.2" x2="121.0" y2="301.7"/><line x1="134.3" y1="261.5" x2="171.1" y2="264.9"/><line x1="134.3" y1="261.5" x2="121.0" y2="301.7"/><line x1="134.3" y1="261.5" x2="174.3" y2="295.9"/><line x1="171.1" y1="264.9" x2="258.8" y2="249.9"/><line x1="171.1" y1="264.9" x2="174.3" y2="295.9"/><line x1="171.1" y1="264.9" x2="263.8" y2="282.1"/><line x1="258.8" y1="249.9" x2="312.4" y2="233.9"/><line x1="258.8" y1="249.9" x2="263.8" y2="282.1"/><line x1="258.8" y1="249.9" x2="322.7" y2="300.7"/><line x1="312.4" y1="233.9" x2="389.4" y2="240.3"/><line x1="312.4" y1="233.9" x2="322.7" y2="300.7"/><line x1="312.4" y1="233.9" x2="368.6" y2="309.0"/><line x1="389.4" y1="240.3" x2="434.9" y2="249.7"/><line x1="389.4" y1="240.3" x2="368.6" y2="309.0"/><line x1="389.4" y1="240.3" x2="418.9" y2="303.9"/><line x1="434.9" y1="249.7" x2="495.0" y2="246.4"/><line x1="434.9" y1="249.7" x2="418.9" y2="303.9"/><line x1="434.9" y1="249.7" x2="513.9" y2="325.2"/><line x1="495.0" y1="246.4" x2="572.2" y2="267.7"/><line x1="495.0" y1="246.4" x2="513.9" y2="325.2"/><line x1="495.0" y1="246.4" x2="546.0" y2="323.1"/><line x1="572.2" y1="267.7" x2="616.2" y2="286.8"/><line x1="572.2" y1="267.7" x2="546.0" y2="323.1"/><line x1="572.2" y1="267.7" x2="618.1" y2="340.5"/><line x1="616.2" y1="286.8" x2="695.0" y2="292.3"/><line x1="616.2" y1="286.8" x2="618.1" y2="340.5"/><line x1="616.2" y1="286.8" x2="699.6" y2="335.9"/><line x1="695.0" y1="292.3" x2="758.7" y2="289.8"/><line x1="695.0" y1="292.3" x2="699.6" y2="335.9"/><line x1="695.0" y1="292.3" x2="748.9" y2="342.1"/><line x1="758.7" y1="289.8" x2="791.8" y2="292.3"/><line x1="758.7" y1="289.8" x2="748.9" y2="342.1"/><line x1="758.7" y1="289.8" x2="808.1" y2="350.1"/><line x1="791.8" y1="292.3" x2="871.7" y2="301.3"/><line x1="791.8" y1="292.3" x2="808.1" y2="350.1"/><line x1="791.8" y1="292.3" x2="854.3" y2="340.2"/><line x1="871.7" y1="301.3" x2="938.4" y2="292.2"/><line x1="871.7" y1="301.3" x2="854.3" y2="340.2"/><line x1="871.7" y1="301.3" x2="938.3" y2="316.9"/><line x1="938.4" y1="292.2" x2="995.6" y2="284.7"/><line x1="938.4" y1="292.2" x2="938.3" y2="316.9"/><line x1="938.4" y1="292.2" x2="978.3" y2="318.1"/><line x1="995.6" y1="284.7" x2="1056.7" y2="259.0"/><line x1="995.6" y1="284.7" x2="978.3" y2="318.1"/><line x1="995.6" y1="284.7" x2="1066.7" y2="299.1"/><line x1="1056.7" y1="259.0" x2="1117.7" y2="255.1"/><line x1="1056.7" y1="259.0" x2="1066.7" y2="299.1"/><line x1="1056.7" y1="259.0" x2="1103.0" y2="297.1"/><line x1="1117.7" y1="255.1" x2="1162.6" y2="254.5"/><line x1="1117.7" y1="255.1" x2="1103.0" y2="297.1"/><line x1="1117.7" y1="255.1" x2="1184.1" y2="288.9"/><line x1="1162.6" y1="254.5" x2="1252.3" y2="240.8"/><line x1="1162.6" y1="254.5" x2="1184.1" y2="288.9"/><line x1="1162.6" y1="254.5" x2="1236.8" y2="283.3"/><line x1="1252.3" y1="240.8" x2="1308.1" y2="247.0"/><line x1="1252.3" y1="240.8" x2="1236.8" y2="283.3"/><line x1="1252.3" y1="240.8" x2="1289.1" y2="290.7"/><line x1="1308.1" y1="247.0" x2="1370.5" y2="255.0"/><line x1="1308.1" y1="247.0" x2="1289.1" y2="290.7"/><line x1="1308.1" y1="247.0" x2="1373.3" y2="296.1"/><line x1="1370.5" y1="255.0" x2="1373.3" y2="296.1"/><line x1="7.0" y1="305.1" x2="66.2" y2="301.7"/><line x1="66.2" y1="301.7" x2="121.0" y2="301.7"/><line x1="121.0" y1="301.7" x2="174.3" y2="295.9"/><line x1="174.3" y1="295.9" x2="263.8" y2="282.1"/><line x1="263.8" y1="282.1" x2="322.7" y2="300.7"/><line x1="322.7" y1="300.7" x2="368.6" y2="309.0"/><line x1="368.6" y1="309.0" x2="418.9" y2="303.9"/><line x1="418.9" y1="303.9" x2="513.9" y2="325.2"/><line x1="513.9" y1="325.2" x2="546.0" y2="323.1"/><line x1="546.0" y1="323.1" x2="618.1" y2="340.5"/><line x1="618.1" y1="340.5" x2="699.6" y2="335.9"/><line x1="699.6" y1="335.9" x2="748.9" y2="342.1"/><line x1="748.9" y1="342.1" x2="808.1" y2="350.1"/><line x1="808.1" y1="350.1" x2="854.3" y2="340.2"/><line x1="854.3" y1="340.2" x2="938.3" y2="316.9"/><line x1="938.3" y1="316.9" x2="978.3" y2="318.1"/><line x1="978.3" y1="318.1" x2="1066.7" y2="299.1"/><line x1="1066.7" y1="299.1" x2="1103.0" y2="297.1"/><line x1="1103.0" y1="297.1" x2="1184.1" y2="288.9"/><line x1="1184.1" y1="288.9" x2="1236.8" y2="283.3"/><line x1="1236.8" y1="283.3" x2="1289.1" y2="290.7"/><line x1="1289.1" y1="290.7" x2="1373.3" y2="296.1"/></g><g fill="url(#xc-net-dot)"><circle cx="-15.2" cy="71.1" r="3.2"/><circle cx="171.6" cy="102.4" r="1.3"/><circle cx="367.4" cy="83.6" r="1.3"/><circle cx="570.3" cy="74.6" r="1.3"/><circle cx="761.2" cy="42.8" r="1.3"/><circle cx="924.7" cy="62.7" r="3.2"/><circle cx="1124.6" cy="100.3" r="1.3"/><circle cx="1295.9" cy="94.1" r="1.3"/><circle cx="61.2" cy="156.1" r="1.3"/><circle cx="253.8" cy="135.4" r="1.3"/><circle cx="416.2" cy="128.9" r="3.2"/><circle cx="633.1" cy="102.9" r="1.3"/><circle cx="814.0" cy="107.8" r="1.3"/><circle cx="997.3" cy="135.3" r="1.3"/><circle cx="1181.3" cy="161.2" r="1.3"/><circle cx="1362.4" cy="115.3" r="3.2"/><circle cx="131.7" cy="208.0" r="1.3"/><circle cx="324.7" cy="167.0" r="1.3"/><circle cx="478.1" cy="157.7" r="1.3"/><circle cx="668.1" cy="155.3" r="1.3"/><circle cx="866.2" cy="198.7" r="3.2"/><circle cx="1040.6" cy="189.2" r="1.3"/><circle cx="1249.1" cy="167.0" r="1.3"/><circle cx="-11.4" cy="257.9" r="1.3"/><circle cx="186.3" cy="214.2" r="1.3"/><circle cx="372.4" cy="203.7" r="3.2"/><circle cx="553.6" cy="204.0" r="1.3"/><circle cx="733.4" cy="226.4" r="1.3"/><circle cx="923.6" cy="259.0" r="1.3"/><circle cx="1115.1" cy="229.9" r="1.3"/><circle cx="1293.2" cy="211.4" r="3.2"/><circle cx="60.1" cy="265.2" r="1.3"/><circle cx="258.8" cy="249.9" r="1.3"/><circle cx="434.9" cy="249.7" r="1.3"/><circle cx="616.2" cy="286.8" r="1.3"/><circle cx="791.8" cy="292.3" r="3.2"/><circle cx="995.6" cy="284.7" r="1.3"/><circle cx="1162.6" cy="254.5" r="1.3"/><circle cx="1370.5" cy="255.0" r="1.3"/><circle cx="121.0" cy="301.7" r="1.3"/><circle cx="322.7" cy="300.7" r="3.2"/><circle cx="513.9" cy="325.2" r="1.3"/><circle cx="699.6" cy="335.9" r="1.3"/><circle cx="854.3" cy="340.2" r="1.3"/><circle cx="1066.7" cy="299.1" r="1.3"/><circle cx="1236.8" cy="283.3" r="3.2"/></g><path d="M-40 300 C170 120 300 390 510 210 S820 340 1020 155 S1260 260 1480 100" fill="none" stroke="#7bffe0" stroke-opacity=".33" stroke-width="2"/><path d="M-40 330 C160 190 360 370 550 250 S830 390 1100 205 S1310 280 1480 160" fill="none" stroke="#00ff88" stroke-opacity=".22" stroke-width="1.3"/></svg></div><div class="container"><div class="xc-tools-intro"><div class="xc-tools-overline"><span class="xc-led"></span> XINECOM LAB / HERRAMIENTAS GRATUITAS</div><h2 class="section-title">Un laboratorio digital <span class="green">a tu alcance.</span></h2><p class="section-description">Herramientas útiles para resolver tareas del día a día. Explora por categoría y utiliza las que ya están disponibles.</p><div class="xc-tools-searchwrap"><span aria-hidden="true">⌕</span><input aria-label="Buscar herramientas gratuitas" autocomplete="off" id="xc-tools-search" placeholder="Buscar herramienta, utilidad o solución..." type="search"/><span class="xc-tools-shortcut">TOOLS / BUSCAR</span></div></div><div aria-label="Filtrar herramientas" class="xc-tools-categories" role="group"><button class="xc-cat is-selected" data-category="all" type="button">✦ Todas</button><button class="xc-cat" data-category="calculos" type="button">▦ Cálculos</button><button class="xc-cat" data-category="redes" type="button">⌁ Redes</button><button class="xc-cat" data-category="seguridad" type="button">◇ Seguridad</button><button class="xc-cat" data-category="archivos" type="button">▤ Archivos / PDF</button><button class="xc-cat" data-category="creadores" type="button">✎ Creadores</button><button class="xc-cat" data-category="diagnostico" type="button">◈ Diagnóstico</button><button class="xc-cat" data-category="asistentes" type="button">◎ Asistentes</button></div><p aria-live="polite" class="xc-tools-count" id="xc-tools-count"></p><div class="tools-grid"><article class="tool" data-xc-category="seguridad"><div class="tool-icon">🛡️</div><h3>XineCom URL Check</h3><p>Revisa señales de phishing en enlaces sospechosos sin abrir el sitio. Análisis orientativo y gratuito.</p><a class="btn btn-small" href="url-check.html">Revisar URL →</a><div class="tool-status">DISPONIBLE · GRATIS</div></article><article class="tool" data-xc-category="calculos"><div class="tool-icon">🧮</div><h3>Calculadora de porcentajes</h3><p>Porcentajes, descuentos y aumentos.</p><button class="btn btn-small" onclick="openXTool('percent')" type="button">Usar herramienta →</button><div class="tool-status">DISPONIBLE</div></article>
+</section><section class="tools" id="herramientas"><div aria-hidden="true" class="xc34-section-art"><svg preserveaspectratio="xMidYMid meet" viewbox="0 0 560 240">
+<path d="M0 92H105L138 60H220L260 106H345L375 78H455L490 120H560"></path>
+<path d="M75 200H180L220 170H298L328 198H410L455 155H560"></path>
+<path d="M200 0V42L245 86M405 0V35L360 75M290 240V205L340 170"></path>
+<path d="M100 0V25H175L210 60M470 240V210H510L540 175"></path>
+<circle cx="138" cy="60" r="3"></circle><circle cx="260" cy="106" r="3"></circle>
+<circle class="xc34-violet" cx="375" cy="78" r="3"></circle><circle cx="490" cy="120" r="3"></circle>
+<circle class="xc34-violet" cx="220" cy="170" r="3"></circle><circle cx="455" cy="155" r="3"></circle>
+<circle cx="245" cy="86" r="2.5"></circle><circle cx="340" cy="170" r="2.5"></circle>
+</svg></div><div aria-hidden="true" class="xc-network-art"><svg preserveaspectratio="xMidYMid slice" viewbox="0 0 1440 420" xmlns="http://www.w3.org/2000/svg"><defs><lineargradient id="xc-net-line" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#00ff88" stop-opacity=".08"></stop><stop offset=".55" stop-color="#47ffbc" stop-opacity=".5"></stop><stop offset="1" stop-color="#64dfff" stop-opacity=".13"></stop></lineargradient><radialgradient id="xc-net-dot"><stop stop-color="#d5fff2"></stop><stop offset="1" stop-color="#00ff88" stop-opacity=".2"></stop></radialgradient></defs><g stroke="url(#xc-net-line)" stroke-width=".85"><line x1="-15.2" x2="54.9" y1="71.1" y2="97.7"></line><line x1="-15.2" x2="-2.6" y1="71.1" y2="131.4"></line><line x1="54.9" x2="123.9" y1="97.7" y2="101.9"></line><line x1="54.9" x2="61.2" y1="97.7" y2="156.1"></line><line x1="54.9" x2="122.0" y1="97.7" y2="156.7"></line><line x1="123.9" x2="171.6" y1="101.9" y2="102.4"></line><line x1="123.9" x2="122.0" y1="101.9" y2="156.7"></line><line x1="123.9" x2="171.3" y1="101.9" y2="140.5"></line><line x1="171.6" x2="260.4" y1="102.4" y2="104.5"></line><line x1="171.6" x2="171.3" y1="102.4" y2="140.5"></line><line x1="171.6" x2="253.8" y1="102.4" y2="135.4"></line><line x1="260.4" x2="326.0" y1="104.5" y2="110.8"></line><line x1="260.4" x2="253.8" y1="104.5" y2="135.4"></line><line x1="260.4" x2="302.9" y1="104.5" y2="135.5"></line><line x1="326.0" x2="367.4" y1="110.8" y2="83.6"></line><line x1="326.0" x2="302.9" y1="110.8" y2="135.5"></line><line x1="326.0" x2="361.0" y1="110.8" y2="117.3"></line><line x1="367.4" x2="443.2" y1="83.6" y2="77.7"></line><line x1="367.4" x2="361.0" y1="83.6" y2="117.3"></line><line x1="367.4" x2="416.2" y1="83.6" y2="128.9"></line><line x1="443.2" x2="478.3" y1="77.7" y2="82.0"></line><line x1="443.2" x2="416.2" y1="77.7" y2="128.9"></line><line x1="443.2" x2="502.8" y1="77.7" y2="119.9"></line><line x1="478.3" x2="570.3" y1="82.0" y2="74.6"></line><line x1="478.3" x2="502.8" y1="82.0" y2="119.9"></line><line x1="478.3" x2="557.7" y1="82.0" y2="113.6"></line><line x1="570.3" x2="636.3" y1="74.6" y2="51.2"></line><line x1="570.3" x2="557.7" y1="74.6" y2="113.6"></line><line x1="570.3" x2="633.1" y1="74.6" y2="102.9"></line><line x1="636.3" x2="666.9" y1="51.2" y2="44.2"></line><line x1="636.3" x2="633.1" y1="51.2" y2="102.9"></line><line x1="636.3" x2="682.9" y1="51.2" y2="101.7"></line><line x1="666.9" x2="761.2" y1="44.2" y2="42.8"></line><line x1="666.9" x2="682.9" y1="44.2" y2="101.7"></line><line x1="666.9" x2="734.1" y1="44.2" y2="103.8"></line><line x1="761.2" x2="793.7" y1="42.8" y2="43.5"></line><line x1="761.2" x2="734.1" y1="42.8" y2="103.8"></line><line x1="761.2" x2="814.0" y1="42.8" y2="107.8"></line><line x1="793.7" x2="851.8" y1="43.5" y2="50.5"></line><line x1="793.7" x2="814.0" y1="43.5" y2="107.8"></line><line x1="851.8" x2="924.7" y1="50.5" y2="62.7"></line><line x1="851.8" x2="880.6" y1="50.5" y2="125.4"></line><line x1="924.7" x2="985.1" y1="62.7" y2="91.3"></line><line x1="924.7" x2="933.8" y1="62.7" y2="143.0"></line><line x1="924.7" x2="997.3" y1="62.7" y2="135.3"></line><line x1="985.1" x2="1042.0" y1="91.3" y2="98.4"></line><line x1="985.1" x2="997.3" y1="91.3" y2="135.3"></line><line x1="985.1" x2="1044.9" y1="91.3" y2="137.9"></line><line x1="1042.0" x2="1124.6" y1="98.4" y2="100.3"></line><line x1="1042.0" x2="1044.9" y1="98.4" y2="137.9"></line><line x1="1042.0" x2="1099.0" y1="98.4" y2="162.8"></line><line x1="1124.6" x2="1180.7" y1="100.3" y2="109.6"></line><line x1="1124.6" x2="1099.0" y1="100.3" y2="162.8"></line><line x1="1124.6" x2="1181.3" y1="100.3" y2="161.2"></line><line x1="1180.7" x2="1243.1" y1="109.6" y2="97.2"></line><line x1="1180.7" x2="1181.3" y1="109.6" y2="161.2"></line><line x1="1180.7" x2="1250.1" y1="109.6" y2="139.8"></line><line x1="1243.1" x2="1295.9" y1="97.2" y2="94.1"></line><line x1="1243.1" x2="1250.1" y1="97.2" y2="139.8"></line><line x1="1243.1" x2="1318.8" y1="97.2" y2="145.7"></line><line x1="1295.9" x2="1360.4" y1="94.1" y2="104.9"></line><line x1="1295.9" x2="1318.8" y1="94.1" y2="145.7"></line><line x1="1295.9" x2="1362.4" y1="94.1" y2="115.3"></line><line x1="1360.4" x2="1362.4" y1="104.9" y2="115.3"></line><line x1="-2.6" x2="61.2" y1="131.4" y2="156.1"></line><line x1="-2.6" x2="-6.5" y1="131.4" y2="191.0"></line><line x1="-2.6" x2="57.2" y1="131.4" y2="189.8"></line><line x1="61.2" x2="122.0" y1="156.1" y2="156.7"></line><line x1="61.2" x2="57.2" y1="156.1" y2="189.8"></line><line x1="61.2" x2="131.7" y1="156.1" y2="208.0"></line><line x1="122.0" x2="171.3" y1="156.7" y2="140.5"></line><line x1="122.0" x2="131.7" y1="156.7" y2="208.0"></line><line x1="122.0" x2="175.6" y1="156.7" y2="196.3"></line><line x1="171.3" x2="253.8" y1="140.5" y2="135.4"></line><line x1="171.3" x2="175.6" y1="140.5" y2="196.3"></line><line x1="171.3" x2="251.0" y1="140.5" y2="179.8"></line><line x1="253.8" x2="302.9" y1="135.4" y2="135.5"></line><line x1="253.8" x2="251.0" y1="135.4" y2="179.8"></line><line x1="253.8" x2="324.7" y1="135.4" y2="167.0"></line><line x1="302.9" x2="361.0" y1="135.5" y2="117.3"></line><line x1="302.9" x2="324.7" y1="135.5" y2="167.0"></line><line x1="302.9" x2="383.6" y1="135.5" y2="149.1"></line><line x1="361.0" x2="416.2" y1="117.3" y2="128.9"></line><line x1="361.0" x2="383.6" y1="117.3" y2="149.1"></line><line x1="361.0" x2="450.8" y1="117.3" y2="145.1"></line><line x1="416.2" x2="502.8" y1="128.9" y2="119.9"></line><line x1="416.2" x2="450.8" y1="128.9" y2="145.1"></line><line x1="416.2" x2="478.1" y1="128.9" y2="157.7"></line><line x1="502.8" x2="557.7" y1="119.9" y2="113.6"></line><line x1="502.8" x2="478.1" y1="119.9" y2="157.7"></line><line x1="502.8" x2="566.0" y1="119.9" y2="152.7"></line><line x1="557.7" x2="633.1" y1="113.6" y2="102.9"></line><line x1="557.7" x2="566.0" y1="113.6" y2="152.7"></line><line x1="557.7" x2="629.6" y1="113.6" y2="149.4"></line><line x1="633.1" x2="682.9" y1="102.9" y2="101.7"></line><line x1="633.1" x2="629.6" y1="102.9" y2="149.4"></line><line x1="633.1" x2="668.1" y1="102.9" y2="155.3"></line><line x1="682.9" x2="734.1" y1="101.7" y2="103.8"></line><line x1="682.9" x2="668.1" y1="101.7" y2="155.3"></line><line x1="734.1" x2="814.0" y1="103.8" y2="107.8"></line><line x1="734.1" x2="760.3" y1="103.8" y2="180.8"></line><line x1="734.1" x2="796.3" y1="103.8" y2="178.2"></line><line x1="814.0" x2="880.6" y1="107.8" y2="125.4"></line><line x1="814.0" x2="796.3" y1="107.8" y2="178.2"></line><line x1="814.0" x2="866.2" y1="107.8" y2="198.7"></line><line x1="880.6" x2="933.8" y1="125.4" y2="143.0"></line><line x1="880.6" x2="866.2" y1="125.4" y2="198.7"></line><line x1="880.6" x2="912.2" y1="125.4" y2="204.0"></line><line x1="933.8" x2="997.3" y1="143.0" y2="135.3"></line><line x1="933.8" x2="912.2" y1="143.0" y2="204.0"></line><line x1="933.8" x2="983.1" y1="143.0" y2="200.9"></line><line x1="997.3" x2="1044.9" y1="135.3" y2="137.9"></line><line x1="997.3" x2="983.1" y1="135.3" y2="200.9"></line><line x1="997.3" x2="1040.6" y1="135.3" y2="189.2"></line><line x1="1044.9" x2="1099.0" y1="137.9" y2="162.8"></line><line x1="1044.9" x2="1040.6" y1="137.9" y2="189.2"></line><line x1="1044.9" x2="1129.8" y1="137.9" y2="194.8"></line><line x1="1099.0" x2="1181.3" y1="162.8" y2="161.2"></line><line x1="1099.0" x2="1129.8" y1="162.8" y2="194.8"></line><line x1="1099.0" x2="1195.0" y1="162.8" y2="195.8"></line><line x1="1181.3" x2="1250.1" y1="161.2" y2="139.8"></line><line x1="1181.3" x2="1195.0" y1="161.2" y2="195.8"></line><line x1="1181.3" x2="1249.1" y1="161.2" y2="167.0"></line><line x1="1250.1" x2="1318.8" y1="139.8" y2="145.7"></line><line x1="1250.1" x2="1249.1" y1="139.8" y2="167.0"></line><line x1="1250.1" x2="1305.2" y1="139.8" y2="178.7"></line><line x1="1318.8" x2="1362.4" y1="145.7" y2="115.3"></line><line x1="1318.8" x2="1305.2" y1="145.7" y2="178.7"></line><line x1="1318.8" x2="1364.1" y1="145.7" y2="147.3"></line><line x1="1362.4" x2="1364.1" y1="115.3" y2="147.3"></line><line x1="-6.5" x2="57.2" y1="191.0" y2="189.8"></line><line x1="-6.5" x2="-11.4" y1="191.0" y2="257.9"></line><line x1="-6.5" x2="79.2" y1="191.0" y2="234.4"></line><line x1="57.2" x2="131.7" y1="189.8" y2="208.0"></line><line x1="57.2" x2="79.2" y1="189.8" y2="234.4"></line><line x1="57.2" x2="117.5" y1="189.8" y2="237.1"></line><line x1="131.7" x2="175.6" y1="208.0" y2="196.3"></line><line x1="131.7" x2="117.5" y1="208.0" y2="237.1"></line><line x1="131.7" x2="186.3" y1="208.0" y2="214.2"></line><line x1="175.6" x2="251.0" y1="196.3" y2="179.8"></line><line x1="175.6" x2="186.3" y1="196.3" y2="214.2"></line><line x1="175.6" x2="265.4" y1="196.3" y2="214.6"></line><line x1="251.0" x2="324.7" y1="179.8" y2="167.0"></line><line x1="251.0" x2="265.4" y1="179.8" y2="214.6"></line><line x1="251.0" x2="305.1" y1="179.8" y2="191.7"></line><line x1="324.7" x2="383.6" y1="167.0" y2="149.1"></line><line x1="324.7" x2="305.1" y1="167.0" y2="191.7"></line><line x1="324.7" x2="372.4" y1="167.0" y2="203.7"></line><line x1="383.6" x2="450.8" y1="149.1" y2="145.1"></line><line x1="383.6" x2="372.4" y1="149.1" y2="203.7"></line><line x1="383.6" x2="422.4" y1="149.1" y2="186.1"></line><line x1="450.8" x2="478.1" y1="145.1" y2="157.7"></line><line x1="450.8" x2="422.4" y1="145.1" y2="186.1"></line><line x1="450.8" x2="504.1" y1="145.1" y2="208.5"></line><line x1="478.1" x2="566.0" y1="157.7" y2="152.7"></line><line x1="478.1" x2="504.1" y1="157.7" y2="208.5"></line><line x1="478.1" x2="553.6" y1="157.7" y2="204.0"></line><line x1="566.0" x2="629.6" y1="152.7" y2="149.4"></line><line x1="566.0" x2="553.6" y1="152.7" y2="204.0"></line><line x1="566.0" x2="624.9" y1="152.7" y2="214.0"></line><line x1="629.6" x2="668.1" y1="149.4" y2="155.3"></line><line x1="629.6" x2="624.9" y1="149.4" y2="214.0"></line><line x1="629.6" x2="668.6" y1="149.4" y2="218.3"></line><line x1="668.1" x2="760.3" y1="155.3" y2="180.8"></line><line x1="668.1" x2="668.6" y1="155.3" y2="218.3"></line><line x1="668.1" x2="733.4" y1="155.3" y2="226.4"></line><line x1="760.3" x2="796.3" y1="180.8" y2="178.2"></line><line x1="760.3" x2="733.4" y1="180.8" y2="226.4"></line><line x1="760.3" x2="791.2" y1="180.8" y2="239.2"></line><line x1="796.3" x2="866.2" y1="178.2" y2="198.7"></line><line x1="796.3" x2="791.2" y1="178.2" y2="239.2"></line><line x1="796.3" x2="857.9" y1="178.2" y2="255.1"></line><line x1="866.2" x2="912.2" y1="198.7" y2="204.0"></line><line x1="866.2" x2="857.9" y1="198.7" y2="255.1"></line><line x1="866.2" x2="923.6" y1="198.7" y2="259.0"></line><line x1="912.2" x2="983.1" y1="204.0" y2="200.9"></line><line x1="912.2" x2="923.6" y1="204.0" y2="259.0"></line><line x1="912.2" x2="1003.2" y1="204.0" y2="239.3"></line><line x1="983.1" x2="1040.6" y1="200.9" y2="189.2"></line><line x1="983.1" x2="1003.2" y1="200.9" y2="239.3"></line><line x1="983.1" x2="1041.5" y1="200.9" y2="240.0"></line><line x1="1040.6" x2="1129.8" y1="189.2" y2="194.8"></line><line x1="1040.6" x2="1041.5" y1="189.2" y2="240.0"></line><line x1="1040.6" x2="1115.1" y1="189.2" y2="229.9"></line><line x1="1129.8" x2="1195.0" y1="194.8" y2="195.8"></line><line x1="1129.8" x2="1115.1" y1="194.8" y2="229.9"></line><line x1="1129.8" x2="1164.4" y1="194.8" y2="219.5"></line><line x1="1195.0" x2="1249.1" y1="195.8" y2="167.0"></line><line x1="1195.0" x2="1164.4" y1="195.8" y2="219.5"></line><line x1="1195.0" x2="1249.3" y1="195.8" y2="207.6"></line><line x1="1249.1" x2="1305.2" y1="167.0" y2="178.7"></line><line x1="1249.1" x2="1249.3" y1="167.0" y2="207.6"></line><line x1="1249.1" x2="1293.2" y1="167.0" y2="211.4"></line><line x1="1305.2" x2="1364.1" y1="178.7" y2="147.3"></line><line x1="1305.2" x2="1293.2" y1="178.7" y2="211.4"></line><line x1="1305.2" x2="1356.7" y1="178.7" y2="208.7"></line><line x1="1364.1" x2="1356.7" y1="147.3" y2="208.7"></line><line x1="-11.4" x2="79.2" y1="257.9" y2="234.4"></line><line x1="-11.4" x2="6.8" y1="257.9" y2="271.5"></line><line x1="-11.4" x2="60.1" y1="257.9" y2="265.2"></line><line x1="79.2" x2="117.5" y1="234.4" y2="237.1"></line><line x1="79.2" x2="60.1" y1="234.4" y2="265.2"></line><line x1="79.2" x2="134.3" y1="234.4" y2="261.5"></line><line x1="117.5" x2="186.3" y1="237.1" y2="214.2"></line><line x1="117.5" x2="134.3" y1="237.1" y2="261.5"></line><line x1="117.5" x2="171.1" y1="237.1" y2="264.9"></line><line x1="186.3" x2="265.4" y1="214.2" y2="214.6"></line><line x1="186.3" x2="171.1" y1="214.2" y2="264.9"></line><line x1="186.3" x2="258.8" y1="214.2" y2="249.9"></line><line x1="265.4" x2="305.1" y1="214.6" y2="191.7"></line><line x1="265.4" x2="258.8" y1="214.6" y2="249.9"></line><line x1="265.4" x2="312.4" y1="214.6" y2="233.9"></line><line x1="305.1" x2="372.4" y1="191.7" y2="203.7"></line><line x1="305.1" x2="312.4" y1="191.7" y2="233.9"></line><line x1="305.1" x2="389.4" y1="191.7" y2="240.3"></line><line x1="372.4" x2="422.4" y1="203.7" y2="186.1"></line><line x1="372.4" x2="389.4" y1="203.7" y2="240.3"></line><line x1="372.4" x2="434.9" y1="203.7" y2="249.7"></line><line x1="422.4" x2="504.1" y1="186.1" y2="208.5"></line><line x1="422.4" x2="434.9" y1="186.1" y2="249.7"></line><line x1="422.4" x2="495.0" y1="186.1" y2="246.4"></line><line x1="504.1" x2="553.6" y1="208.5" y2="204.0"></line><line x1="504.1" x2="495.0" y1="208.5" y2="246.4"></line><line x1="504.1" x2="572.2" y1="208.5" y2="267.7"></line><line x1="553.6" x2="624.9" y1="204.0" y2="214.0"></line><line x1="553.6" x2="572.2" y1="204.0" y2="267.7"></line><line x1="553.6" x2="616.2" y1="204.0" y2="286.8"></line><line x1="624.9" x2="668.6" y1="214.0" y2="218.3"></line><line x1="624.9" x2="616.2" y1="214.0" y2="286.8"></line><line x1="624.9" x2="695.0" y1="214.0" y2="292.3"></line><line x1="668.6" x2="733.4" y1="218.3" y2="226.4"></line><line x1="668.6" x2="695.0" y1="218.3" y2="292.3"></line><line x1="733.4" x2="791.2" y1="226.4" y2="239.2"></line><line x1="733.4" x2="758.7" y1="226.4" y2="289.8"></line><line x1="733.4" x2="791.8" y1="226.4" y2="292.3"></line><line x1="791.2" x2="857.9" y1="239.2" y2="255.1"></line><line x1="791.2" x2="791.8" y1="239.2" y2="292.3"></line><line x1="791.2" x2="871.7" y1="239.2" y2="301.3"></line><line x1="857.9" x2="923.6" y1="255.1" y2="259.0"></line><line x1="857.9" x2="871.7" y1="255.1" y2="301.3"></line><line x1="857.9" x2="938.4" y1="255.1" y2="292.2"></line><line x1="923.6" x2="1003.2" y1="259.0" y2="239.3"></line><line x1="923.6" x2="938.4" y1="259.0" y2="292.2"></line><line x1="923.6" x2="995.6" y1="259.0" y2="284.7"></line><line x1="1003.2" x2="1041.5" y1="239.3" y2="240.0"></line><line x1="1003.2" x2="995.6" y1="239.3" y2="284.7"></line><line x1="1003.2" x2="1056.7" y1="239.3" y2="259.0"></line><line x1="1041.5" x2="1115.1" y1="240.0" y2="229.9"></line><line x1="1041.5" x2="1056.7" y1="240.0" y2="259.0"></line><line x1="1041.5" x2="1117.7" y1="240.0" y2="255.1"></line><line x1="1115.1" x2="1164.4" y1="229.9" y2="219.5"></line><line x1="1115.1" x2="1117.7" y1="229.9" y2="255.1"></line><line x1="1115.1" x2="1162.6" y1="229.9" y2="254.5"></line><line x1="1164.4" x2="1249.3" y1="219.5" y2="207.6"></line><line x1="1164.4" x2="1162.6" y1="219.5" y2="254.5"></line><line x1="1164.4" x2="1252.3" y1="219.5" y2="240.8"></line><line x1="1249.3" x2="1293.2" y1="207.6" y2="211.4"></line><line x1="1249.3" x2="1252.3" y1="207.6" y2="240.8"></line><line x1="1249.3" x2="1308.1" y1="207.6" y2="247.0"></line><line x1="1293.2" x2="1356.7" y1="211.4" y2="208.7"></line><line x1="1293.2" x2="1308.1" y1="211.4" y2="247.0"></line><line x1="1293.2" x2="1370.5" y1="211.4" y2="255.0"></line><line x1="1356.7" x2="1370.5" y1="208.7" y2="255.0"></line><line x1="6.8" x2="60.1" y1="271.5" y2="265.2"></line><line x1="6.8" x2="7.0" y1="271.5" y2="305.1"></line><line x1="6.8" x2="66.2" y1="271.5" y2="301.7"></line><line x1="60.1" x2="134.3" y1="265.2" y2="261.5"></line><line x1="60.1" x2="66.2" y1="265.2" y2="301.7"></line><line x1="60.1" x2="121.0" y1="265.2" y2="301.7"></line><line x1="134.3" x2="171.1" y1="261.5" y2="264.9"></line><line x1="134.3" x2="121.0" y1="261.5" y2="301.7"></line><line x1="134.3" x2="174.3" y1="261.5" y2="295.9"></line><line x1="171.1" x2="258.8" y1="264.9" y2="249.9"></line><line x1="171.1" x2="174.3" y1="264.9" y2="295.9"></line><line x1="171.1" x2="263.8" y1="264.9" y2="282.1"></line><line x1="258.8" x2="312.4" y1="249.9" y2="233.9"></line><line x1="258.8" x2="263.8" y1="249.9" y2="282.1"></line><line x1="258.8" x2="322.7" y1="249.9" y2="300.7"></line><line x1="312.4" x2="389.4" y1="233.9" y2="240.3"></line><line x1="312.4" x2="322.7" y1="233.9" y2="300.7"></line><line x1="312.4" x2="368.6" y1="233.9" y2="309.0"></line><line x1="389.4" x2="434.9" y1="240.3" y2="249.7"></line><line x1="389.4" x2="368.6" y1="240.3" y2="309.0"></line><line x1="389.4" x2="418.9" y1="240.3" y2="303.9"></line><line x1="434.9" x2="495.0" y1="249.7" y2="246.4"></line><line x1="434.9" x2="418.9" y1="249.7" y2="303.9"></line><line x1="434.9" x2="513.9" y1="249.7" y2="325.2"></line><line x1="495.0" x2="572.2" y1="246.4" y2="267.7"></line><line x1="495.0" x2="513.9" y1="246.4" y2="325.2"></line><line x1="495.0" x2="546.0" y1="246.4" y2="323.1"></line><line x1="572.2" x2="616.2" y1="267.7" y2="286.8"></line><line x1="572.2" x2="546.0" y1="267.7" y2="323.1"></line><line x1="572.2" x2="618.1" y1="267.7" y2="340.5"></line><line x1="616.2" x2="695.0" y1="286.8" y2="292.3"></line><line x1="616.2" x2="618.1" y1="286.8" y2="340.5"></line><line x1="616.2" x2="699.6" y1="286.8" y2="335.9"></line><line x1="695.0" x2="758.7" y1="292.3" y2="289.8"></line><line x1="695.0" x2="699.6" y1="292.3" y2="335.9"></line><line x1="695.0" x2="748.9" y1="292.3" y2="342.1"></line><line x1="758.7" x2="791.8" y1="289.8" y2="292.3"></line><line x1="758.7" x2="748.9" y1="289.8" y2="342.1"></line><line x1="758.7" x2="808.1" y1="289.8" y2="350.1"></line><line x1="791.8" x2="871.7" y1="292.3" y2="301.3"></line><line x1="791.8" x2="808.1" y1="292.3" y2="350.1"></line><line x1="791.8" x2="854.3" y1="292.3" y2="340.2"></line><line x1="871.7" x2="938.4" y1="301.3" y2="292.2"></line><line x1="871.7" x2="854.3" y1="301.3" y2="340.2"></line><line x1="871.7" x2="938.3" y1="301.3" y2="316.9"></line><line x1="938.4" x2="995.6" y1="292.2" y2="284.7"></line><line x1="938.4" x2="938.3" y1="292.2" y2="316.9"></line><line x1="938.4" x2="978.3" y1="292.2" y2="318.1"></line><line x1="995.6" x2="1056.7" y1="284.7" y2="259.0"></line><line x1="995.6" x2="978.3" y1="284.7" y2="318.1"></line><line x1="995.6" x2="1066.7" y1="284.7" y2="299.1"></line><line x1="1056.7" x2="1117.7" y1="259.0" y2="255.1"></line><line x1="1056.7" x2="1066.7" y1="259.0" y2="299.1"></line><line x1="1056.7" x2="1103.0" y1="259.0" y2="297.1"></line><line x1="1117.7" x2="1162.6" y1="255.1" y2="254.5"></line><line x1="1117.7" x2="1103.0" y1="255.1" y2="297.1"></line><line x1="1117.7" x2="1184.1" y1="255.1" y2="288.9"></line><line x1="1162.6" x2="1252.3" y1="254.5" y2="240.8"></line><line x1="1162.6" x2="1184.1" y1="254.5" y2="288.9"></line><line x1="1162.6" x2="1236.8" y1="254.5" y2="283.3"></line><line x1="1252.3" x2="1308.1" y1="240.8" y2="247.0"></line><line x1="1252.3" x2="1236.8" y1="240.8" y2="283.3"></line><line x1="1252.3" x2="1289.1" y1="240.8" y2="290.7"></line><line x1="1308.1" x2="1370.5" y1="247.0" y2="255.0"></line><line x1="1308.1" x2="1289.1" y1="247.0" y2="290.7"></line><line x1="1308.1" x2="1373.3" y1="247.0" y2="296.1"></line><line x1="1370.5" x2="1373.3" y1="255.0" y2="296.1"></line><line x1="7.0" x2="66.2" y1="305.1" y2="301.7"></line><line x1="66.2" x2="121.0" y1="301.7" y2="301.7"></line><line x1="121.0" x2="174.3" y1="301.7" y2="295.9"></line><line x1="174.3" x2="263.8" y1="295.9" y2="282.1"></line><line x1="263.8" x2="322.7" y1="282.1" y2="300.7"></line><line x1="322.7" x2="368.6" y1="300.7" y2="309.0"></line><line x1="368.6" x2="418.9" y1="309.0" y2="303.9"></line><line x1="418.9" x2="513.9" y1="303.9" y2="325.2"></line><line x1="513.9" x2="546.0" y1="325.2" y2="323.1"></line><line x1="546.0" x2="618.1" y1="323.1" y2="340.5"></line><line x1="618.1" x2="699.6" y1="340.5" y2="335.9"></line><line x1="699.6" x2="748.9" y1="335.9" y2="342.1"></line><line x1="748.9" x2="808.1" y1="342.1" y2="350.1"></line><line x1="808.1" x2="854.3" y1="350.1" y2="340.2"></line><line x1="854.3" x2="938.3" y1="340.2" y2="316.9"></line><line x1="938.3" x2="978.3" y1="316.9" y2="318.1"></line><line x1="978.3" x2="1066.7" y1="318.1" y2="299.1"></line><line x1="1066.7" x2="1103.0" y1="299.1" y2="297.1"></line><line x1="1103.0" x2="1184.1" y1="297.1" y2="288.9"></line><line x1="1184.1" x2="1236.8" y1="288.9" y2="283.3"></line><line x1="1236.8" x2="1289.1" y1="283.3" y2="290.7"></line><line x1="1289.1" x2="1373.3" y1="290.7" y2="296.1"></line></g><g fill="url(#xc-net-dot)"><circle cx="-15.2" cy="71.1" r="3.2"></circle><circle cx="171.6" cy="102.4" r="1.3"></circle><circle cx="367.4" cy="83.6" r="1.3"></circle><circle cx="570.3" cy="74.6" r="1.3"></circle><circle cx="761.2" cy="42.8" r="1.3"></circle><circle cx="924.7" cy="62.7" r="3.2"></circle><circle cx="1124.6" cy="100.3" r="1.3"></circle><circle cx="1295.9" cy="94.1" r="1.3"></circle><circle cx="61.2" cy="156.1" r="1.3"></circle><circle cx="253.8" cy="135.4" r="1.3"></circle><circle cx="416.2" cy="128.9" r="3.2"></circle><circle cx="633.1" cy="102.9" r="1.3"></circle><circle cx="814.0" cy="107.8" r="1.3"></circle><circle cx="997.3" cy="135.3" r="1.3"></circle><circle cx="1181.3" cy="161.2" r="1.3"></circle><circle cx="1362.4" cy="115.3" r="3.2"></circle><circle cx="131.7" cy="208.0" r="1.3"></circle><circle cx="324.7" cy="167.0" r="1.3"></circle><circle cx="478.1" cy="157.7" r="1.3"></circle><circle cx="668.1" cy="155.3" r="1.3"></circle><circle cx="866.2" cy="198.7" r="3.2"></circle><circle cx="1040.6" cy="189.2" r="1.3"></circle><circle cx="1249.1" cy="167.0" r="1.3"></circle><circle cx="-11.4" cy="257.9" r="1.3"></circle><circle cx="186.3" cy="214.2" r="1.3"></circle><circle cx="372.4" cy="203.7" r="3.2"></circle><circle cx="553.6" cy="204.0" r="1.3"></circle><circle cx="733.4" cy="226.4" r="1.3"></circle><circle cx="923.6" cy="259.0" r="1.3"></circle><circle cx="1115.1" cy="229.9" r="1.3"></circle><circle cx="1293.2" cy="211.4" r="3.2"></circle><circle cx="60.1" cy="265.2" r="1.3"></circle><circle cx="258.8" cy="249.9" r="1.3"></circle><circle cx="434.9" cy="249.7" r="1.3"></circle><circle cx="616.2" cy="286.8" r="1.3"></circle><circle cx="791.8" cy="292.3" r="3.2"></circle><circle cx="995.6" cy="284.7" r="1.3"></circle><circle cx="1162.6" cy="254.5" r="1.3"></circle><circle cx="1370.5" cy="255.0" r="1.3"></circle><circle cx="121.0" cy="301.7" r="1.3"></circle><circle cx="322.7" cy="300.7" r="3.2"></circle><circle cx="513.9" cy="325.2" r="1.3"></circle><circle cx="699.6" cy="335.9" r="1.3"></circle><circle cx="854.3" cy="340.2" r="1.3"></circle><circle cx="1066.7" cy="299.1" r="1.3"></circle><circle cx="1236.8" cy="283.3" r="3.2"></circle></g><path d="M-40 300 C170 120 300 390 510 210 S820 340 1020 155 S1260 260 1480 100" fill="none" stroke="#7bffe0" stroke-opacity=".33" stroke-width="2"></path><path d="M-40 330 C160 190 360 370 550 250 S830 390 1100 205 S1310 280 1480 160" fill="none" stroke="#00ff88" stroke-opacity=".22" stroke-width="1.3"></path></svg></div><div class="container"><div class="xc-tools-intro"><div class="xc-tools-overline"><span class="xc-led"></span> XINECOM LAB / HERRAMIENTAS GRATUITAS</div><h2 class="section-title">Un laboratorio digital <span class="green">a tu alcance.</span></h2><p class="section-description">Herramientas útiles para resolver tareas del día a día. Explora por categoría y utiliza las que ya están disponibles.</p><div class="xc-tools-searchwrap"><span aria-hidden="true">⌕</span><input aria-label="Buscar herramientas gratuitas" autocomplete="off" id="xc-tools-search" placeholder="Buscar herramienta, utilidad o solución..." type="search"/><span class="xc-tools-shortcut">TOOLS / BUSCAR</span></div></div><div aria-label="Filtrar herramientas" class="xc-tools-categories" role="group"><button class="xc-cat is-selected" data-category="all" type="button">✦ Todas</button><button class="xc-cat" data-category="calculos" type="button">▦ Cálculos</button><button class="xc-cat" data-category="redes" type="button">⌁ Redes</button><button class="xc-cat" data-category="seguridad" type="button">◇ Seguridad</button><button class="xc-cat" data-category="archivos" type="button">▤ Archivos / PDF</button><button class="xc-cat" data-category="creadores" type="button">✎ Creadores</button><button class="xc-cat" data-category="diagnostico" type="button">◈ Diagnóstico</button><button class="xc-cat" data-category="asistentes" type="button">◎ Asistentes</button></div><p aria-live="polite" class="xc-tools-count" id="xc-tools-count"></p><div class="tools-grid"><article class="tool" data-xc-category="seguridad"><div class="tool-icon">🛡️</div><h3>XineCom URL Check</h3><p>Revisa señales de phishing en enlaces sospechosos sin abrir el sitio. Análisis orientativo y gratuito.</p><a class="btn btn-small" href="url-check.html">Revisar URL →</a><div class="tool-status">DISPONIBLE · GRATIS</div></article><article class="tool" data-xc-category="calculos"><div class="tool-icon">🧮</div><h3>Calculadora de porcentajes</h3><p>Porcentajes, descuentos y aumentos.</p><button class="btn btn-small" onclick="openXTool('percent')" type="button">Usar herramienta →</button><div class="tool-status">DISPONIBLE</div></article>
 <article class="tool" data-xc-category="calculos"><div class="tool-icon">🎓</div><h3>Mi promedio universitario</h3><p>Promedio ponderado y nota necesaria para aprobar.</p><button class="btn btn-small" onclick="openXTool('grades')" type="button">Usar herramienta →</button><div class="tool-status">DISPONIBLE</div></article>
 <article class="tool" data-xc-category="seguridad"><div class="tool-icon">🔐</div><h3>Generador de contraseñas</h3><p>Crea contraseñas aleatorias en tu navegador.</p><button class="btn btn-small" onclick="openXTool('password')" type="button">Usar herramienta →</button><div class="tool-status">DISPONIBLE</div></article>
 <article class="tool" data-xc-category="diagnostico">
@@ -3262,7 +3535,16 @@ section:not(.hero):not(.xc-quicklinks){background-image:radial-gradient(circle a
 <div class="x-tool-body" hidden="" id="xt-grades"><p>Ingresa notas y ponderaciones que sumen 100%. Deja una nota vacía para saber qué necesitas en esa evaluación.</p><div class="x-tool-fields"><label>Nota máxima <select id="xt-scale"><option value="7">7,0 (Chile)</option><option value="10">10</option><option value="100">100</option></select></label><label>Promedio objetivo <input id="xt-target" step="0.1" type="number" value="4"/></label></div><div id="xt-grade-rows"></div><button class="btn btn-secondary" onclick="xtAddGrade()" type="button">+ Agregar evaluación</button> <button class="btn" onclick="xtGrades()" type="button">Calcular promedio</button><div class="x-tool-result" id="xt-grades-result" role="status"></div><p class="x-tool-hint">El redondeo y los requisitos pueden variar según tu institución.</p></div>
 <div class="x-tool-body" hidden="" id="xt-password"><p>La contraseña se genera localmente en tu navegador y no se envía a XineCom.</p><div class="x-tool-fields"><label>Longitud (8–64) <input id="xt-pass-length" max="64" min="8" type="number" value="18"/></label></div><button class="btn" onclick="xtPassword()" type="button">Generar contraseña</button><div class="x-tool-result" id="xt-password-result" role="status" style="overflow-wrap:anywhere"></div></div>
 <div class="x-tool-body" hidden="" id="xt-storage"><p>Conversión binaria: 1 GB = 1024 MB; 1 TB = 1024 GB.</p><div class="x-tool-fields"><label>Valor <input id="xt-storage-value" step="any" type="number" value="1"/></label><label>Desde <select id="xt-storage-from"><option>MB</option><option selected="">GB</option><option>TB</option></select></label><label>Hasta <select id="xt-storage-to"><option selected="">MB</option><option>GB</option><option>TB</option></select></label></div><button class="btn" onclick="xtStorage()" type="button">Convertir</button><div class="x-tool-result" id="xt-storage-result" role="status"></div></div>
-<div class="x-tool-body" hidden="" id="xt-units"><p>Convierte longitudes al instante. Los resultados usan factores estándar.</p><div class="x-tool-fields"><label>Valor <input id="xc-unit-value" step="any" type="number" value="150"/></label><label>Desde <select id="xc-unit-from"><option value="cm">Centímetros (cm)</option><option value="m">Metros (m)</option><option value="km">Kilómetros (km)</option><option value="mm">Milímetros (mm)</option><option value="in">Pulgadas</option><option value="ft">Pies</option></select></label><label>Hacia <select id="xc-unit-to"><option value="m">Metros (m)</option><option value="cm">Centímetros (cm)</option><option value="km">Kilómetros (km)</option><option value="mm">Milímetros (mm)</option><option value="in">Pulgadas</option><option value="ft">Pies</option></select></label></div><button class="btn" onclick="xcConvertUnits()" type="button">Convertir →</button><div class="x-tool-result" id="xc-unit-result" role="status"></div></div><div class="x-tool-body" hidden="" id="xt-documents"><p>Genera una cotización o solicitud sencilla. Puedes imprimirla o guardarla como PDF desde tu navegador. Los datos se procesan en tu dispositivo.</p><div class="x-tool-fields"><label>Tipo de documento <select id="xc-doc-type"><option value="Cotización">Cotización</option><option value="Solicitud de servicio">Solicitud de servicio</option></select></label><label>Nombre / Empresa <input id="xc-doc-name" maxlength="100" placeholder="Ej. Empresa ABC"/></label><label>Destinatario <input id="xc-doc-recipient" maxlength="100" placeholder="Ej. Cliente XYZ"/></label><label>Fecha <input id="xc-doc-date" type="date"/></label><label style="grid-column:1/-1">Descripción del servicio <textarea id="xc-doc-desc" maxlength="2000" placeholder="Describe el trabajo o solicitud" rows="4"></textarea></label><label>Monto estimado (CLP, opcional) <input id="xc-doc-amount" min="0" placeholder="Ej. 25000" step="1" type="number"/></label></div><button class="btn" onclick="xcCreateDocument()" type="button">Generar e imprimir / PDF →</button><p class="x-tool-hint">Plantilla orientativa; revisa los datos antes de compartirla. No es una factura ni un documento tributario.</p></div></div></div></section><section id="automatizacion">
+<div class="x-tool-body" hidden="" id="xt-units"><p>Convierte longitudes al instante. Los resultados usan factores estándar.</p><div class="x-tool-fields"><label>Valor <input id="xc-unit-value" step="any" type="number" value="150"/></label><label>Desde <select id="xc-unit-from"><option value="cm">Centímetros (cm)</option><option value="m">Metros (m)</option><option value="km">Kilómetros (km)</option><option value="mm">Milímetros (mm)</option><option value="in">Pulgadas</option><option value="ft">Pies</option></select></label><label>Hacia <select id="xc-unit-to"><option value="m">Metros (m)</option><option value="cm">Centímetros (cm)</option><option value="km">Kilómetros (km)</option><option value="mm">Milímetros (mm)</option><option value="in">Pulgadas</option><option value="ft">Pies</option></select></label></div><button class="btn" onclick="xcConvertUnits()" type="button">Convertir →</button><div class="x-tool-result" id="xc-unit-result" role="status"></div></div><div class="x-tool-body" hidden="" id="xt-documents"><p>Genera una cotización o solicitud sencilla. Puedes imprimirla o guardarla como PDF desde tu navegador. Los datos se procesan en tu dispositivo.</p><div class="x-tool-fields"><label>Tipo de documento <select id="xc-doc-type"><option value="Cotización">Cotización</option><option value="Solicitud de servicio">Solicitud de servicio</option></select></label><label>Nombre / Empresa <input id="xc-doc-name" maxlength="100" placeholder="Ej. Empresa ABC"/></label><label>Destinatario <input id="xc-doc-recipient" maxlength="100" placeholder="Ej. Cliente XYZ"/></label><label>Fecha <input id="xc-doc-date" type="date"/></label><label style="grid-column:1/-1">Descripción del servicio <textarea id="xc-doc-desc" maxlength="2000" placeholder="Describe el trabajo o solicitud" rows="4"></textarea></label><label>Monto estimado (CLP, opcional) <input id="xc-doc-amount" min="0" placeholder="Ej. 25000" step="1" type="number"/></label></div><button class="btn" onclick="xcCreateDocument()" type="button">Generar e imprimir / PDF →</button><p class="x-tool-hint">Plantilla orientativa; revisa los datos antes de compartirla. No es una factura ni un documento tributario.</p></div></div></div></section><section id="automatizacion"><div aria-hidden="true" class="xc34-section-art"><svg preserveaspectratio="xMidYMid meet" viewbox="0 0 560 240">
+<path d="M0 92H105L138 60H220L260 106H345L375 78H455L490 120H560"></path>
+<path d="M75 200H180L220 170H298L328 198H410L455 155H560"></path>
+<path d="M200 0V42L245 86M405 0V35L360 75M290 240V205L340 170"></path>
+<path d="M100 0V25H175L210 60M470 240V210H510L540 175"></path>
+<circle cx="138" cy="60" r="3"></circle><circle cx="260" cy="106" r="3"></circle>
+<circle class="xc34-violet" cx="375" cy="78" r="3"></circle><circle cx="490" cy="120" r="3"></circle>
+<circle class="xc34-violet" cx="220" cy="170" r="3"></circle><circle cx="455" cy="155" r="3"></circle>
+<circle cx="245" cy="86" r="2.5"></circle><circle cx="340" cy="170" r="2.5"></circle>
+</svg></div>
 <div class="container automation-grid">
 <div>
 <div class="eyebrow">
@@ -3313,7 +3595,16 @@ section:not(.hero):not(.xc-quicklinks){background-image:radial-gradient(circle a
         </a>
 </div>
 </div>
-</section><section class="business xc-business-v23" id="empresas">
+</section><section class="business xc-business-v23" id="empresas"><div aria-hidden="true" class="xc34-section-art"><svg preserveaspectratio="xMidYMid meet" viewbox="0 0 560 240">
+<path d="M0 92H105L138 60H220L260 106H345L375 78H455L490 120H560"></path>
+<path d="M75 200H180L220 170H298L328 198H410L455 155H560"></path>
+<path d="M200 0V42L245 86M405 0V35L360 75M290 240V205L340 170"></path>
+<path d="M100 0V25H175L210 60M470 240V210H510L540 175"></path>
+<circle cx="138" cy="60" r="3"></circle><circle cx="260" cy="106" r="3"></circle>
+<circle class="xc34-violet" cx="375" cy="78" r="3"></circle><circle cx="490" cy="120" r="3"></circle>
+<circle class="xc34-violet" cx="220" cy="170" r="3"></circle><circle cx="455" cy="155" r="3"></circle>
+<circle cx="245" cy="86" r="2.5"></circle><circle cx="340" cy="170" r="2.5"></circle>
+</svg></div>
 <div class="container business-grid">
 <div>
 <div class="eyebrow">XINECOM PARA EMPRESAS Y EMPRENDEDORES</div>
@@ -3356,7 +3647,16 @@ section:not(.hero):not(.xc-quicklinks){background-image:radial-gradient(circle a
 <!-- ======================================================
        RECURSOS DIGITALES
        ====================================================== -->
-<section id="recursos">
+<section id="recursos"><div aria-hidden="true" class="xc34-section-art"><svg preserveaspectratio="xMidYMid meet" viewbox="0 0 560 240">
+<path d="M0 92H105L138 60H220L260 106H345L375 78H455L490 120H560"></path>
+<path d="M75 200H180L220 170H298L328 198H410L455 155H560"></path>
+<path d="M200 0V42L245 86M405 0V35L360 75M290 240V205L340 170"></path>
+<path d="M100 0V25H175L210 60M470 240V210H510L540 175"></path>
+<circle cx="138" cy="60" r="3"></circle><circle cx="260" cy="106" r="3"></circle>
+<circle class="xc34-violet" cx="375" cy="78" r="3"></circle><circle cx="490" cy="120" r="3"></circle>
+<circle class="xc34-violet" cx="220" cy="170" r="3"></circle><circle cx="455" cy="155" r="3"></circle>
+<circle cx="245" cy="86" r="2.5"></circle><circle cx="340" cy="170" r="2.5"></circle>
+</svg></div>
 <div class="container">
 <div class="eyebrow">
         RECURSOS XINECOM
@@ -3433,7 +3733,16 @@ section:not(.hero):not(.xc-quicklinks){background-image:radial-gradient(circle a
 </div>
 </section>
 <!-- XINECOM 2.5: SOBRE XINECOM — SIN FOTOGRAFÍA -->
-<section aria-labelledby="xc-about-title" class="xc-about" id="sobre-xinecom">
+<section aria-labelledby="xc-about-title" class="xc-about" id="sobre-xinecom"><div aria-hidden="true" class="xc34-section-art"><svg preserveaspectratio="xMidYMid meet" viewbox="0 0 560 240">
+<path d="M0 92H105L138 60H220L260 106H345L375 78H455L490 120H560"></path>
+<path d="M75 200H180L220 170H298L328 198H410L455 155H560"></path>
+<path d="M200 0V42L245 86M405 0V35L360 75M290 240V205L340 170"></path>
+<path d="M100 0V25H175L210 60M470 240V210H510L540 175"></path>
+<circle cx="138" cy="60" r="3"></circle><circle cx="260" cy="106" r="3"></circle>
+<circle class="xc34-violet" cx="375" cy="78" r="3"></circle><circle cx="490" cy="120" r="3"></circle>
+<circle class="xc34-violet" cx="220" cy="170" r="3"></circle><circle cx="455" cy="155" r="3"></circle>
+<circle cx="245" cy="86" r="2.5"></circle><circle cx="340" cy="170" r="2.5"></circle>
+</svg></div>
 <div class="container xc-about-layout">
 <div>
 <div class="eyebrow">PERSONAS DETRÁS DE LA TECNOLOGÍA</div>
@@ -3457,7 +3766,16 @@ section:not(.hero):not(.xc-quicklinks){background-image:radial-gradient(circle a
 <!-- ======================================================
        CONFIANZA
        ====================================================== -->
-<section class="trust">
+<section class="trust"><div aria-hidden="true" class="xc34-section-art"><svg preserveaspectratio="xMidYMid meet" viewbox="0 0 560 240">
+<path d="M0 92H105L138 60H220L260 106H345L375 78H455L490 120H560"></path>
+<path d="M75 200H180L220 170H298L328 198H410L455 155H560"></path>
+<path d="M200 0V42L245 86M405 0V35L360 75M290 240V205L340 170"></path>
+<path d="M100 0V25H175L210 60M470 240V210H510L540 175"></path>
+<circle cx="138" cy="60" r="3"></circle><circle cx="260" cy="106" r="3"></circle>
+<circle class="xc34-violet" cx="375" cy="78" r="3"></circle><circle cx="490" cy="120" r="3"></circle>
+<circle class="xc34-violet" cx="220" cy="170" r="3"></circle><circle cx="455" cy="155" r="3"></circle>
+<circle cx="245" cy="86" r="2.5"></circle><circle cx="340" cy="170" r="2.5"></circle>
+</svg></div>
 <div class="container">
 <div class="eyebrow">
         NUESTRA FORMA DE TRABAJAR
@@ -3516,8 +3834,26 @@ section:not(.hero):not(.xc-quicklinks){background-image:radial-gradient(circle a
 <!-- ======================================================
        FAQ
        ====================================================== -->
-<section id="academy" style="background:#080c0a"><div class="container"><div class="eyebrow">XINECOM ACADEMY</div><h2 class="section-title">Aprende tecnología <span class="green">sin complicaciones.</span></h2><p class="section-description">Próximamente compartiremos guías prácticas sobre Windows, Microsoft 365, seguridad digital, n8n y automatización.</p><a class="btn" href="#contacto">Proponer un tema →</a></div></section>
-<section class="xc-faq-section" id="faq">
+<section id="academy" style="background:#080c0a"><div aria-hidden="true" class="xc34-section-art"><svg preserveaspectratio="xMidYMid meet" viewbox="0 0 560 240">
+<path d="M0 92H105L138 60H220L260 106H345L375 78H455L490 120H560"></path>
+<path d="M75 200H180L220 170H298L328 198H410L455 155H560"></path>
+<path d="M200 0V42L245 86M405 0V35L360 75M290 240V205L340 170"></path>
+<path d="M100 0V25H175L210 60M470 240V210H510L540 175"></path>
+<circle cx="138" cy="60" r="3"></circle><circle cx="260" cy="106" r="3"></circle>
+<circle class="xc34-violet" cx="375" cy="78" r="3"></circle><circle cx="490" cy="120" r="3"></circle>
+<circle class="xc34-violet" cx="220" cy="170" r="3"></circle><circle cx="455" cy="155" r="3"></circle>
+<circle cx="245" cy="86" r="2.5"></circle><circle cx="340" cy="170" r="2.5"></circle>
+</svg></div><div class="container"><div class="eyebrow">XINECOM ACADEMY</div><h2 class="section-title">Aprende tecnología <span class="green">sin complicaciones.</span></h2><p class="section-description">Próximamente compartiremos guías prácticas sobre Windows, Microsoft 365, seguridad digital, n8n y automatización.</p><a class="btn" href="#contacto">Proponer un tema →</a></div></section>
+<section class="xc-faq-section" id="faq"><div aria-hidden="true" class="xc34-section-art"><svg preserveaspectratio="xMidYMid meet" viewbox="0 0 560 240">
+<path d="M0 92H105L138 60H220L260 106H345L375 78H455L490 120H560"></path>
+<path d="M75 200H180L220 170H298L328 198H410L455 155H560"></path>
+<path d="M200 0V42L245 86M405 0V35L360 75M290 240V205L340 170"></path>
+<path d="M100 0V25H175L210 60M470 240V210H510L540 175"></path>
+<circle cx="138" cy="60" r="3"></circle><circle cx="260" cy="106" r="3"></circle>
+<circle class="xc34-violet" cx="375" cy="78" r="3"></circle><circle cx="490" cy="120" r="3"></circle>
+<circle class="xc34-violet" cx="220" cy="170" r="3"></circle><circle cx="455" cy="155" r="3"></circle>
+<circle cx="245" cy="86" r="2.5"></circle><circle cx="340" cy="170" r="2.5"></circle>
+</svg></div>
 <div class="container">
 <div class="eyebrow">RESOLVEMOS TUS DUDAS</div>
 <h2 class="section-title">¿Tienes preguntas? <span class="green">Aquí te ayudamos.</span></h2>
@@ -3540,7 +3876,16 @@ section:not(.hero):not(.xc-quicklinks){background-image:radial-gradient(circle a
 <!-- ======================================================
        CONTACTO
        ====================================================== -->
-<section class="contact" id="contacto">
+<section class="contact" id="contacto"><div aria-hidden="true" class="xc34-section-art"><svg preserveaspectratio="xMidYMid meet" viewbox="0 0 560 240">
+<path d="M0 92H105L138 60H220L260 106H345L375 78H455L490 120H560"></path>
+<path d="M75 200H180L220 170H298L328 198H410L455 155H560"></path>
+<path d="M200 0V42L245 86M405 0V35L360 75M290 240V205L340 170"></path>
+<path d="M100 0V25H175L210 60M470 240V210H510L540 175"></path>
+<circle cx="138" cy="60" r="3"></circle><circle cx="260" cy="106" r="3"></circle>
+<circle class="xc34-violet" cx="375" cy="78" r="3"></circle><circle cx="490" cy="120" r="3"></circle>
+<circle class="xc34-violet" cx="220" cy="170" r="3"></circle><circle cx="455" cy="155" r="3"></circle>
+<circle cx="245" cy="86" r="2.5"></circle><circle cx="340" cy="170" r="2.5"></circle>
+</svg></div>
 <div class="container contact-grid">
 <div class="contact-info">
 <div class="eyebrow">
