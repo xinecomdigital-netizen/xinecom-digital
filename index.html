@@ -2681,6 +2681,38 @@
 
     .nav-links{gap:14px;flex-wrap:wrap}.nav-links a{font-size:12px}.tool .btn{margin-top:auto}section{scroll-margin-top:76px}
   @media(max-width:760px){.nav-links{display:flex;overflow-x:auto;flex-wrap:nowrap;max-width:100%;padding:8px 0}.nav-container{flex-wrap:wrap;gap:2px}.nav-links li{white-space:nowrap}.hero{padding:55px 0}}
+
+/* XineCom 2.7 — FAQ interactiva, sin dependencias */
+.xc-faq-section{background:radial-gradient(ellipse at 85% 15%,rgba(0,255,136,.065),transparent 45%)}
+.xc-faq-list{max-width:940px;margin:28px auto 0;display:grid;gap:10px}
+.xc-faq-item{border:1px solid rgba(0,255,136,.18);border-radius:14px;background:rgba(12,25,18,.82);overflow:hidden;transition:border-color .2s,background .2s}
+.xc-faq-item:hover,.xc-faq-item[open]{border-color:rgba(0,255,136,.55);background:rgba(16,37,24,.95)}
+.xc-faq-item summary{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:18px 20px;cursor:pointer;font-weight:750;color:#f3fff6;list-style:none}
+.xc-faq-item summary::-webkit-details-marker{display:none}
+.xc-faq-item summary:focus-visible{outline:2px solid #00ff88;outline-offset:-3px}
+.xc-faq-plus{color:#00ff88;font-size:23px;font-weight:400;flex-shrink:0;transition:transform .2s}
+.xc-faq-item[open] .xc-faq-plus{transform:rotate(45deg)}
+.xc-faq-body{padding:0 20px 20px;color:#bed0c3;font-size:15px;line-height:1.75}
+.xc-faq-contact{max-width:940px;margin:26px auto 0;padding:22px;border:1px solid rgba(0,255,136,.22);border-radius:16px;background:rgba(0,255,136,.055);display:flex;align-items:center;justify-content:space-between;gap:22px}
+.xc-faq-contact strong{color:#fff}.xc-faq-contact p{color:#bed0c3;margin:7px 0 0;font-size:14px}.xc-faq-contact .btn{white-space:nowrap}
+@media(max-width:650px){.xc-faq-item summary{padding:15px;font-size:14px}.xc-faq-body{padding:0 15px 16px;font-size:14px}.xc-faq-contact{flex-direction:column;align-items:stretch}.xc-faq-contact .btn{text-align:center}}
+
+
+/* XineCom 2.8 — 12 preguntas compactas en cuadrícula */
+@media (min-width: 760px) {
+  .xc-faq-list { max-width: 1100px; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 9px 12px; align-items:start; }
+}
+.xc-faq-list { margin-top: 18px; gap: 8px; }
+.xc-faq-item { border-radius: 10px; }
+.xc-faq-item summary { padding: 11px 13px; font-size: 13px; line-height: 1.35; gap: 8px; }
+.xc-faq-plus { font-size: 19px; }
+.xc-faq-body { padding: 0 13px 13px; font-size: 13px; line-height: 1.55; }
+.xc-faq-contact { margin-top: 18px; padding: 16px; }
+@media(max-width:650px) {
+  .xc-faq-item summary { padding: 11px 12px; font-size: 13px; }
+  .xc-faq-body { padding: 0 12px 12px; font-size: 13px; }
+}
+
 </style>
 <style>
 .x-tool-panel{margin-top:35px;border:1px solid var(--border-green);border-radius:20px;background:#0b100d;padding:clamp(18px,4vw,30px)}.x-tool-panel[hidden],.x-tool-body[hidden]{display:none!important}.x-tool-header{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-bottom:18px}.x-tool-header h3{font-size:23px}.x-tool-body p{color:var(--muted);margin-bottom:16px}.x-tool-fields{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin-bottom:18px}.x-tool-body label{display:block;color:#c6d0c8;font-size:13px;font-weight:700;margin-bottom:12px}.x-tool-body input,.x-tool-body select,.x-tool-body textarea{display:block;width:100%;margin-top:7px;padding:12px;background:#050706;color:white;border:1px solid #364339;border-radius:9px;font:inherit}.x-tool-result{margin-top:18px;padding:16px;border:1px solid var(--border-green);background:rgba(0,255,136,.06);color:var(--green);border-radius:10px;font-weight:800}.x-grade-row{display:grid;grid-template-columns:1fr 1fr auto;gap:12px;align-items:end;margin-bottom:8px}.x-grade-row button{margin-bottom:12px}.x-tool-hint{font-size:12px;margin-top:14px}.x-tool-panel .btn{margin-top:4px}@media(max-width:600px){.x-grade-row{grid-template-columns:1fr 1fr}.x-grade-row button{grid-column:span 2}}
@@ -2721,7 +2753,6 @@ body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-ser
 .xc-stock-showcase .xc-stock-cta{margin-top:18px;width:auto;max-width:100%;color:#04170c;background:#00ff88;text-align:center;padding:12px 18px;border-radius:10px;cursor:pointer}
 @media(max-width:600px){.xc-stock-showcase{padding:19px}.xc-stock-showcase .xc-stock-cta{width:100%}}
 </style>
-
 <style id="xc-carousel-styles">
 /* Banner rotativo XineCom: dos propuestas comerciales, sin librerías externas */
 /* Corrección del carrusel: el header original era flex horizontal.
@@ -2772,7 +2803,6 @@ body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-ser
 @media(max-width:760px){.xc-price-panel{padding:21px}.xc-price-list div{flex-wrap:wrap}.xc-hero-controls{padding-bottom:22px}}
 @media(prefers-reduced-motion:reduce){.xc-hero-slide{animation:none}}
 </style>
-
 <style id="xc-microbusiness-styles">
 .xc-microbusiness{margin-top:36px;padding:clamp(20px,4vw,38px);border:1px solid rgba(0,255,136,.34);border-radius:24px;background:linear-gradient(130deg,#0e2719,#07120c);box-shadow:0 24px 70px #0004}
 .xc-micro-kicker{display:block;color:#00ff88;font-size:11px;font-weight:800;letter-spacing:.14em;margin-bottom:12px}
@@ -2783,7 +2813,116 @@ body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-ser
 @media(max-width:900px){.xc-micro-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.xc-micro-footer{flex-direction:column;align-items:stretch}.xc-micro-cta{width:100%}}
 @media(max-width:520px){.xc-micro-grid{grid-template-columns:1fr}.xc-microbusiness{padding:19px}.xc-micro-intro h3{font-size:27px}}
 </style>
-</head>
+<style id="xc-compact-services-v1">
+/* XineCom 2.2: catálogo compacto; mantiene intactos los 15 servicios y cotizaciones */
+#servicios .cards{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;align-items:stretch}
+#servicios .card{padding:17px 13px;border-radius:15px;min-width:0;display:flex;flex-direction:column;gap:8px}
+#servicios .card-icon{width:39px;height:39px;font-size:20px;margin:0;border-radius:10px}
+#servicios .card h3{font-size:14px;line-height:1.35;margin:0;min-height:38px;overflow-wrap:anywhere}
+#servicios .card .price{font-size:15px;margin:0}
+#servicios .card > p:not(.xc-commercial-scope),#servicios .card .xc-commercial-scope,#servicios .card .xc-commercial-mode{display:none}
+#servicios .card.xc-expanded > p:not(.xc-commercial-scope),#servicios .card.xc-expanded .xc-commercial-scope{display:block;min-height:0;margin:3px 0;font-size:12px;line-height:1.55}
+#servicios .card.xc-expanded .xc-commercial-mode{display:inline-flex;align-self:flex-start;margin:2px 0;font-size:10px}
+#servicios .card .xc-detail-toggle{order:2;width:100%;margin-top:auto;padding:8px 6px;border:1px solid #245a3a;border-radius:9px;background:#102318;color:#91ffbc;font-weight:700;font-size:11px;cursor:pointer}
+#servicios .card .xc-detail-toggle:hover{border-color:#00ff88;background:#153b25}
+#servicios .card .xc-service-btn{order:3;width:100%;min-height:37px;padding:9px 5px;margin:0;font-size:10px;line-height:1.3;white-space:normal}
+#servicios .card.xc-expanded{border-color:#00ff8866;background:linear-gradient(145deg,#102418,#08110b)}
+@media(max-width:1100px){#servicios .cards{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:700px){#servicios .cards{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}#servicios .card{padding:12px 10px;gap:7px}#servicios .card h3{font-size:12px;min-height:34px}#servicios .card .price{font-size:13px}#servicios .card .xc-service-btn{font-size:10px}#servicios .card-icon{width:34px;height:34px;font-size:18px}}
+@media(max-width:350px){#servicios .cards{grid-template-columns:1fr}}
+</style>
+<style id="xc-business-v23-style">
+.xc-business-v23 .business-grid{grid-template-columns:minmax(0,1fr) minmax(0,.94fr);gap:clamp(28px,5vw,66px)}
+.xc-business-v23 .section-description{margin-bottom:22px;line-height:1.8}
+.xc-business-mission{border-left:3px solid #00ff88;padding:16px 20px;margin:0 0 23px;background:linear-gradient(90deg,#00ff8810,transparent);border-radius:0 12px 12px 0}
+.xc-mission-label{color:#00ff88;letter-spacing:.12em;font-size:10px;font-weight:900}
+.xc-business-mission p{color:#d1e2d5;font-size:14px;line-height:1.8;margin-top:7px}
+.xc-business-benefits{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin-bottom:24px}
+.xc-business-benefits div{border:1px solid #28553a;border-radius:12px;padding:13px;background:#08170e}
+.xc-business-benefits span{color:#00ff88;display:block;margin-bottom:6px}
+.xc-business-benefits strong{display:block;font-size:12px;line-height:1.3}
+.xc-business-benefits small{display:block;color:#a3b8aa;font-size:11px;line-height:1.55;margin-top:6px}
+.xc-business-cta{max-width:100%;text-align:center}
+.xc-business-panel-v23{padding:clamp(20px,3vw,32px)}
+.xc-business-steps-heading{font-size:12px;font-weight:800;color:#bde8ca;margin-top:22px}
+.xc-business-v23 .xc-business-flow strong{display:block;line-height:1.3;margin-top:4px}
+.xc-business-panel-v23 p.xc-business-smallprint{font-size:11px;color:#8fa998;margin:15px 0 0;line-height:1.6}
+@media(max-width:1000px){.xc-business-v23 .business-grid{grid-template-columns:1fr}}
+@media(max-width:600px){.xc-business-benefits{grid-template-columns:1fr}.xc-business-v23 .xc-business-flow{grid-template-columns:repeat(3,minmax(0,1fr))}.xc-business-v23 .xc-business-flow div{padding:10px 5px}.xc-business-v23 .xc-business-flow strong{font-size:10px}}
+</style>
+<style id="xc-about-v25">
+.xc-about{padding:88px 0;background:radial-gradient(ellipse at 85% 25%,rgba(0,255,136,.085),transparent 45%),#090f0c}
+.xc-about-layout{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(280px,.8fr);gap:36px;align-items:center}
+.xc-about .section-description{max-width:690px}
+.xc-about-quote{margin:25px 0;padding:20px 24px;border-left:3px solid #00ff88;background:rgba(0,255,136,.045);border-radius:0 14px 14px 0;line-height:1.7;color:#e2f3e8}
+.xc-about-person{border:1px solid rgba(0,255,136,.27);border-radius:22px;background:linear-gradient(145deg,#13271b,#0b1410);padding:30px;position:relative;overflow:hidden}
+.xc-about-person:before{content:'';position:absolute;right:-60px;top:-65px;width:180px;height:180px;border:1px solid rgba(0,255,136,.15);border-radius:50%;box-shadow:0 0 0 32px rgba(0,255,136,.025),0 0 0 65px rgba(0,255,136,.02);pointer-events:none}
+.xc-about-monogram{display:grid;place-items:center;width:76px;height:76px;border-radius:20px;border:1px solid #00ff88;background:#0a1d11;color:#00ff88;font-weight:800;font-size:31px;letter-spacing:-2px;margin-bottom:24px}
+.xc-about-person h3{font-size:28px;margin:0 0 7px;color:#fff}
+.xc-about-role{color:#00ff88;font-weight:650;margin-bottom:16px}
+.xc-about-person p{color:#c5d7cc;line-height:1.7}
+.xc-about-tags{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0}
+.xc-about-tags span{border:1px solid #335a42;border-radius:30px;padding:7px 11px;color:#c9e6d2;font-size:12px}
+.xc-about-cta{margin-top:12px}
+@media(max-width:800px){.xc-about-layout{grid-template-columns:1fr}.xc-about{padding:58px 0}.xc-about-person{padding:24px}}
+</style>
+<style id="xc-contact-v29">
+.xc-quote-context{padding:13px 16px;margin:0 0 14px;border:1px solid rgba(0,255,136,.4);background:rgba(0,255,136,.08);color:#adffd2;border-radius:12px;font-size:13px;font-weight:700}
+.xc-quote-context[hidden]{display:none!important}
+#contactForm .xc-form-success{border-left:3px solid #00ff88;padding:12px;background:#0c2818;color:#b9ffda}
+#contactForm .xc-form-error{border-left:3px solid #ffb66c;padding:12px;background:#352318;color:#ffe3bf}
+#contactForm select:focus-visible,#contactForm input:focus-visible,#contactForm textarea:focus-visible{outline:2px solid #00ff88;outline-offset:2px}
+</style>
+<style>
+/* XineCom NeoTech 3.0 — visual refresh, preserves functionality */
+:root{--xc-neon:#00ff88;--xc-panel:#0c1711;--xc-outline:rgba(100,255,166,.16)}
+html{scroll-behavior:smooth;scroll-padding-top:96px}
+body{background:#050b08!important}
+nav{position:sticky!important;top:0;z-index:1000;background:rgba(5,13,9,.79)!important;backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px);border-bottom:1px solid rgba(0,255,136,.12)!important}
+.nav-container{min-height:76px;gap:24px}
+.logo-symbol{border-radius:14px!important;box-shadow:0 0 24px rgba(0,255,136,.15)}
+.nav-links{align-items:center;gap:8px!important;list-style:none}
+.nav-links>li{position:relative}
+.nav-links>li>a{display:inline-flex;align-items:center;gap:6px;padding:12px 14px!important;border-radius:12px;transition:background .2s,color .2s;white-space:nowrap;font-size:13px!important}
+.nav-links>li>a:hover,.nav-links>li:focus-within>a{background:rgba(0,255,136,.09);color:#00ff88!important}
+.nav-links .xc-nav-cta{background:#00ff88!important;color:#06120b!important;font-weight:800!important;padding:11px 19px!important;box-shadow:0 6px 24px rgba(0,255,136,.16)}
+.xc-dropdown{display:none;position:absolute;top:calc(100% - 2px);left:0;min-width:230px;padding:9px;list-style:none;border:1px solid rgba(0,255,136,.22);border-radius:16px;background:#0c1b12;box-shadow:0 22px 50px rgba(0,0,0,.42)}
+.xc-nav-group:hover .xc-dropdown,.xc-nav-group:focus-within .xc-dropdown{display:block}
+.xc-dropdown a{display:block;padding:12px 13px;border-radius:10px;color:#d8e9dc;text-decoration:none;font-size:13px}
+.xc-dropdown a:hover,.xc-dropdown a:focus{background:rgba(0,255,136,.11);color:#00ff88}
+.xc-mobile-menu{display:none;position:relative;color:#e8f8ed}
+.xc-mobile-menu summary{cursor:pointer;border:1px solid rgba(0,255,136,.24);border-radius:12px;padding:10px 14px;list-style:none;font-weight:700}
+.xc-mobile-menu summary::-webkit-details-marker{display:none}
+.xc-mobile-links{position:absolute;right:0;top:calc(100% + 12px);width:min(85vw,320px);max-height:75vh;overflow:auto;padding:15px;border:1px solid rgba(0,255,136,.24);border-radius:18px;background:#0a1710;box-shadow:0 20px 50px #000a}
+.xc-mobile-links a,.xc-mobile-heading{display:block;padding:10px 13px;text-decoration:none;color:#e9fff1;font-size:14px}
+.xc-mobile-heading{color:#00ff88;font-size:11px;font-weight:800;letter-spacing:.13em;padding-top:16px}
+.xc-hero-carousel{position:relative;isolation:isolate;overflow:hidden;background:radial-gradient(ellipse at 75% 38%,rgba(0,255,136,.11),transparent 43%),radial-gradient(ellipse at 15% 85%,rgba(0,143,89,.09),transparent 50%),#050c08!important}
+.xc-hero-carousel:before{content:"";position:absolute;inset:0;z-index:-1;background-image:linear-gradient(rgba(0,255,136,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(0,255,136,.045) 1px,transparent 1px);background-size:56px 56px;mask-image:linear-gradient(90deg,transparent,black 30%,black 85%,transparent);pointer-events:none}
+.xc-hero-carousel:after{content:"";position:absolute;width:450px;height:450px;border:1px solid rgba(0,255,136,.09);border-radius:50%;right:-200px;top:30px;box-shadow:0 0 0 85px rgba(0,255,136,.018),0 0 0 170px rgba(0,255,136,.012);pointer-events:none}
+.xc-hero-slide .hero-grid{position:relative;min-height:620px;gap:45px;align-items:center}
+.xc-hero-slide .hero-content{position:relative;z-index:2}
+.xc-hero-slide h1{font-size:clamp(3.2rem,6vw,6.2rem)!important;line-height:1.02!important;letter-spacing:-.065em!important;text-wrap:balance}
+.xc-hero-slide h1 .green{color:#00ff88!important;text-shadow:0 0 42px rgba(0,255,136,.16)}
+.xc-hero-slide .eyebrow{display:inline-flex;padding:10px 15px;border-radius:999px;border:1px solid rgba(0,255,136,.23);background:rgba(0,255,136,.055);letter-spacing:.12em;font-size:11px}
+.xc-hero-slide .hero-description{font-size:clamp(15px,1.45vw,18px);line-height:1.8;max-width:570px}
+.xc-hero-slide .hero-visual{position:relative;filter:drop-shadow(0 24px 60px rgba(0,255,136,.08))}
+.xc-dashboard,.xc-price-panel{background:linear-gradient(145deg,rgba(18,40,27,.95),rgba(7,18,12,.98))!important;border:1px solid rgba(0,255,136,.23)!important;border-radius:26px!important;box-shadow:0 32px 80px rgba(0,0,0,.35),inset 0 1px rgba(255,255,255,.045)!important}
+.xc-dash-actions a{border-radius:14px!important;transition:transform .2s,border-color .2s,background .2s}
+.xc-dash-actions a:hover{transform:translateY(-4px);border-color:rgba(0,255,136,.6)!important;background:rgba(0,255,136,.075)!important}
+.xc-hero-controls{position:relative;z-index:5}
+.xc-quicklinks{padding:20px 0 44px;background:#050b08}
+.xc-quicklinks-inner{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}
+.xc-quicklinks a{display:flex;flex-direction:column;gap:10px;padding:22px 24px;border:1px solid rgba(0,255,136,.15);border-radius:18px;background:linear-gradient(125deg,rgba(18,38,25,.78),rgba(9,19,13,.88));text-decoration:none;transition:transform .2s,border-color .2s,box-shadow .2s}
+.xc-quicklinks a:hover{transform:translateY(-4px);border-color:rgba(0,255,136,.55);box-shadow:0 15px 38px rgba(0,0,0,.22)}
+.xc-quicklinks span{color:#00ff88;font-size:10px;font-weight:800;letter-spacing:.15em}
+.xc-quicklinks strong{color:#f1fff5;font-size:clamp(13px,1.3vw,17px)}
+section.services .card,.services .card,.xc-faq-section details,.business .card{border-radius:18px!important;transition:border-color .22s,transform .22s,box-shadow .22s}
+section.services .card:hover,.services .card:hover{transform:translateY(-3px);border-color:rgba(0,255,136,.42)!important;box-shadow:0 14px 32px rgba(0,0,0,.22)}
+section[id]{scroll-margin-top:92px}
+@media(max-width:1050px){.nav-links{display:none!important}.xc-mobile-menu{display:block}.nav-container{justify-content:space-between}.xc-hero-slide .hero-grid{min-height:auto;padding-top:90px;padding-bottom:65px}}
+@media(max-width:680px){.xc-quicklinks-inner{grid-template-columns:1fr}.xc-quicklinks a{padding:16px 18px}.xc-hero-slide h1{font-size:clamp(2.8rem,11vw,4.3rem)!important}.xc-hero-slide .hero-grid{padding-top:62px;padding-bottom:45px}.xc-hero-carousel:after{display:none}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.xc-quicklinks a,.xc-dash-actions a,.services .card{transition:none!important}}
+</style></head>
 <body>
 <!-- ======================================================
        NAVEGACIÓN
@@ -2803,43 +2942,15 @@ body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-ser
           </span>
 </div>
 </a>
-<ul class="nav-links"><li>
-<a href="#servicios">
-            Servicios
-          </a>
-</li><li>
-<a class="free-link" href="#herramientas">
-            Herramientas
-
-            <span class="free-badge">
-              GRATIS
-            </span>
-</a>
-</li><li>
-<a href="#automatizacion">
-            Automatización
-          </a>
-</li><li>
-<a href="#empresas">
-            Empresas
-          </a>
-</li><li>
-<a href="#recursos">
-            Recursos
-          </a>
-</li><li>
-<a href="#contacto">
-            Contacto
-          </a>
-</li></ul>
-</div>
+<ul class="nav-links"><li class="xc-nav-item"><a href="#inicio">Inicio</a></li><li class="xc-nav-group"><a href="#servicios">Servicios <span aria-hidden="true">⌄</span></a><ul class="xc-dropdown"><li><a href="#servicios">Soporte TI</a></li><li><a href="#automatizacion">Automatización</a></li><li><a href="#empresas">Para empresas</a></li></ul></li><li class="xc-nav-group"><a href="#herramientas">Explorar <span aria-hidden="true">⌄</span></a><ul class="xc-dropdown"><li><a href="#herramientas">Herramientas gratis</a></li><li><a href="#recursos">Productos digitales</a></li><li><a href="#academy">Academia</a></li></ul></li><li class="xc-nav-group"><a href="#sobre-xinecom">Nosotros <span aria-hidden="true">⌄</span></a><ul class="xc-dropdown"><li><a href="#sobre-xinecom">Sobre XineCom</a></li><li><a href="#faq">Preguntas frecuentes</a></li></ul></li><li class="xc-nav-item"><a class="xc-nav-cta" href="#contacto">Cotizar</a></li></ul>
+<details class="xc-mobile-menu"><summary>Menú ☰</summary><div class="xc-mobile-links"><a href="#inicio">Inicio</a><span class="xc-mobile-heading">Servicios</span><a href="#servicios">Soporte TI</a><a href="#automatizacion">Automatización</a><a href="#empresas">Para empresas</a><span class="xc-mobile-heading">Explorar</span><a href="#herramientas">Herramientas gratis</a><a href="#recursos">Productos digitales</a><a href="#academy">Academia</a><span class="xc-mobile-heading">Nosotros</span><a href="#sobre-xinecom">Sobre XineCom</a><a href="#faq">Preguntas frecuentes</a><a href="#contacto">Cotizar</a></div></details></div>
 </nav>
 <!-- ======================================================
        HERO
        ====================================================== -->
-<header class="hero xc-hero-carousel" id="inicio" aria-label="Novedades de XineCom Digital">
-  <div class="xc-hero-slide is-active" id="xc-hero-slide-1" aria-hidden="false">
-<div class="container hero-grid">
+<header aria-label="Novedades de XineCom Digital" class="hero xc-hero-carousel" id="inicio">
+<div aria-hidden="false" class="xc-hero-slide is-active" id="xc-hero-slide-1">
+<div aria-hidden="true" class="xc-grid-backdrop"></div><div class="container hero-grid">
 <div class="hero-content">
 <div class="eyebrow">
           ● SOPORTE TI · AUTOMATIZACIÓN · IA
@@ -2860,40 +2971,40 @@ body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-ser
 <div class="hero-visual"><div class="visual-glow"></div><div class="xc-dashboard"><div class="xc-dash-top"><div><span class="xc-dash-kicker">XINECOM / CONTROL CENTER</span><h3>Tu centro tecnológico</h3></div><span class="xc-online"><i></i> En línea</span></div><div class="xc-dash-main"><span class="xc-dash-kicker">¿QUÉ NECESITAS HOY?</span><div class="xc-dash-actions"><a href="#servicios"><span>◈</span><strong>Soporte TI</strong><small>Resolver un problema ↗</small></a><a href="#herramientas"><span>⌘</span><strong>Herramientas</strong><small>Utilidades gratis ↗</small></a><a href="#automatizacion"><span>⚡</span><strong>Automatizar</strong><small>Ahorrar tiempo ↗</small></a></div></div><div class="xc-dash-bottom"><div><strong>01</strong><span>Diagnostica</span></div><div><strong>02</strong><span>Optimiza</span></div><div><strong>03</strong><span>Avanza</span></div></div></div></div>
 </div>
 </div>
-  <div class="xc-hero-slide" id="xc-hero-slide-2" aria-hidden="true" inert>
-<div class="container hero-grid">
-  <div class="hero-content">
-    <div class="eyebrow">● PRECIOS ACCESIBLES · ATENCIÓN CERCANA</div>
-    <h1>Soluciones reales.<br><span class="green">Precios a tu alcance.</span></h1>
-    <p class="hero-description">Cuidamos tu tecnología y tu presupuesto. Soporte TI desde $10.000, optimización desde $12.000 y cotizaciones claras antes de comenzar.</p>
-    <div class="hero-buttons">
-      <a class="btn" href="#servicios">Conocer precios →</a>
-      <a class="btn btn-secondary" href="#contacto">Solicitar cotización</a>
-    </div>
-    <div class="hero-note">Sin sorpresas · Atención remota y presencial según disponibilidad</div>
-  </div>
-  <div class="hero-visual">
-    <div class="visual-glow"></div>
-    <div class="xc-price-panel">
-      <span class="xc-dash-kicker">XINECOM / PRECIOS DE LANZAMIENTO</span>
-      <h3>Tu bolsillo también importa.</h3>
-      <p>Servicios claros para personas y pequeños negocios.</p>
-      <div class="xc-price-list">
-        <div><span>Soporte TI remoto</span><strong>Desde $10.000</strong></div>
-        <div><span>Optimización Windows</span><strong>$12.000</strong></div>
-        <div><span>Instalación de Windows + drivers</span><strong>$15.000</strong></div>
-      </div>
-      <div class="xc-price-foot">Valores en CLP · Trabajos adicionales sujetos a cotización previa</div>
-      <a href="#servicios" class="btn btn-small xc-price-link">Ver todos los servicios →</a>
-    </div>
-  </div>
+<div aria-hidden="true" class="xc-hero-slide" id="xc-hero-slide-2" inert="">
+<div aria-hidden="true" class="xc-grid-backdrop"></div><div class="container hero-grid">
+<div class="hero-content">
+<div class="eyebrow">● PRECIOS ACCESIBLES · ATENCIÓN CERCANA</div>
+<h1>Soluciones reales.<br/><span class="green">Precios a tu alcance.</span></h1>
+<p class="hero-description">Cuidamos tu tecnología y tu presupuesto. Soporte TI desde $10.000, optimización desde $12.000 y cotizaciones claras antes de comenzar.</p>
+<div class="hero-buttons">
+<a class="btn" href="#servicios">Conocer precios →</a>
+<a class="btn btn-secondary" href="#contacto">Solicitar cotización</a>
+</div>
+<div class="hero-note">Sin sorpresas · Atención remota y presencial según disponibilidad</div>
+</div>
+<div class="hero-visual">
+<div class="visual-glow"></div>
+<div class="xc-price-panel">
+<span class="xc-dash-kicker">XINECOM / PRECIOS DE LANZAMIENTO</span>
+<h3>Tu bolsillo también importa.</h3>
+<p>Servicios claros para personas y pequeños negocios.</p>
+<div class="xc-price-list">
+<div><span>Soporte TI remoto</span><strong>Desde $10.000</strong></div>
+<div><span>Optimización Windows</span><strong>$12.000</strong></div>
+<div><span>Instalación de Windows + drivers</span><strong>$15.000</strong></div>
+</div>
+<div class="xc-price-foot">Valores en CLP · Trabajos adicionales sujetos a cotización previa</div>
+<a class="btn btn-small xc-price-link" href="#servicios">Ver todos los servicios →</a>
+</div>
+</div>
 </div></div>
-  <div class="xc-hero-controls container" aria-label="Controles del banner">
-    <button type="button" class="xc-hero-arrow" id="xc-hero-prev" aria-label="Banner anterior">‹</button>
-    <button type="button" class="xc-hero-dot is-active" data-xc-slide="0" aria-label="Mostrar banner de presentación" aria-current="true"></button>
-    <button type="button" class="xc-hero-dot" data-xc-slide="1" aria-label="Mostrar banner de precios" aria-current="false"></button>
-    <button type="button" class="xc-hero-arrow" id="xc-hero-next" aria-label="Banner siguiente">›</button>
-  </div>
+<div aria-label="Controles del banner" class="xc-hero-controls container">
+<button aria-label="Banner anterior" class="xc-hero-arrow" id="xc-hero-prev" type="button">‹</button>
+<button aria-current="true" aria-label="Mostrar banner de presentación" class="xc-hero-dot is-active" data-xc-slide="0" type="button"></button>
+<button aria-current="false" aria-label="Mostrar banner de precios" class="xc-hero-dot" data-xc-slide="1" type="button"></button>
+<button aria-label="Banner siguiente" class="xc-hero-arrow" id="xc-hero-next" type="button">›</button>
+</div>
 </header>
 <!-- ======================================================
        VALUE BAR
@@ -2917,7 +3028,7 @@ body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-ser
 <span>Seguridad</span>
 </div>
 </div>
-</section>
+</section><section aria-label="Accesos rápidos" class="xc-quicklinks"><div class="container xc-quicklinks-inner"><a href="#servicios"><span>01 / SOPORTE</span><strong>Resuelve tu problema ↗</strong></a><a href="#herramientas"><span>02 / HERRAMIENTAS</span><strong>Utilidades gratuitas ↗</strong></a><a href="#automatizacion"><span>03 / AUTOMATIZA</span><strong>Haz crecer tu negocio ↗</strong></a></div></section>
 <!-- ======================================================
        SERVICIOS
        ====================================================== -->
@@ -2942,7 +3053,7 @@ body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-ser
         tecnicismos innecesarios.
 
       </p>
-<p class="xc-commercial-note">Precios de lanzamiento en CLP. Los valores «Desde» corresponden al servicio básico y se confirman antes de realizar el trabajo, según diagnóstico y alcance. Atención presencial en comunas de la Región Metropolitana, sujeta a disponibilidad, con recargo del 10 % sobre el valor del servicio. Cualquier costo adicional se informará en la cotización.</p>
+<p class="xc-commercial-note">Precios de lanzamiento en CLP. Los valores «Desde» corresponden al servicio básico y se confirman antes de realizar el trabajo, según diagnóstico y alcance. Atención presencial en comunas de la Región Metropolitana, sujeta a disponibilidad. Se cobra el costo de los pasajes de ida y regreso, más un 10 % del valor del servicio contratado. Si se realiza la visita pero no se efectúa el servicio, solo se cobra el costo de los pasajes de ida y regreso, informado previamente. Cualquier costo adicional se informará en la cotización.</p>
 <div class="cards">
 <!-- SOPORTE TI -->
 <article class="card">
@@ -3046,13 +3157,11 @@ body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-ser
           </p>
 <div class="price">Desde $30.000</div><div class="xc-commercial-mode">Empresas · remoto o presencial</div><p class="xc-commercial-scope">Alcance, número de equipos, frecuencia y desplazamientos se acuerdan mediante presupuesto.</p>
 <button class="btn btn-secondary btn-small xc-service-btn" data-service="Soporte para empresa" type="button">Cotizar soporte empresarial →</button></article>
-
 <!-- SERVICIOS COMPLEMENTARIOS -->
 <article class="card"><div class="card-icon">💾</div><h3>Respaldo de archivos</h3><p>Respaldo básico de documentos y archivos personales, según cantidad y estado del equipo.</p><div class="price">Desde $15.000</div><div class="xc-commercial-mode">Remoto o presencial según el caso</div><p class="xc-commercial-scope">Recuperación de datos de discos dañados y medios externos se cotiza por separado.</p><button class="btn btn-secondary btn-small xc-service-btn" data-service="Respaldo de archivos" type="button">Solicitar respaldo →</button></article>
 <article class="card"><div class="card-icon">🖨️</div><h3>Configuración de impresoras</h3><p>Instalación, conexión y configuración de impresoras compatibles.</p><div class="price">$15.000</div><div class="xc-commercial-mode">Remoto o presencial según el caso</div><p class="xc-commercial-scope">No incluye reparaciones físicas, repuestos ni consumibles.</p><button class="btn btn-secondary btn-small xc-service-btn" data-service="Configuración de impresoras" type="button">Configurar impresora →</button></article>
 <article class="card"><div class="card-icon">🧰</div><h3>Mantención física PC / notebook</h3><p>Limpieza interna preventiva de equipos convencionales, previa evaluación.</p><div class="price">Desde $25.000</div><div class="xc-commercial-mode">Presencial</div><p class="xc-commercial-scope">El alcance y cualquier material o trabajo adicional se acuerdan antes del servicio.</p><button class="btn btn-secondary btn-small xc-service-btn" data-service="Mantención física" type="button">Solicitar mantención →</button></article>
 <article class="card"><div class="card-icon">🤖</div><h3>Automatización personalizada</h3><p>Automatizaciones para negocios, adaptadas al flujo de trabajo y herramientas disponibles.</p><div class="price">Cotización</div><div class="xc-commercial-mode">Empresas · evaluación previa</div><p class="xc-commercial-scope">XineCom Stock está en desarrollo; se puede solicitar una demostración.</p><button class="btn btn-secondary btn-small xc-service-btn" data-service="Automatización" type="button">Cotizar automatización →</button></article>
-
 <!-- NUEVOS SERVICIOS TI · XINECOM -->
 <article class="card"><div class="card-icon">🧩</div><h3>Instalación de SSD y RAM</h3><p>Instalación o ampliación de almacenamiento SSD y memoria RAM compatible para tu equipo.</p><div class="price">Desde $15.000</div><div class="xc-commercial-mode">Presencial · previa evaluación</div><p class="xc-commercial-scope">Mano de obra. Componentes y migración de datos se cotizan aparte.</p><button class="btn btn-secondary btn-small xc-service-btn" data-service="Instalación de SSD y RAM" type="button">Mejorar mi equipo →</button></article>
 <article class="card"><div class="card-icon">📦</div><h3>Instalación de programas</h3><p>Instalación y configuración de aplicaciones compatibles, con revisión básica de funcionamiento.</p><div class="price">Desde $8.000</div><div class="xc-commercial-mode">Remoto o presencial</div><p class="xc-commercial-scope">No incluye licencias de software ni programas de pago.</p><button class="btn btn-secondary btn-small xc-service-btn" data-service="Instalación de programas" type="button">Instalar programas →</button></article>
@@ -3060,43 +3169,35 @@ body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-ser
 <article class="card"><div class="card-icon">🔄</div><h3>Migración de información</h3><p>Traslado de documentos y archivos personales entre equipos en funcionamiento.</p><div class="price">Desde $18.000</div><div class="xc-commercial-mode">Presencial o remoto según el caso</div><p class="xc-commercial-scope">Depende del volumen de datos. No incluye recuperación de unidades dañadas.</p><button class="btn btn-secondary btn-small xc-service-btn" data-service="Migración de información" type="button">Solicitar migración →</button></article>
 <article class="card"><div class="card-icon">🛠️</div><h3>Solución de errores de Windows</h3><p>Diagnóstico y solución de fallas de arranque, actualizaciones y errores del sistema operativo.</p><div class="price">Desde $15.000</div><div class="xc-commercial-mode">Remoto o presencial según el problema</div><p class="xc-commercial-scope">Reinstalaciones, respaldo y repuestos se cotizan por separado cuando sean necesarios.</p><button class="btn btn-secondary btn-small xc-service-btn" data-service="Errores de Windows" type="button">Solucionar Windows →</button></article>
 </div>
-<div class="xc-microbusiness" aria-labelledby="xc-micro-title">
-  <div class="xc-micro-intro"><span class="xc-micro-kicker">🏪 XINECOM PARA TU NEGOCIO</span><h3 id="xc-micro-title">Tu negocio funcionando. <span>Sin complicaciones.</span></h3><p>Soporte tecnológico para almacenes, minimarkets, oficinas y microempresas. Nos enfocamos en computadores, impresoras, programas y correo; sin servicios de redes ni cableado.</p><div class="xc-micro-price">Soporte para microempresas <strong>desde $30.000</strong> · alcance a cotizar</div></div>
-  <div class="xc-micro-grid">
-    <div class="xc-micro-item"><span>💻</span><h4>Computadores de trabajo</h4><p>Windows, optimización y solución de problemas cotidianos.</p></div>
-    <div class="xc-micro-item"><span>🖨️</span><h4>Impresoras y periféricos</h4><p>Instalación y configuración de dispositivos compatibles.</p></div>
-    <div class="xc-micro-item"><span>📧</span><h4>Correo y Microsoft 365</h4><p>Configuración de cuentas y aplicaciones de oficina.</p></div>
-    <div class="xc-micro-item"><span>📦</span><h4>XineCom Stock</h4><p>Inventario y alertas por correo. Solución en desarrollo; demostraciones sujetas a disponibilidad.</p></div>
-  </div>
-  <div class="xc-micro-footer"><p>Atención remota o presencial según el caso. Visitas en comunas de la Región Metropolitana, sujetas a disponibilidad, con recargo del 10 % sobre el servicio. El presupuesto se confirma antes de trabajar.</p><button class="btn xc-micro-cta" data-service="Soporte para empresa" data-message="Hola, quiero cotizar soporte TI para mi microempresa. Tipo de negocio: " type="button">Cotizar para mi negocio →</button></div>
+<div aria-labelledby="xc-micro-title" class="xc-microbusiness">
+<div class="xc-micro-intro"><span class="xc-micro-kicker">🏪 XINECOM PARA TU NEGOCIO</span><h3 id="xc-micro-title">Tu negocio funcionando. <span>Sin complicaciones.</span></h3><p>Soporte tecnológico para almacenes, minimarkets, oficinas y microempresas. Nos enfocamos en computadores, impresoras, programas y correo; sin servicios de redes ni cableado.</p><div class="xc-micro-price">Soporte para microempresas <strong>desde $30.000</strong>. El precio final dependerá del problema, los equipos que necesiten atención y el trabajo solicitado. Te informaremos el valor antes de comenzar.</div></div>
+<div class="xc-micro-grid">
+<div class="xc-micro-item"><span>💻</span><h4>Computadores de trabajo</h4><p>Windows, optimización y solución de problemas cotidianos.</p></div>
+<div class="xc-micro-item"><span>🖨️</span><h4>Impresoras y periféricos</h4><p>Instalación y configuración de dispositivos compatibles.</p></div>
+<div class="xc-micro-item"><span>📧</span><h4>Correo y Microsoft 365</h4><p>Configuración de cuentas y aplicaciones de oficina.</p></div>
+<div class="xc-micro-item"><span>📦</span><h4>XineCom Stock</h4><p>Inventario y alertas por correo. Solución en desarrollo; demostraciones sujetas a disponibilidad.</p></div>
+</div>
+<div class="xc-micro-footer"><p>Atención remota o presencial según el caso. Visitas en comunas de la Región Metropolitana, sujetas a disponibilidad. Se cobra el costo de los pasajes de ida y regreso, más un 10 % del valor del servicio contratado. Si se realiza la visita pero no se efectúa el servicio, solo se cobra el costo de los pasajes de ida y regreso, informado previamente. El presupuesto se confirma antes de trabajar.</p><button class="btn xc-micro-cta" data-message="Hola, quiero cotizar soporte TI para mi microempresa. Tipo de negocio: " data-service="Soporte para empresa" type="button">Cotizar para mi negocio →</button></div>
 </div>
 <div class="xc-support-lab"><div><span class="eyebrow">CENTRO DE AYUDA</span><h3>¿No sabes qué servicio elegir?</h3><p>Selecciona lo que te ocurre y te orientamos hacia la mejor opción.</p></div><div class="xc-issue-grid"><button data-service="Optimización de PC" type="button">🐢 Mi PC está lento <span>→</span></button><button data-service="Configuración de impresoras" type="button">🖨️ Problemas con impresora <span>→</span></button><button data-service="Seguridad informática" type="button">🛡️ Sospecho de un virus <span>→</span></button><button data-service="Instalación de Windows" type="button">🪟 Problemas con Windows <span>→</span></button><button data-service="Soporte TI" type="button">📧 Problemas con correo <span>→</span></button><button data-service="Diagnóstico de PC" type="button">🔍 No sé qué le pasa <span>→</span></button></div></div>
 </div>
 </section><section class="tools" id="herramientas"><div class="container"><div class="eyebrow">XINECOM TOOLS · GRATIS</div><h2 class="section-title">Herramientas que <span class="green">sí sirven.</span></h2><p class="section-description">Calculadoras y utilidades gratuitas para estudiantes, personas y profesionales. Todo desde esta página.</p><div class="tools-grid"><article class="tool"><div class="tool-icon">🛡️</div><h3>XineCom URL Check</h3><p>Revisa señales de phishing en enlaces sospechosos sin abrir el sitio. Análisis orientativo y gratuito.</p><a class="btn btn-small" href="url-check.html">Revisar URL →</a><div class="tool-status">DISPONIBLE · GRATIS</div></article><article class="tool"><div class="tool-icon">🧮</div><h3>Calculadora de porcentajes</h3><p>Porcentajes, descuentos y aumentos.</p><button class="btn btn-small" onclick="openXTool('percent')" type="button">Usar herramienta →</button><div class="tool-status">DISPONIBLE</div></article>
 <article class="tool"><div class="tool-icon">🎓</div><h3>Mi promedio universitario</h3><p>Promedio ponderado y nota necesaria para aprobar.</p><button class="btn btn-small" onclick="openXTool('grades')" type="button">Usar herramienta →</button><div class="tool-status">DISPONIBLE</div></article>
 <article class="tool"><div class="tool-icon">🔐</div><h3>Generador de contraseñas</h3><p>Crea contraseñas aleatorias en tu navegador.</p><button class="btn btn-small" onclick="openXTool('password')" type="button">Usar herramienta →</button><div class="tool-status">DISPONIBLE</div></article>
-
-
 <article class="tool">
-  <div class="tool-icon">💻</div>
-  <h3>XineCom Diagnostic FREE</h3>
-  <p>Diagnostica Windows, procesador, RAM, almacenamiento y red. Genera un informe gratuito en TXT.</p>
+<div class="tool-icon">💻</div>
+<h3>XineCom Diagnostic FREE</h3>
+<p>Diagnostica Windows, procesador, RAM, almacenamiento y red. Genera un informe gratuito en TXT.</p>
 <div class="xc-diagnostic-actions">
-  <a class="btn btn-small xc-diagnostic-download"
-     href="XineCom-Diagnostic-Free-v1.0.1.ps1"
-     download="XineCom-Diagnostic-Free-v1.0.1.ps1">
+<a class="btn btn-small xc-diagnostic-download" download="XineCom-Diagnostic-Free-v1.0.1.ps1" href="XineCom-Diagnostic-Free-v1.0.1.ps1">
     ⬇ Descargar gratis
   </a>
-  <a class="btn btn-small btn-secondary xc-diagnostic-guide"
-     href="XineCom_Diagnostic_FREE_v1.0.1_Guia_de_Uso.pdf"
-     target="_blank"
-     rel="noopener noreferrer">
+<a class="btn btn-small btn-secondary xc-diagnostic-guide" href="XineCom_Diagnostic_FREE_v1.0.1_Guia_de_Uso.pdf" rel="noopener noreferrer" target="_blank">
     📖 Ver guía de uso
   </a>
 </div>
 </article>
 <article class="tool"><div class="tool-icon">💾</div><h3>Conversor MB / GB / TB</h3><p>Conversión de unidades de almacenamiento.</p><button class="btn btn-small" onclick="openXTool('storage')" type="button">Usar herramienta →</button><div class="tool-status">DISPONIBLE</div></article>
-
 <article class="tool"><div class="tool-icon">💻</div><h3>¿Cuánta RAM necesito?</h3><p>Recomendaciones según el uso de tu equipo.</p><div class="tool-status coming">EN DESARROLLO</div></article><article class="tool"><div class="tool-icon">📐</div><h3>Conversor de unidades</h3><p>Centímetros, metros, kilómetros, pulgadas y más.</p><button class="btn btn-small" onclick="openXTool('units')" type="button">Usar herramienta →</button><div class="tool-status">DISPONIBLE</div></article><article class="tool"><div class="tool-icon">📑</div><h3>Generador de documentos</h3><p>Crea cotizaciones y solicitudes con una plantilla lista para imprimir o guardar en PDF.</p><button class="btn btn-small" onclick="openXTool('documents')" type="button">Crear documento →</button><div class="tool-status">DISPONIBLE</div></article></div>
 <div class="x-tool-panel" hidden="" id="x-tool-panel">
 <div class="x-tool-header"><h3 id="x-tool-title">Herramienta</h3><button class="btn btn-secondary btn-small" onclick="document.getElementById('x-tool-panel').hidden=true" type="button">Cerrar ✕</button></div>
@@ -3104,7 +3205,6 @@ body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-ser
 <div class="x-tool-body" hidden="" id="xt-grades"><p>Ingresa notas y ponderaciones que sumen 100%. Deja una nota vacía para saber qué necesitas en esa evaluación.</p><div class="x-tool-fields"><label>Nota máxima <select id="xt-scale"><option value="7">7,0 (Chile)</option><option value="10">10</option><option value="100">100</option></select></label><label>Promedio objetivo <input id="xt-target" step="0.1" type="number" value="4"/></label></div><div id="xt-grade-rows"></div><button class="btn btn-secondary" onclick="xtAddGrade()" type="button">+ Agregar evaluación</button> <button class="btn" onclick="xtGrades()" type="button">Calcular promedio</button><div class="x-tool-result" id="xt-grades-result" role="status"></div><p class="x-tool-hint">El redondeo y los requisitos pueden variar según tu institución.</p></div>
 <div class="x-tool-body" hidden="" id="xt-password"><p>La contraseña se genera localmente en tu navegador y no se envía a XineCom.</p><div class="x-tool-fields"><label>Longitud (8–64) <input id="xt-pass-length" max="64" min="8" type="number" value="18"/></label></div><button class="btn" onclick="xtPassword()" type="button">Generar contraseña</button><div class="x-tool-result" id="xt-password-result" role="status" style="overflow-wrap:anywhere"></div></div>
 <div class="x-tool-body" hidden="" id="xt-storage"><p>Conversión binaria: 1 GB = 1024 MB; 1 TB = 1024 GB.</p><div class="x-tool-fields"><label>Valor <input id="xt-storage-value" step="any" type="number" value="1"/></label><label>Desde <select id="xt-storage-from"><option>MB</option><option selected="">GB</option><option>TB</option></select></label><label>Hasta <select id="xt-storage-to"><option selected="">MB</option><option>GB</option><option>TB</option></select></label></div><button class="btn" onclick="xtStorage()" type="button">Convertir</button><div class="x-tool-result" id="xt-storage-result" role="status"></div></div>
-
 <div class="x-tool-body" hidden="" id="xt-units"><p>Convierte longitudes al instante. Los resultados usan factores estándar.</p><div class="x-tool-fields"><label>Valor <input id="xc-unit-value" step="any" type="number" value="150"/></label><label>Desde <select id="xc-unit-from"><option value="cm">Centímetros (cm)</option><option value="m">Metros (m)</option><option value="km">Kilómetros (km)</option><option value="mm">Milímetros (mm)</option><option value="in">Pulgadas</option><option value="ft">Pies</option></select></label><label>Hacia <select id="xc-unit-to"><option value="m">Metros (m)</option><option value="cm">Centímetros (cm)</option><option value="km">Kilómetros (km)</option><option value="mm">Milímetros (mm)</option><option value="in">Pulgadas</option><option value="ft">Pies</option></select></label></div><button class="btn" onclick="xcConvertUnits()" type="button">Convertir →</button><div class="x-tool-result" id="xc-unit-result" role="status"></div></div><div class="x-tool-body" hidden="" id="xt-documents"><p>Genera una cotización o solicitud sencilla. Puedes imprimirla o guardarla como PDF desde tu navegador. Los datos se procesan en tu dispositivo.</p><div class="x-tool-fields"><label>Tipo de documento <select id="xc-doc-type"><option value="Cotización">Cotización</option><option value="Solicitud de servicio">Solicitud de servicio</option></select></label><label>Nombre / Empresa <input id="xc-doc-name" maxlength="100" placeholder="Ej. Empresa ABC"/></label><label>Destinatario <input id="xc-doc-recipient" maxlength="100" placeholder="Ej. Cliente XYZ"/></label><label>Fecha <input id="xc-doc-date" type="date"/></label><label style="grid-column:1/-1">Descripción del servicio <textarea id="xc-doc-desc" maxlength="2000" placeholder="Describe el trabajo o solicitud" rows="4"></textarea></label><label>Monto estimado (CLP, opcional) <input id="xc-doc-amount" min="0" placeholder="Ej. 25000" step="1" type="number"/></label></div><button class="btn" onclick="xcCreateDocument()" type="button">Generar e imprimir / PDF →</button><p class="x-tool-hint">Plantilla orientativa; revisa los datos antes de compartirla. No es una factura ni un documento tributario.</p></div></div></div></section><section id="automatizacion">
 <div class="container automation-grid">
 <div>
@@ -3128,13 +3228,13 @@ body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-ser
         </p>
 <div class="automation-list"><article class="xc-auto-card"><span class="xc-auto-icon">📩</span><div><h3>Recepción de clientes</h3><p>Formularios conectados a notificaciones y registro de solicitudes.</p></div><button class="xc-auto-link" data-message="Me interesa: Recepción de clientes" data-service="Automatización" type="button">Consultar ↗</button></article><article class="xc-auto-card"><span class="xc-auto-icon">📊</span><div><h3>Registro de ventas y leads</h3><p>Organiza contactos y oportunidades en hojas de cálculo.</p></div><button class="xc-auto-link" data-message="Me interesa: Registro de ventas y leads" data-service="Automatización" type="button">Consultar ↗</button></article><article class="xc-auto-card"><span class="xc-auto-icon">📅</span><div><h3>Recordatorios de citas</h3><p>Avisos programados para reducir ausencias.</p></div><button class="xc-auto-link" data-message="Me interesa: Recordatorios de citas" data-service="Automatización" type="button">Consultar ↗</button></article><article class="xc-auto-card"><span class="xc-auto-icon">🧾</span><div><h3>Cotizaciones y seguimiento</h3><p>Organiza solicitudes y recordatorios de presupuestos.</p></div><button class="xc-auto-link" data-message="Me interesa: Cotizaciones y seguimiento" data-service="Automatización" type="button">Consultar ↗</button></article><article class="xc-auto-card"><span class="xc-auto-icon">📦</span><div><h3>Alertas de inventario</h3><p>Avisos cuando un producto alcanza un nivel mínimo.</p></div><button class="xc-auto-link" data-message="Me interesa: Alertas de inventario" data-service="Automatización" type="button">Consultar ↗</button></article><article class="xc-auto-card"><span class="xc-auto-icon">💬</span><div><h3>Atención y consultas frecuentes</h3><p>Flujos de respuesta según canales y herramientas disponibles.</p></div><button class="xc-auto-link" data-message="Me interesa: Atención y consultas frecuentes" data-service="Automatización" type="button">Consultar ↗</button></article><article class="xc-auto-card"><span class="xc-auto-icon">📈</span><div><h3>Reportes automáticos</h3><p>Resúmenes periódicos de ventas, tareas y operaciones.</p></div><button class="xc-auto-link" data-message="Me interesa: Reportes automáticos" data-service="Automatización" type="button">Consultar ↗</button></article><article class="xc-auto-card"><span class="xc-auto-icon">🤖</span><div><h3>Automatización con IA</h3><p>Clasificación y borradores asistidos con revisión humana.</p></div><button class="xc-auto-link" data-message="Me interesa: Automatización con IA" data-service="Automatización" type="button">Consultar ↗</button></article></div>
 </div>
-<article class="xc-stock-showcase" aria-labelledby="xc-stock-title">
-  <div class="xc-stock-top"><span class="xc-stock-kicker">📦 XINECOM STOCK</span><span class="xc-stock-status">EN DESARROLLO · DEMOSTRACIONES</span></div>
-  <h3 id="xc-stock-title">Organiza tu inventario y detecta cuándo reponer.</h3>
-  <p>Propuesta para almacenes, minimarkets y pequeños negocios: registro de productos en una planilla, niveles mínimos y alertas de stock bajo por correo, según la configuración acordada.</p>
-  <div class="xc-stock-points"><span>✓ Inventario organizado</span><span>✓ Alertas por correo</span><span>✓ Adaptación al negocio</span></div>
-  <p class="xc-stock-caution">Solución en desarrollo. La demostración y las funciones definitivas dependen del alcance acordado. No incluye integración automática con cajas ni máquinas de pago.</p>
-  <button class="btn xc-auto-link xc-stock-cta" data-service="Automatización" data-message="Me interesa solicitar una demostración de XineCom Stock. Mi negocio es: " type="button">Solicitar demostración →</button>
+<article aria-labelledby="xc-stock-title" class="xc-stock-showcase">
+<div class="xc-stock-top"><span class="xc-stock-kicker">📦 XINECOM STOCK</span><span class="xc-stock-status">EN DESARROLLO · DEMOSTRACIONES</span></div>
+<h3 id="xc-stock-title">Organiza tu inventario y detecta cuándo reponer.</h3>
+<p>Propuesta para almacenes, minimarkets y pequeños negocios: registro de productos en una planilla, niveles mínimos y alertas de stock bajo por correo, según la configuración acordada.</p>
+<div class="xc-stock-points"><span>✓ Inventario organizado</span><span>✓ Alertas por correo</span><span>✓ Adaptación al negocio</span></div>
+<p class="xc-stock-caution">Solución en desarrollo. La demostración y las funciones definitivas dependen del alcance acordado. No incluye integración automática con cajas ni máquinas de pago.</p>
+<button class="btn xc-auto-link xc-stock-cta" data-message="Me interesa solicitar una demostración de XineCom Stock. Mi negocio es: " data-service="Automatización" type="button">Solicitar demostración →</button>
 </article>
 <div class="automation-offer">
 <div class="discount">
@@ -3156,112 +3256,46 @@ body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-ser
         </a>
 </div>
 </div>
-</section><section class="business" id="empresas">
+</section><section class="business xc-business-v23" id="empresas">
 <div class="container business-grid">
 <div>
-<div class="eyebrow">
-          XINECOM EMPRESAS
-        </div>
-<h2 class="section-title">
-
-          Tu negocio necesita tecnología.
-
-          <span class="green">
-            No complicaciones.
-          </span>
-</h2>
-<p class="section-description">
-
-          Queremos ayudar a pequeñas empresas que
-          necesitan apoyo tecnológico sin mantener
-          un gran departamento TI interno.
-
-        </p>
-<ul class="business-list">
-<li>
-            Soporte remoto a usuarios
-          </li>
-<li>
-            Configuración de computadores
-          </li>
-<li>
-            Apoyo con Microsoft 365
-          </li>
-<li>
-            Instalación y configuración de software
-          </li>
-<li>
-            Diagnóstico de problemas
-          </li>
-<li>
-            Automatización de tareas repetitivas
-          </li>
-<li>
-            Orientación tecnológica
-          </li>
-</ul>
-<a class="btn" href="#contacto">
-          Hablar sobre mi empresa →
-        </a>
+<div class="eyebrow">XINECOM PARA EMPRESAS Y EMPRENDEDORES</div>
+<h2 class="section-title">Tu negocio crece. <span class="green">Nosotros te ayudamos con la tecnología.</span></h2>
+<p class="section-description xc-business-intro">Sabemos que emprender implica resolver mil cosas al mismo tiempo. Por eso queremos que la tecnología sea una ayuda para tu negocio, no otra preocupación.</p>
+<div class="xc-business-mission">
+<span class="xc-mission-label">LO QUE BUSCAMOS</span>
+<p>Acercar el soporte TI y la automatización a negocios de todos los tamaños, especialmente a quienes no cuentan con un equipo tecnológico propio. Escuchamos lo que necesitas, explicamos las opciones con claridad y buscamos una solución útil que se adapte a tu realidad y presupuesto.</p>
 </div>
-<div class="business-panel"><div class="xc-business-tag">◆ XINECOM / BUSINESS SOLUTIONS</div>
-<h3>
-          Soporte TI para pequeñas empresas
-        </h3>
-<p>
-
-          Podemos evaluar las necesidades de tu
-          negocio y preparar una solución adaptada
-          al tamaño y operación de tu empresa.
-
-        </p>
-<div class="business-feature">
-<strong>
-            💻 Usuarios y equipos
-          </strong>
-<span>
-            Apoyo para computadores y usuarios.
-          </span>
+<div aria-label="Beneficios para tu negocio" class="xc-business-benefits">
+<div><span aria-hidden="true">✦</span><strong>Atención cercana</strong><small>Hablamos claro y escuchamos tu problema.</small></div>
+<div><span aria-hidden="true">✦</span><strong>Sin gastos innecesarios</strong><small>Evaluamos alternativas antes de recomendar.</small></div>
+<div><span aria-hidden="true">✦</span><strong>A tu ritmo</strong><small>Desde una ayuda puntual hasta un proyecto mayor.</small></div>
 </div>
-<div class="business-feature">
-<strong>
-            ☁️ Servicios digitales
-          </strong>
-<span>
-            Ayuda con herramientas de trabajo y nube.
-          </span>
+<button class="btn xc-business-cta" data-message="Hola, tengo un negocio y me gustaría conversar sobre una solución tecnológica. Mi necesidad es: " data-service="Soporte para empresa" type="button">Conversemos sobre tu negocio →</button>
 </div>
-<div class="business-feature">
-<strong>
-            🤖 Automatización
-          </strong>
-<span>
-            Procesos repetitivos convertidos en flujos automáticos.
-          </span>
+<div class="business-panel xc-business-panel-v23">
+<div class="xc-business-tag">◆ XINECOM / SOLUCIONES PARA TU NEGOCIO</div>
+<h3>¿En qué podemos ayudarte?</h3>
+<p>No necesitas saber de tecnología para pedir ayuda. Cuéntanos qué está pasando y evaluaremos contigo los siguientes pasos.</p>
+<div class="business-feature"><strong>💻 Equipos y soporte</strong><span>Problemas de computadores, programas, impresoras y usuarios.</span></div>
+<div class="business-feature"><strong>☁️ Herramientas de trabajo</strong><span>Configuración y orientación en correo, Microsoft 365 y servicios digitales.</span></div>
+<div class="business-feature"><strong>🤖 Automatizaciones prácticas</strong><span>Ideas para reducir tareas repetitivas y ordenar información.</span></div>
+<div class="business-feature"><strong>🧩 Soluciones a medida</strong><span>Desde una consulta puntual hasta un plan adaptado a tu operación.</span></div>
+<div class="xc-business-steps-heading">Así trabajamos contigo</div>
+<div class="xc-business-flow"><div><span>01</span><strong>Te escuchamos</strong></div><div><span>02</span><strong>Te orientamos</strong></div><div><span>03</span><strong>Lo resolvemos juntos</strong></div></div>
+<p class="xc-business-smallprint">Cada propuesta depende de una evaluación previa; los servicios y costos se acuerdan antes de comenzar.</p>
 </div>
-<div class="business-feature">
-<strong>
-            🔧 Atención personalizada
-          </strong>
-<span>
-            Soluciones pensadas según cada necesidad.
-          </span>
-</div>
-<div class="xc-business-flow"><div><span>01</span><strong>Evaluamos</strong></div><div><span>02</span><strong>Proponemos</strong></div><div><span>03</span><strong>Implementamos</strong></div></div></div>
 </div>
 </section>
 <!-- ======================================================
        XINECOM EMPRESAS
        ====================================================== -->
-
 <!-- ======================================================
        AUTOMATIZACIÓN
        ====================================================== -->
-
 <!-- ======================================================
        HERRAMIENTAS GRATIS
        ====================================================== -->
-
 <!-- ======================================================
        RECURSOS DIGITALES
        ====================================================== -->
@@ -3341,6 +3375,28 @@ body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-ser
 </div>
 </div>
 </section>
+<!-- XINECOM 2.5: SOBRE XINECOM — SIN FOTOGRAFÍA -->
+<section aria-labelledby="xc-about-title" class="xc-about" id="sobre-xinecom">
+<div class="container xc-about-layout">
+<div>
+<div class="eyebrow">PERSONAS DETRÁS DE LA TECNOLOGÍA</div>
+<h2 class="section-title" id="xc-about-title">Hola, soy Elías. <span class="green">Bienvenido a XineCom.</span></h2>
+<p class="section-description">XineCom Digital nace de una idea sencilla: la tecnología debería ayudarte, no complicarte la vida. Sabemos que cuando un computador falla o un negocio necesita organizarse mejor, lo que más se agradece es alguien que escuche, explique y proponga soluciones claras.</p>
+<p class="section-description">Queremos acompañar a personas y emprendedores con soporte técnico, herramientas gratuitas y automatizaciones que respondan a necesidades reales. Sin promesas exageradas, sin tecnicismos innecesarios y buscando siempre alternativas que se ajusten a cada presupuesto.</p>
+<blockquote class="xc-about-quote">«No se trata solo de arreglar un equipo o automatizar una tarea. Se trata de que puedas seguir adelante con tranquilidad y confianza».</blockquote>
+<a class="btn xc-about-cta" href="#contacto">Conversemos sobre lo que necesitas →</a>
+</div>
+<aside aria-label="Presentación del fundador de XineCom Digital" class="xc-about-person">
+<div aria-hidden="true" class="xc-about-monogram">XC</div>
+<div class="eyebrow">CONOCE AL FUNDADOR</div>
+<h3>Elías Aguilera</h3>
+<div class="xc-about-role">Fundador de XineCom Digital</div>
+<p>Soy técnico en Telecomunicaciones y trabajo en el área de soporte TI. Me gusta encontrar soluciones prácticas y explicar la tecnología de una manera cercana, para que nadie sienta que necesita ser experto para pedir ayuda.</p>
+<div class="xc-about-tags"><span>Soporte TI</span><span>Telecomunicaciones</span><span>Automatización</span><span>Atención cercana</span></div>
+<p style="font-size:13px;margin-bottom:0">💚 Tu tecnología. Más simple.</p>
+</aside>
+</div>
+</section>
 <!-- ======================================================
        CONFIANZA
        ====================================================== -->
@@ -3404,94 +3460,24 @@ body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-ser
        FAQ
        ====================================================== -->
 <section id="academy" style="background:#080c0a"><div class="container"><div class="eyebrow">XINECOM ACADEMY</div><h2 class="section-title">Aprende tecnología <span class="green">sin complicaciones.</span></h2><p class="section-description">Próximamente compartiremos guías prácticas sobre Windows, Microsoft 365, seguridad digital, n8n y automatización.</p><a class="btn" href="#contacto">Proponer un tema →</a></div></section>
-<section id="faq">
+<section class="xc-faq-section" id="faq">
 <div class="container">
-<div class="eyebrow">
-        FAQ
-      </div>
-<h2 class="section-title">
-
-        Preguntas
-
-        <span class="green">
-          frecuentes.
-        </span>
-</h2>
-<div class="faq">
-<div class="faq-item">
-<div class="faq-question">
-            ¿XineCom atiende personas?
-          </div>
-<div class="faq-answer">
-
-            Sí. Podemos ayudarte con problemas
-            de computadores, Windows, programas,
-            rendimiento y otras necesidades de soporte.
-
-          </div>
-</div>
-<div class="faq-item">
-<div class="faq-question">
-            ¿Trabajan con pequeñas empresas?
-          </div>
-<div class="faq-answer">
-
-            Sí. Uno de nuestros principales enfoques
-            es ayudar a pequeños negocios que necesitan
-            soporte TI y soluciones digitales.
-
-          </div>
-</div>
-<div class="faq-item">
-<div class="faq-question">
-            ¿Qué se puede automatizar?
-          </div>
-<div class="faq-answer">
-
-            Formularios, registro de clientes,
-            correos, planillas, notificaciones,
-            tareas repetitivas e integraciones entre
-            diferentes herramientas, entre otros procesos.
-
-          </div>
-</div>
-<div class="faq-item">
-<div class="faq-question">
-            ¿Las automatizaciones son personalizadas?
-          </div>
-<div class="faq-answer">
-
-            Sí. Primero revisamos el proceso,
-            identificamos qué tareas pueden automatizarse
-            y luego evaluamos la solución adecuada.
-
-          </div>
-</div>
-<div class="faq-item">
-<div class="faq-question">
-            ¿Las herramientas gratuitas tienen costo?
-          </div>
-<div class="faq-answer">
-
-            No. Las herramientas identificadas como
-            gratuitas pueden utilizarse directamente
-            desde XineCom Digital.
-
-          </div>
-</div>
-<div class="faq-item">
-<div class="faq-question">
-            ¿Ofrecen garantía?
-          </div>
-<div class="faq-answer">
-
-            Los servicios de soporte pueden contar con
-            15 días de garantía sobre el trabajo realizado,
-            según las condiciones del servicio.
-
-          </div>
-</div>
-</div>
+<div class="eyebrow">RESOLVEMOS TUS DUDAS</div>
+<h2 class="section-title">¿Tienes preguntas? <span class="green">Aquí te ayudamos.</span></h2>
+<p class="section-description">No necesitas saber de tecnología para pedir ayuda. Estas son las preguntas que nos haríamos antes de contratar un servicio.</p>
+<div class="xc-faq-list"><details class="xc-faq-item"><summary>Mi computador está muy lento, ¿tengo que comprar otro?<span aria-hidden="true" class="xc-faq-plus">+</span></summary><div class="xc-faq-body">No necesariamente. Primero evaluamos qué está causando la lentitud y te explicamos si conviene optimizar Windows, revisar el almacenamiento o considerar una mejora de hardware.</div></details>
+<details class="xc-faq-item"><summary>¿Cuánto cuesta realmente el servicio?<span aria-hidden="true" class="xc-faq-plus">+</span></summary><div class="xc-faq-body">En el catálogo encontrarás precios «desde», que corresponden al trabajo básico indicado. Te explicaremos el costo final según tu problema y lo que necesites antes de comenzar. No realizaremos trabajos adicionales sin informarte.</div></details>
+<details class="xc-faq-item"><summary>¿Pueden ayudarme sin ir a mi casa?<span aria-hidden="true" class="xc-faq-plus">+</span></summary><div class="xc-faq-body">Sí, muchos problemas de software y configuración se pueden atender de forma remota, con tu autorización. Si es necesaria una visita presencial, revisaremos la disponibilidad y los costos contigo.</div></details>
+<details class="xc-faq-item"><summary>¿Cómo se cobran las visitas presenciales?<span aria-hidden="true" class="xc-faq-plus">+</span></summary><div class="xc-faq-body">Si contratas un servicio presencial, se cobra el costo de los pasajes de ida y regreso más un 10 % del valor del servicio contratado. Te informaremos estos montos antes de confirmar la visita.</div></details>
+<details class="xc-faq-item"><summary>¿Y si vienen a revisar mi equipo, pero finalmente no se realiza el servicio?<span aria-hidden="true" class="xc-faq-plus">+</span></summary><div class="xc-faq-body">En ese caso solo se cobra el costo de los pasajes de ida y regreso, siempre informado previamente. Así puedes decidir con claridad antes de agendar.</div></details>
+<details class="xc-faq-item"><summary>¿Puedo perder mis archivos si instalan Windows?<span aria-hidden="true" class="xc-faq-plus">+</span></summary><div class="xc-faq-body">Una reinstalación puede borrar información. Antes de comenzar te explicaremos los riesgos y las opciones de respaldo. El respaldo y la migración de archivos pueden tener un costo adicional.</div></details>
+<details class="xc-faq-item"><summary>¿Qué pasa si el problema vuelve después del servicio?<span aria-hidden="true" class="xc-faq-plus">+</span></summary><div class="xc-faq-body">Ofrecemos 15 días de garantía para problemas atribuibles al trabajo realizado, de acuerdo con las condiciones informadas para ese servicio. La garantía no cubre fallas nuevas o ajenas a la intervención.</div></details>
+<details class="xc-faq-item"><summary>Tengo un pequeño negocio, ¿también me pueden atender?<span aria-hidden="true" class="xc-faq-plus">+</span></summary><div class="xc-faq-body">¡Por supuesto! Ayudamos a microempresas y emprendedores con soporte TI y soluciones digitales. El soporte para microempresas parte desde $30.000; el valor final depende del problema, la cantidad de equipos y el trabajo solicitado.</div></details>
+<details class="xc-faq-item"><summary>No sé nada de automatización, ¿pueden orientarme?<span aria-hidden="true" class="xc-faq-plus">+</span></summary><div class="xc-faq-body">Claro. Cuéntanos qué tarea repetitiva te quita tiempo, como registrar pedidos, responder consultas o actualizar planillas. Revisamos contigo qué es viable y te proponemos una solución ajustada a tu negocio.</div></details>
+<details class="xc-faq-item"><summary>¿Una automatización tiene costos mensuales?<span aria-hidden="true" class="xc-faq-plus">+</span></summary><div class="xc-faq-body">Depende de la solución. Algunas requieren servicios externos, alojamiento, licencias o mantenimiento. Si corresponde, esos costos se detallarán por separado en la cotización antes de implementar.</div></details>
+<details class="xc-faq-item"><summary>¿Las herramientas del laboratorio digital son realmente gratuitas?<span aria-hidden="true" class="xc-faq-plus">+</span></summary><div class="xc-faq-body">Sí. Las herramientas publicadas como gratuitas se pueden utilizar sin contratar soporte ni comprar productos. Algunas funciones avanzadas o verificaciones externas podrían no estar disponibles hasta que se implementen y prueben.</div></details>
+<details class="xc-faq-item"><summary>¿Cómo solicito una cotización?<span aria-hidden="true" class="xc-faq-plus">+</span></summary><div class="xc-faq-body">Elige un servicio y pulsa «Cotizar» para ir al formulario de contacto, o escríbenos a xinecomdigital@gmail.com. Cuéntanos tu necesidad y revisaremos cómo ayudarte. Una solicitud no implica contratar automáticamente.</div></details></div>
+<div class="xc-faq-contact"><div><strong>¿Tu pregunta no está aquí?</strong><p>Cuéntanos qué necesitas. Queremos explicarte las opciones con claridad y sin tecnicismos.</p></div><a class="btn" href="#contacto">Hacer una consulta →</a></div>
 </div>
 </section>
 <!-- ======================================================
@@ -3531,6 +3517,7 @@ body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-ser
 <!-- ==================================================
            FORMULARIO
            ================================================== -->
+<div aria-live="polite" class="xc-quote-context" hidden="" id="xc-quote-context"></div>
 <form action="https://formspree.io/f/mzedgdrv" class="form" id="contactForm" method="POST" onsubmit="sendLead(event)">
 <h3 class="form-title">
           Solicitar información
@@ -3682,12 +3669,17 @@ body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-ser
           headers: { "Accept": "application/json" }
         });
         if (!response.ok) throw new Error("Error HTTP " + response.status);
-        status.textContent = "✅ Solicitud enviada correctamente. Nos pondremos en contacto contigo.";
+        status.textContent = "✅ El formulario confirmó la recepción de tu solicitud. Nos pondremos en contacto contigo.";
+        status.classList.remove("xc-form-error");
+        status.classList.add("xc-form-success");
+        document.getElementById("xc-quote-context").hidden = true;
         status.style.display = "block";
         form.reset();
       } catch (error) {
         console.error("Error enviando formulario XineCom:", error);
-        status.textContent = "⚠️ No pudimos enviar la solicitud. Intenta nuevamente o escríbenos a xinecomdigital@gmail.com.";
+        status.textContent = "⚠️ No se pudo confirmar el envío. Conservamos tus datos en el formulario para que intentes nuevamente o nos escribas a xinecomdigital@gmail.com.";
+        status.classList.remove("xc-form-success");
+        status.classList.add("xc-form-error");
         status.style.display = "block";
       } finally {
         button.disabled = false;
@@ -4057,8 +4049,22 @@ xtAddGrade('5','30');xtAddGrade('6','30');xtAddGrade('','40');
 </script>
 <script>(function(){
 'use strict';
-function selectService(service,message){const select=document.getElementById('contactService'),msg=document.getElementById('contactMessage');if(select){select.value=service;if(!select.value)select.value='Otro';}if(message&&msg)msg.value=message;document.getElementById('contacto').scrollIntoView({behavior:'smooth'});setTimeout(()=>{if(msg)msg.focus({preventScroll:true});},500);}
+function selectService(service,message){
+ const select=document.getElementById('contactService'),msg=document.getElementById('contactMessage'),ctx=document.getElementById('xc-quote-context');
+ if(select){const option=[...select.options].find(o=>o.value===service);if(!option){console.warn('Servicio sin opción:',service);return;}select.value=service;select.dispatchEvent(new Event('change',{bubbles:true}));}
+ if(msg){msg.value=message||'';}
+ if(ctx){ctx.hidden=false;ctx.textContent='Estás consultando por: '+(select?.selectedOptions[0]?.textContent.trim()||service);}
+ document.getElementById('contacto').scrollIntoView({behavior:'smooth',block:'start'});
+ setTimeout(()=>{(msg||select)?.focus({preventScroll:true});},450);
+}
 document.querySelectorAll('[data-service]').forEach(btn=>btn.addEventListener('click',()=>selectService(btn.dataset.service,btn.dataset.message||'')));
+const xcSelect=document.getElementById('contactService');
+xcSelect?.addEventListener('change',()=>{const ctx=document.getElementById('xc-quote-context');if(!ctx)return;ctx.hidden=!xcSelect.value;if(xcSelect.value)ctx.textContent='Estás consultando por: '+xcSelect.selectedOptions[0].textContent.trim();});
+const xcRequested=new URLSearchParams(window.location.search).get('servicio');
+if(xcRequested&&[...xcSelect.options].some(o=>o.value===xcRequested)){
+  selectService(xcRequested,'');
+}
+
 window.xcConvertUnits=function(){const v=document.getElementById('xc-unit-value').value,out=document.getElementById('xc-unit-result');if(v===''||!Number.isFinite(Number(v))){out.textContent='Ingresa un número válido.';return;}const factors={mm:.001,cm:.01,m:1,km:1000,in:.0254,ft:.3048};const from=document.getElementById('xc-unit-from').value,to=document.getElementById('xc-unit-to').value;const result=Number(v)*factors[from]/factors[to];out.textContent=Number(v).toLocaleString('es-CL')+' '+from+' = '+result.toLocaleString('es-CL',{maximumFractionDigits:8})+' '+to;};
 window.xcCreateDocument=function(){const get=id=>document.getElementById(id).value.trim();const name=get('xc-doc-name'),recipient=get('xc-doc-recipient'),desc=get('xc-doc-desc'),type=get('xc-doc-type'),date=get('xc-doc-date'),amount=get('xc-doc-amount');if(!name||!recipient||!desc){alert('Completa nombre, destinatario y descripción.');return;}const escape=s=>s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));const win=window.open('','_blank');if(!win){alert('Permite ventanas emergentes para generar el documento.');return;}const html='<!doctype html><html lang="es"><head><meta charset="utf-8"><title>'+escape(type)+'</title><style>body{font:16px Arial,sans-serif;max-width:760px;margin:55px auto;padding:20px;color:#15251a}h1{border-bottom:3px solid #00a65c;padding-bottom:20px}.brand{color:#008c4d;font-weight:bold}.meta{margin:28px 0;line-height:1.9}.description{white-space:pre-wrap;padding:20px;background:#f2f6f3;border-radius:8px}.footer{margin-top:60px;color:#657568;font-size:12px}@media print{button{display:none}}</style></head><body><div class="brand">DOCUMENTO GENERADO · XINECOM TOOLS</div><h1>'+escape(type)+'</h1><div class="meta"><b>Emisor:</b> '+escape(name)+'<br><b>Destinatario:</b> '+escape(recipient)+'<br><b>Fecha:</b> '+escape(date||new Date().toLocaleDateString('es-CL'))+'</div><h3>Detalle</h3><div class="description">'+escape(desc)+'</div>'+(amount?'<h3>Monto estimado: $'+Number(amount).toLocaleString('es-CL')+' CLP</h3>':'')+'<p class="footer">Documento de referencia elaborado con una herramienta gratuita. No constituye factura ni documento tributario.</p><button onclick="window.print()">Imprimir / Guardar como PDF</button></body></html>';win.document.open();win.document.write(html);win.document.close();};
 })();</script>
@@ -4097,6 +4103,26 @@ window.xcCreateDocument=function(){const get=id=>document.getElementById(id).val
   if(reduceMotion.addEventListener)reduceMotion.addEventListener('change',start);
   show(0);start();
 })();
+</script>
+<script id="xc-compact-services-js">
+document.addEventListener('DOMContentLoaded',function(){
+ document.querySelectorAll('#servicios .cards > .card').forEach(function(card,i){
+  const title=card.querySelector('h3');
+  if(!title)return;
+  const detail=document.createElement('button');
+  detail.type='button';detail.className='xc-detail-toggle';
+  detail.textContent='Ver detalles +';
+  detail.setAttribute('aria-expanded','false');
+  detail.setAttribute('aria-label','Ver detalles de '+title.textContent.trim());
+  detail.addEventListener('click',function(){
+   const expanded=card.classList.toggle('xc-expanded');
+   detail.textContent=expanded?'Ocultar detalles −':'Ver detalles +';
+   detail.setAttribute('aria-expanded',String(expanded));
+  });
+  const cta=card.querySelector('.xc-service-btn');
+  if(cta)card.insertBefore(detail,cta);else card.appendChild(detail);
+ });
+});
 </script>
 </body>
 </html>
