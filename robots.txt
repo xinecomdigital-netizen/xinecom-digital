@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://xinecomdigital-netizen.github.io/xinecom-digital/sitemap.xml
+Sitemap: https://xinecomdigital.com/sitemap.xml
