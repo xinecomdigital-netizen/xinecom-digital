@@ -4155,6 +4155,12 @@ body footer{
           headers: { "Accept": "application/json" }
         });
         if (!response.ok) throw new Error("Error HTTP " + response.status);
+        // Registrar cotización exitosa en Google Analytics 4
+        if (typeof gtag === "function") {
+        gtag("event", "generate_lead", {
+       currency: "CLP"
+  });
+}
         status.textContent = "✅ El formulario confirmó la recepción de tu solicitud. Nos pondremos en contacto contigo.";
         status.classList.remove("xc-form-error");
         status.classList.add("xc-form-success");
