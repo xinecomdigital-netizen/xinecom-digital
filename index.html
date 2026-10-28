@@ -42,30 +42,102 @@
 <!-- ======================================================
        DATOS ESTRUCTURADOS
        ====================================================== -->
+
 <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "XineCom Digital",
-    "url": "https://xinecomdigital.com/",
-    "email": "xinecomdigital@gmail.com",
-    "description": "Soporte TI, optimización de computadores, seguridad informática y automatización para personas, emprendedores y pequeñas empresas.",
-    "areaServed": {
-      "@type": "Country",
-      "name": "Chile"
-    },
-    "serviceType": [
-      "Soporte TI",
-      "Optimización de computadores",
-      "Instalación de Windows",
-      "Seguridad informática",
-      "Diagnóstico de computadores",
-      "Automatización",
-      "Automatización con IA",
-      "Soporte para pequeñas empresas"
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "XineCom Digital",
+  "url": "https://xinecomdigital.com/",
+  "email": "xinecomdigital@gmail.com",
+  "description": "Soporte TI, optimización de computadores, seguridad informática y automatización para personas, emprendedores y pequeñas empresas.",
+  "areaServed": {
+    "@type": "Country",
+    "name": "Chile"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Servicios XineCom Digital",
+    "itemListElement": [
+      {
+        "@type": "OfferCatalog",
+        "name": "Soporte y mantenimiento TI",
+        "itemListElement": [
+          {
+            "@type": "OfferCatalog",
+            "name": "Servicios técnicos",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "serviceType": "Soporte TI"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "serviceType": "Optimización de computadores"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "serviceType": "Instalación de Windows"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "serviceType": "Seguridad informática"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "serviceType": "Diagnóstico de computadores"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "@type": "OfferCatalog",
+        "name": "Automatización",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "serviceType": "Automatización"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "serviceType": "Automatización con IA"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "serviceType": "Soporte para pequeñas empresas"
+            }
+          }
+        ]
+      }
     ]
   }
-  </script>
+}
+</script>
+
 <style>
 
     /* ======================================================
