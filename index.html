@@ -2,17 +2,11 @@
 
 <html lang="es">
 <head>
-<!-- Google AdSense -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6607159539321104"
-     crossorigin="anonymous"></script>
-<!-- Google tag (gtag.js) -->
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-HKY94YD22L"></script>
+<!-- XineCom: los servicios opcionales se cargan solo tras consentimiento. -->
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-HKY94YD22L');
+window.dataLayer = window.dataLayer || [];
+function gtag(){window.dataLayer.push(arguments);}
+window.xcConsent = {analytics:false,ads:false};
 </script>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
@@ -3300,7 +3294,22 @@ body footer{
 #herramientas .xc-cat[data-category="favorites"]{border-color:#00ff8870}
 #herramientas .xc-favorites-help{color:#a4c3b0;font-size:12px;margin:0 0 12px}
 </style>
-<style id="xc-lab-extras-style">#x-tool-panel textarea{min-height:110px;resize:vertical}#x-tool-panel .x-tool-result{white-space:pre-wrap;overflow-wrap:anywhere}#herramientas .tool{height:100%}#x-tool-panel{scroll-margin-top:110px}</style></head>
+<style id="xc-lab-extras-style">#x-tool-panel textarea{min-height:110px;resize:vertical}#x-tool-panel .x-tool-result{white-space:pre-wrap;overflow-wrap:anywhere}#herramientas .tool{height:100%}#x-tool-panel{scroll-margin-top:110px}</style>
+<style id="xc-consent-style">
+#xc-cookie-banner,#xc-cookie-settings{position:fixed;z-index:99999;left:16px;right:16px;bottom:16px;max-width:620px;margin:auto;background:#0a1510;color:#f1fff5;border:1px solid #28754b;border-radius:16px;padding:20px;box-shadow:0 20px 60px #000b;font:14px/1.55 Arial,sans-serif}
+#xc-cookie-banner[hidden],#xc-cookie-settings[hidden]{display:none!important}
+#xc-cookie-banner h2,#xc-cookie-settings h2{font-size:19px;color:#00ff88;margin:0 0 8px}
+#xc-cookie-banner p,#xc-cookie-settings p{margin:0 0 13px;color:#c3d6c9}
+.xc-cookie-actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:14px}
+.xc-cookie-actions button,#xc-cookie-settings button{cursor:pointer;border:1px solid #33865a;border-radius:9px;background:#14271c;color:white;padding:10px 15px;font-weight:700}
+.xc-cookie-actions .xc-cookie-accept,#xc-cookie-settings .xc-cookie-save{background:#00ff88;color:#052012;border-color:#00ff88}
+#xc-cookie-settings label{display:flex;align-items:center;gap:9px;margin:12px 0;color:#f1fff5}
+#xc-cookie-settings input{accent-color:#00ff88;width:18px;height:18px}
+#xc-cookie-manage{border:0;background:none;color:#00ff88;text-decoration:underline;cursor:pointer;font:inherit}
+#xc-cookie-banner a,#xc-cookie-settings a{color:#00ff88;text-decoration:underline}
+@media(max-width:480px){#xc-cookie-banner,#xc-cookie-settings{padding:16px;left:10px;right:10px;bottom:10px}.xc-cookie-actions button{flex:1}}
+</style>
+</head>
 <body>
 <div aria-hidden="true" class="xc-global-tech"><svg preserveaspectratio="xMidYMid slice" viewbox="0 0 1440 900" xmlns="http://www.w3.org/2000/svg">
 <defs>
@@ -4100,7 +4109,7 @@ body footer{
       </div>
 <div>
 
-        Soporte TI · Automatización · Tecnología · <a href="/privacidad.html" style="color:#00ff88;text-decoration:underline">Política de Privacidad</a>
+        Soporte TI · Automatización · Tecnología · <a href="/privacidad.html" style="color:#00ff88;text-decoration:underline">Política de Privacidad</a> · <button type="button" id="xc-cookie-manage">Configurar cookies</button>
 
       </div>
 </div>
@@ -4160,7 +4169,7 @@ body footer{
         });
         if (!response.ok) throw new Error("Error HTTP " + response.status);
         // Registrar cotización exitosa en Google Analytics 4
-        if (typeof gtag === "function") {
+        if (window.xcConsent && window.xcConsent.analytics && typeof gtag === "function") {
         gtag("event", "generate_lead", {
        currency: "CLP"
   });
@@ -4672,5 +4681,65 @@ window.xcSubnet=()=>{try{const ip=fromIP(get('xc-ip-address').value),prefix=Numb
 window.xcBase64=decode=>{try{const t=get('xc-b64-input').value;if(decode){const raw=atob(t.replace(/\s/g,''));const bytes=Uint8Array.from(raw,c=>c.charCodeAt(0));output('xc-b64-out',new TextDecoder('utf-8',{fatal:true}).decode(bytes));}else{const bytes=new TextEncoder().encode(t);let binary='';for(const byte of bytes)binary+=String.fromCharCode(byte);output('xc-b64-out',btoa(binary));}}catch(e){output('xc-b64-out','⚠ Entrada Base64 inválida o texto no UTF-8.');}};
 window.xcConvertImage=async()=>{const file=get('xc-image-file').files[0],out=get('xc-image-out');if(!file){out.textContent='Selecciona una imagen.';return;}if(file.size>25*1024*1024){out.textContent='El archivo supera el límite de 25 MB.';return;}let url;try{url=URL.createObjectURL(file);const img=new Image();img.src=url;await img.decode();let w=img.naturalWidth,h=img.naturalHeight;const max=Number(get('xc-image-width').value);if(get('xc-image-width').value&&(max<1||max>8000||!Number.isInteger(max)))throw Error('Ancho máximo inválido.');if(max&&w>max){h=Math.round(h*max/w);w=max;}if(w*h>50000000)throw Error('Imagen demasiado grande para procesar.');const canvas=document.createElement('canvas');canvas.width=w;canvas.height=h;const ctx=canvas.getContext('2d');const type=get('xc-image-format').value;if(type==='image/jpeg'){ctx.fillStyle='#fff';ctx.fillRect(0,0,w,h);}ctx.drawImage(img,0,0,w,h);const blob=await new Promise(resolve=>canvas.toBlob(resolve,type,.9));if(!blob)throw Error('No se pudo generar la imagen.');const download=URL.createObjectURL(blob),a=document.createElement('a');a.href=download;a.download=(file.name.replace(/\.[^.]+$/,'')||'imagen')+'.'+({'image/png':'png','image/jpeg':'jpg','image/webp':'webp'}[type]);document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(download),1000);out.textContent=`✓ Imagen convertida: ${w} × ${h} px · ${(blob.size/1024).toFixed(1)} KB`; }catch(e){out.textContent='⚠ '+e.message;}finally{if(url)URL.revokeObjectURL(url);}};
 })();
-</script></body>
+</script>
+<!-- Controles de consentimiento XineCom Digital -->
+<div id="xc-cookie-banner" role="dialog" aria-modal="false" aria-labelledby="xc-cookie-title" hidden>
+  <h2 id="xc-cookie-title">Tu privacidad importa 🍪</h2>
+  <p>Utilizamos tecnologías opcionales para medir visitas y, si se aprueba el sitio, mostrar publicidad. Tú decides. Consulta nuestra <a href="/privacidad.html">Política de Privacidad</a>.</p>
+  <div class="xc-cookie-actions">
+    <button type="button" class="xc-cookie-accept" id="xc-cookie-accept">Aceptar todas</button>
+    <button type="button" id="xc-cookie-reject">Rechazar opcionales</button>
+    <button type="button" id="xc-cookie-configure">Configurar</button>
+  </div>
+</div>
+<div id="xc-cookie-settings" role="dialog" aria-modal="false" aria-labelledby="xc-cookie-settings-title" hidden>
+  <h2 id="xc-cookie-settings-title">Preferencias de privacidad</h2>
+  <p>Las funciones esenciales del sitio permanecen disponibles. Puedes cambiar tus preferencias cuando quieras.</p>
+  <label><input type="checkbox" checked disabled> Esenciales (siempre activas)</label>
+  <label><input type="checkbox" id="xc-cookie-analytics"> Analítica (Google Analytics)</label>
+  <label><input type="checkbox" id="xc-cookie-ads"> Publicidad (Google AdSense)</label>
+  <div class="xc-cookie-actions">
+    <button type="button" class="xc-cookie-save" id="xc-cookie-save">Guardar preferencias</button>
+    <button type="button" id="xc-cookie-settings-cancel">Volver</button>
+  </div>
+</div>
+<script id="xc-cookie-logic">
+(function(){
+  'use strict';
+  const KEY='xc_cookie_consent_v1';
+  const banner=document.getElementById('xc-cookie-banner');
+  const panel=document.getElementById('xc-cookie-settings');
+  const analytics=document.getElementById('xc-cookie-analytics');
+  const ads=document.getElementById('xc-cookie-ads');
+  let loadedAnalytics=false,loadedAds=false;
+  function read(){try{const v=JSON.parse(localStorage.getItem(KEY));return v&&typeof v.analytics==='boolean'&&typeof v.ads==='boolean'?v:null;}catch(e){return null;}}
+  function loadScript(src){const s=document.createElement('script');s.async=true;s.src=src;document.head.appendChild(s);}
+  function apply(v){
+    window.xcConsent={analytics:!!v.analytics,ads:!!v.ads};
+    if(v.analytics&&!loadedAnalytics){
+      loadedAnalytics=true;
+      gtag('js',new Date());
+      gtag('config','G-HKY94YD22L');
+      loadScript('https://www.googletagmanager.com/gtag/js?id=G-HKY94YD22L');
+    }
+    if(v.ads&&!loadedAds){
+      loadedAds=true;
+      loadScript('https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6607159539321104');
+    }
+    // Si se retira un consentimiento después de haber cargado el proveedor,
+    // recargamos para garantizar que no siga activo en esta visita.
+    if((loadedAnalytics&&!v.analytics)||(loadedAds&&!v.ads)){location.reload();}
+  }
+  function save(v){try{localStorage.setItem(KEY,JSON.stringify(v));}catch(e){}banner.hidden=true;panel.hidden=true;apply(v);}
+  function showSettings(){const v=read()||{analytics:false,ads:false};analytics.checked=v.analytics;ads.checked=v.ads;banner.hidden=true;panel.hidden=false;}
+  document.getElementById('xc-cookie-accept').addEventListener('click',()=>save({analytics:true,ads:true}));
+  document.getElementById('xc-cookie-reject').addEventListener('click',()=>save({analytics:false,ads:false}));
+  document.getElementById('xc-cookie-configure').addEventListener('click',showSettings);
+  document.getElementById('xc-cookie-save').addEventListener('click',()=>save({analytics:analytics.checked,ads:ads.checked}));
+  document.getElementById('xc-cookie-settings-cancel').addEventListener('click',()=>{panel.hidden=true;banner.hidden=false;});
+  document.getElementById('xc-cookie-manage').addEventListener('click',showSettings);
+  const previous=read();if(previous)apply(previous);else banner.hidden=false;
+})();
+</script>
+</body>
 </html>
